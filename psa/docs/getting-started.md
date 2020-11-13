@@ -8,7 +8,7 @@ _Physical Starlight and Atmosphere_  is a Blender addon for advanced environment
 and lighting, and visual consistency between every object in your scene. It can be installed as any other Blender addon.
 ## Requirements
 
-Latest _Physical Starlight and Atmosphere v1.2_ is supported by [Blender 2.81+](https://www.blender.org/). Older
+Latest _Physical Starlight and Atmosphere v1.3_ is supported by [Blender 2.81+](https://www.blender.org/). Older
 versions of addon (v1.0 and v1.1) works also on [Blender 2.80](https://www.blender.org/) .
 
 ## Installation
