@@ -3,7 +3,7 @@ site_dir: psa
 theme:
   name: material
   features:
-    - tabs
+    - navigation.tabs
 plugins:
   - search
 site_url: https://www.physicaladdons.com/psa/
