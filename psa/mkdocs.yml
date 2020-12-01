@@ -14,6 +14,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - attr_list
+  - abbr
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -28,8 +29,9 @@ nav:
     - Frequently Asked Questions: faq.md
   - Documentation:
     - Overview: overview.md
-#    - Presets: presets.md
+    - Presets: presets.md
     - Sun: sun.md
+    - Binary Sun: binary-sun.md
 #    - Atmosphere: atmosphere.md
     - Ground: ground.md
 #    - Stars: stars.md

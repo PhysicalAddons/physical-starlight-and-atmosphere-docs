@@ -2,9 +2,10 @@
     This section currently is under development. 
  
 ![GUI_tools](img/UI/UI_tools.PNG){: align=right }
-Addon interface is divided into 5 sections:
+Addon interface is divided into 6 sections:
 
 * Sun
+* Binary Sun (:octicons-beaker-24: Experimental)
 * Atmosphere
 * Stars
 * Ground
