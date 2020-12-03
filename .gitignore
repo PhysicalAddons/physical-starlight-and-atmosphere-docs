@@ -1,2 +1,5 @@
 .idea
 *.iml
+psa/docs/stylesheets/node_modules/
+/venv
+/node_modules/*

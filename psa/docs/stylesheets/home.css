@@ -1,0 +1,42 @@
+.psa, .psa div, .psa span, .psa applet, .psa object, .psa iframe,
+.psa h1, .psa h2, .psa h3, .psa h4, .psa h5, .psa h6, .psa p, .psa blockquote, .psa pre,
+.psa a, .psa abbr, .psa acronym, .psa address, .psa big, .psa cite, .psa code,
+.psa del, .psa dfn, .psa em, .psa img, .psa ins, .psa kbd, .psa q, .psa s, .psa samp,
+.psa small, .psa strike, .psa strong, .psa sub, .psa sup, .psa tt, .psa var,
+.psa b, .psa u, .psa i, .psa center,
+.psa dl, .psa dt, .psa dd, .psa ol, .psa ul, .psa li,
+.psa fieldset, .psa form, .psa label, .psa legend,
+.psa table, .psa caption, .psa tbody, .psa tfoot, .psa thead, .psa tr, .psa th, .psa td,
+.psa article, .psa aside, .psa canvas, .psa details, .psa embed,
+.psa figure, .psa figcaption, .psa footer, .psa header, .psa hgroup,
+.psa menu, .psa nav, .psa output, .psa ruby, .psa section, .psa summary,
+.psa time, .psa mark, .psa audio, .psa video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+.psa {
+  line-height: 1;
+  /* HTML5 display-role reset for older browsers */ }
+  .psa article, .psa aside, .psa details, .psa figcaption, .psa figure,
+  .psa footer, .psa header, .psa hgroup, .psa menu, .psa nav, .psa section {
+    display: block; }
+  .psa ol, .psa ul {
+    list-style: none; }
+  .psa blockquote, .psa q {
+    quotes: none; }
+  .psa blockquote:before, .psa blockquote:after,
+  .psa q:before, .psa q:after {
+    content: '';
+    content: none; }
+  .psa table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+.psa {
+  background-color: red; }
+  .psa .landing {
+    height: 100vh; }
