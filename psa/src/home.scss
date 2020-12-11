@@ -1,17 +1,11 @@
 @import "reset";
-.psa {
-  background-color: #ff6e42;
-  @import "typography";
-  @import "scaffolding";
+@import "media-queries";
+@import "typography";
+@import "scaffolding";
 
+.psa {
   @import "partials/landing";
+  @import "partials/nav-primary";
+  @import "partials/tablinks";
 }
 
-
-
-//@import "partials/nav-top";
-
-//body {
-//  background-color: blue !important;
-//  color: red !important;
-//}

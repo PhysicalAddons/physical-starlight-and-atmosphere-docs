@@ -1,0 +1,48 @@
+$nav-font-size: 16px;
+$nav-font-color: #F5F5F5;
+
+.nav-primary {
+  position: relative;
+  //display: flex;
+  padding: 20px;
+  min-height: 48px;
+  margin-bottom: 140px;
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    svg {
+
+    }
+  }
+  &__link {
+    display: inline-block;
+    padding: 16px 0;
+    font-size: $nav-font-size;
+    color: $nav-font-color;
+    text-decoration: none;
+    &+.nav-primary__link {
+      margin-left: 60px;
+    }
+  }
+
+  // layout & positioning
+  &__main {
+    @extend .container-s;
+  }
+  &__secondary {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+
+  // mobile
+  &__toggle {
+    display: none;
+
+  }
+  &__collapse {
+
+  }
+}

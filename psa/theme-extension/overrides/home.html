@@ -11,73 +11,96 @@
     {% endfor %}
 </head>
 <body class="psa">
-    <div class="landing" style="background-image: url({{ 'assets/images/landing-1.png' | url }})">
-        <nav class="nav-primary">
-            <a class="nav-primary__logo" href="/" aria-label="Physical Addons">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0V48H11.3333V36V27.3333V20.6667V12H20H28H36.6667V20.6667V27.3333V30V36H20V48H28V38H36.6667V48H48V0H0Z" fill="white"/>
-                </svg>
-            </a>
-            <button class="nav-primary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
-            </button>
-            <div class="nav-primary__collapse">
-                <div class="nav-primary__main">
-                    <a href="#" class="nav-primary__link">Documentation</a>
-                    <a href="#" class="nav-primary__link">Blender market</a>
-                </div>
-                <div class="nav-primary__secondary">
-                    <a href="#" class="nav-primary__link">Contacts</a>
-                </div>
+<!--    <div class="wrapper">-->
+        <div class="landing" style="/*background-image: url({{ 'assets/images/landing-1.png' | url }})*/">
+
+            <div class="container-l">
+                <nav class="nav-primary">
+                    <a class="nav-primary__logo" href="/" aria-label="Physical Addons">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0V48H11.3333V36V27.3333V20.6667V12H20H28H36.6667V20.6667V27.3333V30V36H20V48H28V38H36.6667V48H48V0H0Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <button class="nav-primary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                    </button>
+                    <div class="nav-primary__collapse">
+                        <div class="nav-primary__main">
+                            <a href="#" class="nav-primary__link">Documentation</a>
+                            <a href="#" class="nav-primary__link">Blender market</a>
+                        </div>
+                        <div class="nav-primary__secondary">
+                            <a href="#" class="nav-primary__link">Contacts</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+            <div class="container-s">
+                <article class="landing__logo">
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
+                        <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
+                    </svg>
+                </article>
 
-        <article class="landing__logo">
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
-                <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
-            </svg>
-        </article>
+                <h1 class="landing__title">
+                    Cinematic atmosphere<br>
+                    in 30 seconds for Blender<br>
+                    <em>Physical Starlight and Atmosphere</em>
+                </h1>
+                <div class="tablinks">
+                    <ul class="tablinks__list">
+                        <li class="tablinks__item">
+                            <a href="" class="tablinks__link">Model</a>
+                        </li>
+                        <li class="tablinks__item tablinks__item--active">
+                            <a href="" class="tablinks__link">Retro</a>
+                        </li>
+                        <li class="tablinks__item">
+                            <a href="" class="tablinks__link">Earth</a>
+                        </li>
+                        <li class="tablinks__item">
+                            <a href="" class="tablinks__link">Mars</a>
+                        </li>
+                    </ul>
+                    <div class="tablinks__line"></div>
+                </div>
 
-        <h1 class="landing__title">
-            Cinematic atmosphere<br>
-            in 30 seconds for Blender<br>
-            <em>Physical Starlight and Atmosphere</em>
-        </h1>
-
-        <ul class="tablinks" data-progress="0">
-            <li class="tablinks__item">
-                <a href="" class="tablinks__link">Model</a>
-            </li>
-            <li class="tablinks__item">
-                <a href="" class="tablinks__link">Retro</a>
-            </li>
-            <li class="tablinks__item">
-                <a href="" class="tablinks__link">Earth</a>
-            </li>
-            <li class="tablinks__item">
-                <a href="" class="tablinks__link">Mars</a>
-            </li>
-        </ul>
-
-        <nav class="nav-secondary">
-            <a class="nav-secondary__logo" href="/" aria-label="Physical Starlight and Atmosphere">
-                <svg width="48" height="48" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
-                    <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
-                </svg>
-            </a>
-            <button class="nav-secondary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
-            </button>
-            <div class="nav-secondary__collapse">
-                <a href="#" class="nav-secondary__link">Documentation</a>
-                <a href="#" class="nav-secondary__link">Blender market</a>
-                <a href="#" class="nav-secondary__link">Contacts</a>
             </div>
-        </nav>
-    </div>
-    Something after landing
+            <nav class="nav-secondary">
+                <a class="nav-secondary__logo" href="/" aria-label="Physical Starlight and Atmosphere">
+                    <svg width="48" height="48" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
+                        <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
+                    </svg>
+                </a>
+                <button class="nav-secondary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                </button>
+                <div class="nav-secondary__collapse">
+                    <a href="#" class="nav-secondary__link">Documentation</a>
+                    <a href="#" class="nav-secondary__link">Blender market</a>
+                    <a href="#" class="nav-secondary__link">Contacts</a>
+                </div>
+            </nav>
+            <div class="landing__images">
+                <img
+                    alt="An astronaut on Earth looking over desert in sun direction"
+                    srcset="
+                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=300' | url }} 300w,
+                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=600' | url }} 600w,
+                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=1200' | url }} 1200w,
+                        {{ 'assets/images/earth.jpg' | url }} 1440w,
+                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=2000' | url }} 2000w
+                    "
+                    sizes="100vw"
+                >
+            </div>
+
+        </div>
+        Something after landing
+<!--    </div>-->
+
 
 
 </body>
