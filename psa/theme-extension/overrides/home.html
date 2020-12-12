@@ -48,19 +48,22 @@
                     in 30 seconds for Blender<br>
                     <em>Physical Starlight and Atmosphere</em>
                 </h1>
-                <div class="tablinks">
+                <div class="tablinks" id="presetlinks">
                     <ul class="tablinks__list">
                         <li class="tablinks__item">
-                            <a href="" class="tablinks__link">Model</a>
-                        </li>
-                        <li class="tablinks__item tablinks__item--active">
-                            <a href="" class="tablinks__link">Retro</a>
+                            <a href="#preset-model" class="tablinks__link tablinks__link--active">Model</a>
                         </li>
                         <li class="tablinks__item">
-                            <a href="" class="tablinks__link">Earth</a>
+                            <a href="#preset-earth" class="tablinks__link">Earth</a>
                         </li>
                         <li class="tablinks__item">
-                            <a href="" class="tablinks__link">Mars</a>
+                            <a href="#preset-mars" class="tablinks__link">Mars</a>
+                        </li>
+                        <li class="tablinks__item">
+                            <a href="#preset-nishita" class="tablinks__link">Nishita</a>
+                        </li>
+                        <li class="tablinks__item">
+                            <a href="#preset-retrowave" class="tablinks__link">Retrowave</a>
                         </li>
                     </ul>
                     <div class="tablinks__line"></div>
@@ -83,17 +86,71 @@
                     <a href="#" class="nav-secondary__link">Contacts</a>
                 </div>
             </nav>
-            <div class="landing__images">
+            <div class="presets">
                 <img
+                    id="preset-model"
+                    class="presets__image presets__image--active"
                     alt="An astronaut on Earth looking over desert in sun direction"
                     srcset="
-                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=300' | url }} 300w,
-                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=600' | url }} 600w,
-                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=1200' | url }} 1200w,
-                        {{ 'assets/images/earth.jpg' | url }} 1440w,
-                        {{ 'assets/images/earth.jpg?nf_resize=fit&w=2000' | url }} 2000w
+                        {{ 'assets/images/model.jpeg?nf_resize=fit&w=300' | url }} 300w,
+                        {{ 'assets/images/model.jpeg?nf_resize=fit&w=600' | url }} 600w,
+                        {{ 'assets/images/model.jpeg?nf_resize=fit&w=1200' | url }} 1200w,
+                        {{ 'assets/images/model.jpeg' | url }} 1600w,
+                        {{ 'assets/images/model.jpeg?nf_resize=fit&w=2000' | url }} 2000w
                     "
                     sizes="100vw"
+                >
+                <img
+                        id="preset-earth"
+                        class="presets__image presets__image--earth"
+                        alt="An astronaut on Earth looking over desert in sun direction"
+                        srcset="
+                        {{ 'assets/images/earth.jpeg?nf_resize=fit&w=300' | url }} 300w,
+                        {{ 'assets/images/earth.jpeg?nf_resize=fit&w=600' | url }} 600w,
+                        {{ 'assets/images/earth.jpeg?nf_resize=fit&w=1200' | url }} 1200w,
+                        {{ 'assets/images/earth.jpeg' | url }} 1600w,
+                        {{ 'assets/images/earth.jpeg?nf_resize=fit&w=2000' | url }} 2000w
+                    "
+                        sizes="100vw"
+                >
+                <img
+                        id="preset-mars"
+                        class="presets__image"
+                        alt="An astronaut on Earth looking over desert in sun direction"
+                        srcset="
+                        {{ 'assets/images/mars.jpeg?nf_resize=fit&w=300' | url }} 300w,
+                        {{ 'assets/images/mars.jpeg?nf_resize=fit&w=600' | url }} 600w,
+                        {{ 'assets/images/mars.jpeg?nf_resize=fit&w=1200' | url }} 1200w,
+                        {{ 'assets/images/mars.jpeg' | url }} 1600w,
+                        {{ 'assets/images/mars.jpeg?nf_resize=fit&w=2000' | url }} 2000w
+                    "
+                        sizes="100vw"
+                >
+                <img
+                        id="preset-nishita"
+                        class="presets__image"
+                        alt="An astronaut on Earth looking over desert in sun direction"
+                        srcset="
+                        {{ 'assets/images/nishita.jpeg?nf_resize=fit&w=300' | url }} 300w,
+                        {{ 'assets/images/nishita.jpeg?nf_resize=fit&w=600' | url }} 600w,
+                        {{ 'assets/images/nishita.jpeg?nf_resize=fit&w=1200' | url }} 1200w,
+                        {{ 'assets/images/nishita.jpeg' | url }} 1600w,
+                        {{ 'assets/images/nishita.jpeg?nf_resize=fit&w=2000' | url }} 2000w
+                    "
+                        sizes="100vw"
+                >
+                <img
+                        id="preset-retrowave"
+                        class="presets__image"
+                        alt="An astronaut on Earth looking over desert in sun direction"
+                        srcset="
+                        {{ 'assets/images/retrowave.jpeg?nf_resize=fit&w=300' | url }} 300w,
+                        {{ 'assets/images/retrowave.jpeg?nf_resize=fit&w=600' | url }} 600w,
+                        {{ 'assets/images/retrowave.jpeg?nf_resize=fit&w=1200' | url }} 1200w,
+                        {{ 'assets/images/retrowave.jpeg' | url }} 1600w,
+                        {{ 'assets/images/retrowave.jpeg?nf_resize=fit&w=2000' | url }} 2000w
+                    "
+                        sizes="100vw"
                 >
             </div>
 
@@ -102,7 +159,7 @@
 <!--    </div>-->
 
 
-
+    <script src="{{ 'assets/javascript/presets.js' | url }}"></script>
 </body>
 </html>
 
