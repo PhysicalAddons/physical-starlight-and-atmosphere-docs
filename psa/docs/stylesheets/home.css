@@ -155,6 +155,6 @@
     min-width: 100%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity .3s ease-in-out; }
+    transition: opacity 1s ease-in-out; }
     .psa .presets__image--active {
       opacity: 1; }
