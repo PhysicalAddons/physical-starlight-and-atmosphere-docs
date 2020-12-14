@@ -17,36 +17,8 @@
     }
   }
 
-  // simulate background-position: fill;
-  &__images {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    overflow: hidden;
-
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-
-      width: auto;
-      height: auto;
-
-      max-height: none;
-      max-width: none;
-
-      min-height: 100%;
-      min-width: 100%;
-
-      transform: translate(-50%, -50%);
-    }
-  }
-
   // push these elements on top of images
-  .container-l, .container-s, .nav-secondary {
+  .container-xl, .container-s, .nav-secondary {
     position: relative;
     z-index: 1;
   }

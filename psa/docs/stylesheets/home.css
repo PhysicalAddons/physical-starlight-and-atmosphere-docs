@@ -1,16 +1,20 @@
-.psa, .psa div, .psa span, .psa applet, .psa object, .psa iframe,
-.psa h1, .psa h2, .psa h3, .psa h4, .psa h5, .psa h6, .psa p, .psa blockquote, .psa pre,
-.psa a, .psa abbr, .psa acronym, .psa address, .psa big, .psa cite, .psa code,
-.psa del, .psa dfn, .psa em, .psa img, .psa ins, .psa kbd, .psa q, .psa s, .psa samp,
-.psa small, .psa strike, .psa strong, .psa sub, .psa sup, .psa tt, .psa var,
-.psa b, .psa u, .psa i, .psa center,
-.psa dl, .psa dt, .psa dd, .psa ol, .psa ul, .psa li,
-.psa fieldset, .psa form, .psa label, .psa legend,
-.psa table, .psa caption, .psa tbody, .psa tfoot, .psa thead, .psa tr, .psa th, .psa td,
-.psa article, .psa aside, .psa canvas, .psa details, .psa embed,
-.psa figure, .psa figcaption, .psa footer, .psa header, .psa hgroup,
-.psa menu, .psa nav, .psa output, .psa ruby, .psa section, .psa summary,
-.psa time, .psa mark, .psa audio, .psa video {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,38 +22,65 @@
   font: inherit;
   vertical-align: baseline; }
 
-.psa {
-  line-height: 1;
-  /* HTML5 display-role reset for older browsers */ }
-  .psa article, .psa aside, .psa details, .psa figcaption, .psa figure,
-  .psa footer, .psa header, .psa hgroup, .psa menu, .psa nav, .psa section {
-    display: block; }
-  .psa ol, .psa ul {
-    list-style: none; }
-  .psa blockquote, .psa q {
-    quotes: none; }
-  .psa blockquote:before, .psa blockquote:after,
-  .psa q:before, .psa q:after {
-    content: '';
-    content: none; }
-  .psa table {
-    border-collapse: collapse;
-    border-spacing: 0; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.psa .container-s, .psa .nav-primary__main, .psa .container-l {
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: #F5F5F5; }
+
+.psa .h2 {
+  margin-bottom: 46px;
+  color: #F5F5F5;
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 400; }
+
+.psa .underline {
+  padding-bottom: 32px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+
+.psa .container-s, .psa .nav-primary__main, .psa .container-m, .psa .container-l, .psa .container-xl {
   margin-right: auto;
   margin-left: auto; }
 
 .psa {
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   background-color: black; }
   .psa .wrapper {
     max-width: 1366px;
     margin: 0 auto; }
   .psa .container-s, .psa .nav-primary__main {
     max-width: 690px; }
+  .psa .container-m {
+    max-width: 900px; }
   .psa .container-l {
+    max-width: 1200px; }
+  .psa .container-xl {
     max-width: 1440px; }
+
+.gap {
+  width: 100%;
+  height: 148px; }
 
 .psa .landing {
   position: relative;
@@ -65,25 +96,7 @@
     color: white; }
     .psa .landing__title em {
       color: rgba(255, 255, 255, 0.5); }
-  .psa .landing__images {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden; }
-    .psa .landing__images img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
-      height: auto;
-      max-height: none;
-      max-width: none;
-      min-height: 100%;
-      min-width: 100%;
-      transform: translate(-50%, -50%); }
-  .psa .landing .container-l, .psa .landing .container-s, .psa .landing .nav-primary__main, .psa .landing .nav-secondary {
+  .psa .landing .container-xl, .psa .landing .container-s, .psa .landing .nav-primary__main, .psa .landing .nav-secondary {
     position: relative;
     z-index: 1; }
   .psa .landing:after {
@@ -94,6 +107,9 @@
     left: 0;
     right: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); }
+
+.psa .workflow__links {
+  margin-top: 78px; }
 
 .psa .nav-primary {
   position: relative;
@@ -128,8 +144,6 @@
     display: inline-block; }
     .psa .tablinks__item + .tablinks__item {
       margin-left: 80px; }
-    .psa .tablinks__item--active .tablinks__link:before {
-      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="); }
   .psa .tablinks__link {
     display: block;
     color: white;
@@ -140,6 +154,8 @@
     .psa .tablinks__link:before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2em0uNjY2LTE0LjIwNnYxMi40MTJMMTIuNjE3IDggMS4zMzIgMS43OTR6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9Ii41Ii8+PC9zdmc+");
       margin-right: 12px; }
+    .psa .tablinks__link--active:before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="); }
   .psa .tablinks:before, .psa .tablinks__line {
     content: "";
     position: absolute;
@@ -153,6 +169,29 @@
     background-color: white;
     width: 25%;
     transition: width .3s ease-in-out, left .3s ease-in-out; }
+
+.psa .presets {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+  .psa .presets__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out; }
+    .psa .presets__image--active {
+      opacity: 1; }
 
 .psa .nav-secondary {
   position: absolute !important;
@@ -181,6 +220,9 @@
     .psa .nav-secondary__toggle {
       display: none; } }
 
+.psa .videoplayer {
+  max-width: 100%; }
+
 .psa .btn {
   display: inline-block;
   padding: 4px 12px;
@@ -194,3 +236,11 @@
   border: 2px solid #F5F5F5;
   font-size: 16px;
   border-radius: 25px; }
+
+.psa .steps {
+  margin-top: 60px;
+  max-width: 410px; }
+  .psa .steps__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px; }

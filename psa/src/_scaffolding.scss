@@ -1,5 +1,4 @@
 
-
 %container {
   //max-width: 1380px;
   //padding-right: 15px;
@@ -8,7 +7,6 @@
   margin-left: auto;
 }
 .psa {
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   background-color: black;
 
   .wrapper {
@@ -16,13 +14,26 @@
     margin: 0 auto;
   }
   .container {
-    &-s {
+    &-s { // used for MOST CASES
       @extend %container;
       max-width: 690px;
     }
-    &-l {
+    &-m { // used for workflow
+      @extend %container;
+      max-width: 900px;
+    }
+    &-l { // used for references
+      @extend %container;
+      max-width: 1200px;
+    }
+    &-xl { // used for primary navigation
       @extend %container;
       max-width: 1440px;
     }
   }
+}
+
+.gap {
+  width: 100%;
+  height: 148px;
 }

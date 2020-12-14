@@ -5,10 +5,14 @@
 
 .psa {
   @import "partials/landing";
+  @import "partials/workflow";
+
   @import "partials/nav-primary";
   @import "partials/tablinks";
+  @import "partials/presets";
   @import "partials/nav-secondary";
-
+  @import "partials/videoplayer";
   @import "partials/btn";
+  @import "partials/steps";
 }
 

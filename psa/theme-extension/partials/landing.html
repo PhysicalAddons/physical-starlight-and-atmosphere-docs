@@ -1,0 +1,44 @@
+<div class="landing">
+
+    <div class="container-xl">
+        {% include "partials/nav-primary.html" %}
+    </div>
+    <div class="container-s">
+        <article class="landing__logo">
+            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
+                <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
+            </svg>
+        </article>
+
+        <h1 class="landing__title">
+            Cinematic atmosphere<br>
+            in 30 seconds for Blender<br>
+            <em>Physical Starlight and Atmosphere</em>
+        </h1>
+        <div class="tablinks" id="presetlinks">
+            <ul class="tablinks__list">
+                <li class="tablinks__item">
+                    <a href="#preset-model" class="tablinks__link tablinks__link--active">Model</a>
+                </li>
+                <li class="tablinks__item">
+                    <a href="#preset-earth" class="tablinks__link">Earth</a>
+                </li>
+                <li class="tablinks__item">
+                    <a href="#preset-mars" class="tablinks__link">Mars</a>
+                </li>
+                <li class="tablinks__item">
+                    <a href="#preset-nishita" class="tablinks__link">Nishita</a>
+                </li>
+                <li class="tablinks__item">
+                    <a href="#preset-retrowave" class="tablinks__link">Retrowave</a>
+                </li>
+            </ul>
+            <div class="tablinks__line"></div>
+        </div>
+
+    </div>
+    {% include "partials/nav-secondary.html" %}
+    {% include "partials/presets.html" %}
+
+</div>
