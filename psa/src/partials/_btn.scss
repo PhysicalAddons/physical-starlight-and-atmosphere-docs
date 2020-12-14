@@ -1,0 +1,19 @@
+$nav-font-size: 16px;
+$nav-font-color: #F5F5F5;
+
+.btn {
+  display: inline-block;
+  padding: 4px 12px;
+
+  font-weight: 400;
+  line-height: 19px;
+  color: $nav-font-color;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 2px solid $nav-font-color;
+
+  font-size: $nav-font-size;
+  border-radius: 25px;
+}
