@@ -1,8 +1,8 @@
-
+$nav-secondary-height: 48px;
 
 .landing {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - #{$nav-secondary-height});
   min-height: 770px;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
   }
 
   // push these elements on top of images
-  .container-xl, .container-s, .nav-secondary {
+  .container-xl, .container-s {
     position: relative;
     z-index: 1;
   }
@@ -27,7 +27,7 @@
     content: "";
     position: absolute;
     height: 160px;
-    bottom: 0;
+    bottom: -$nav-secondary-height;
     left: 0;
     right: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);

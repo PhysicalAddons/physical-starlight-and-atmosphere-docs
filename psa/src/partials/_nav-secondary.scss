@@ -2,8 +2,8 @@ $nav-font-size: 16px;
 $nav-font-color: #F5F5F5;
 
 .nav-secondary {
-  position: absolute !important; // TODO
-  bottom: 0;
+  position: sticky;
+  top: 0;
   left: 0;
   right: 0;
 

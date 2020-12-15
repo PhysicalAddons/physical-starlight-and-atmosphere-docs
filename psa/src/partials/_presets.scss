@@ -1,9 +1,11 @@
+$nav-secondary-height: 48px;
+
 // simulate background-position: fill;
 .presets {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -$nav-secondary-height;
   left: 0;
 
   overflow: hidden;

@@ -10,17 +10,17 @@
   background-color: black;
 
   .wrapper {
-    max-width: 1366px;
+    max-width: 2000px;
     margin: 0 auto;
   }
   .container {
     &-s { // used for MOST CASES
       @extend %container;
-      max-width: 690px;
+      max-width: 50%;
     }
     &-m { // used for workflow
       @extend %container;
-      max-width: 900px;
+      max-width: 930px;
     }
     &-l { // used for references
       @extend %container;
@@ -28,7 +28,7 @@
     }
     &-xl { // used for primary navigation
       @extend %container;
-      max-width: 1440px;
+      max-width: 100%;
     }
   }
 }
