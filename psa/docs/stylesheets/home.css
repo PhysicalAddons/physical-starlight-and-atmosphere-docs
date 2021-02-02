@@ -257,5 +257,59 @@ body {
     font-size: 16px;
     line-height: 25px; }
 
+.psa body {
+  background-color: black; }
+
 .psa .timeline {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 40px; }
+  .psa .timeline__section {
+    /*float: left;*/
+    width: calc(20% - 4px);
+    height: 4px;
+    margin-left: 5px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: height .1s ease-in-out;
+    cursor: pointer; }
+    .psa .timeline__section:before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      height: 4px; }
+    .psa .timeline__section:after {
+      content: attr(title);
+      display: block;
+      position: absolute;
+      bottom: 13px;
+      left: 0;
+      right: 0;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0);
+      transition: color .1s ease-in-out; }
+    .psa .timeline__section:hover {
+      height: 8px; }
+      .psa .timeline__section:hover:after {
+        color: rgba(255, 255, 255, 0.2); }
+    .psa .timeline__section--active:after {
+      color: white !important; }
+  .psa .timeline__progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    transform-origin: 0;
+    transform: scaleX(0);
+    transition: transform .1s linear;
+    will-change: transform; }
+
+.psa .no-transition .timeline__progress {
+  transition: none; }
