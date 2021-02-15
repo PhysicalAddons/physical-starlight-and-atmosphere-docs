@@ -1,3 +1,18 @@
+### 1.3.1 <small>- released xx.xx.2021</small>
+
+`new:`{: .label-new }   
+
+
+`improvements:`{: .label-improvements }   
+
+- Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading. 
+
+
+`fixed:`{: .label-fixed }
+
+- Fixed issues when installing a new addon version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)} 
+
+
 ### 1.3.0 <small>- released 13.11.2020</small>
 [![Release 1.3.0 banner](img/releases/psa1.3.0.png)](img/releases/psa1.3.0.png)
 
