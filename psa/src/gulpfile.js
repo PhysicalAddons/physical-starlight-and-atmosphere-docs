@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
+	twig = require('gulp-twig'),
 	browserSync = require('browser-sync').create();
 
 gulp.task('css', function() {
@@ -8,13 +9,28 @@ gulp.task('css', function() {
 				// outputStyle: 'compressed'
 			}).on('error', sass.logError)
 		)
-		.pipe(gulp.dest('../docs/stylesheets/'))
+		.pipe(gulp.dest('../theme-extension/assets/css/'))
 		.pipe(browserSync.stream())
+});
+
+gulp.task('compile', function (done) {
+	// return gulp.src('../theme-extension/index.twig')
+	// 	.pipe(twig({data: {}}))
+	// 	.pipe(gulp.dest('../theme-extension/'));
+	// browserSync.reload();
+	// done()
+	return gulp.src('./index.twig')
+		.pipe(twig({data: {}}))
+		.pipe(gulp.dest('./'));
+	// browserSync.reload();
+	done()
 });
 
 gulp.task('browserSync', function(){
 	browserSync.init({
-		proxy: "localhost:8000",
+		server: {
+			baseDir: "../theme-extension/"
+		}
 	});
 });
 
@@ -28,7 +44,7 @@ gulp.task('watch', function(){
 	// gulp.watch('../templates/partial/**/*.twig', gulp.series('compile'))
 });
 
-gulp.task('default', gulp.parallel('browserSync','watch', 'css'));
+gulp.task('default', gulp.parallel('browserSync', 'compile', 'watch', 'css'));
 
 // npm install <-- 
 // gulp
