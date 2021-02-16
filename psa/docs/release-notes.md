@@ -1,11 +1,12 @@
-### 1.3.1 <small>- released xx.xx.2021</small>
+ ### 1.3.1 <small>- released xx.xx.2021</small>
 
 `new:`{: .label-new }   
 
 
 `improvements:`{: .label-improvements }   
 
-- Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading. 
+- Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
+- Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
 
 
 `fixed:`{: .label-fixed }
