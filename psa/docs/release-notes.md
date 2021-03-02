@@ -1,4 +1,4 @@
- ### 1.3.1 <small>- released xx.xx.2021</small>
+### 1.3.1 <small>- released xx.xx.2021</small>
 
 `new:`{: .label-new }   
 
@@ -7,11 +7,13 @@
 
 - Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
 - Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
+- Whenever a blendfile is loaded it correctly loads preset defaults it is based on.
 
 
 `fixed:`{: .label-fixed }
 
-- Fixed issues when installing a new addon version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)} 
+- Fixed issues when installing a new addon version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)}
+- Fixed issue when addon was not working in multiple scenes {[#26](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/26)}. 
 
 
 ### 1.3.0 <small>- released 13.11.2020</small>
