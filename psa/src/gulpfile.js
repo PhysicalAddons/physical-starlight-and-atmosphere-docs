@@ -14,15 +14,10 @@ gulp.task('css', function() {
 });
 
 gulp.task('compile', function (done) {
-	// return gulp.src('../theme-extension/index.twig')
-	// 	.pipe(twig({data: {}}))
-	// 	.pipe(gulp.dest('../theme-extension/'));
-	// browserSync.reload();
-	// done()
 	return gulp.src('./index.twig')
 		.pipe(twig({data: {}}))
 		.pipe(gulp.dest('./'));
-	// browserSync.reload();
+		browserSync.reload();
 	done()
 });
 
@@ -34,9 +29,6 @@ gulp.task('browserSync', function(){
 	});
 });
 
-gulp.task('compile', function () {
-	browserSync.reload();
-});
  
 gulp.task('watch', function(){
 
