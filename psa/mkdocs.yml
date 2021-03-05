@@ -10,6 +10,7 @@ site_url: https://www.physicaladdons.com/psa/
 google_analytics: ['UA-86947939-2', 'auto']
 markdown_extensions:
   - admonition
+  - pymdownx.details
   - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.keys
@@ -43,3 +44,11 @@ nav:
     - Contacts: contacts.md
 extra_css:
   - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/PhysicalAddons
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/upitismartins_digital/
+    - icon: fontawesome/brands/github
+      link: https://github.com/PhysicalAddons/
