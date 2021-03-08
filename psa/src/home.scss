@@ -4,16 +4,16 @@
 @import "scaffolding";
 
 .psa {
-  @import "partials/landing";
+  @import "partials/landing/landing";
   @import "partials/workflow";
 
-  @import "partials/nav-primary";
+  @import "partials/nav-primary/nav-primary";
   @import "partials/tablinks";
-  @import "partials/presets";
-  @import "partials/nav-secondary";
+  @import "partials/presets/presets";
+  @import "partials/nav-secondary/nav-secondary";
   @import "partials/videoplayer";
   @import "partials/btn";
   @import "partials/steps";
-  @import "partials/timeline";
+  @import "partials/timeline/timeline";
 }
 
