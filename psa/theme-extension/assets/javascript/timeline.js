@@ -10,7 +10,7 @@ var Timeline = (function (window) {
     sections = timeline.querySelectorAll(".timeline__section");
     _prepareTimeline(); // calculate attributes, set classes
     sections.forEach(function (section) {
-      section.addEventListener("mousedown", _onSectionClick);
+      section.addEventListener("click", _onSectionClick);
     });
     _startTimer(0);
   }
@@ -105,6 +105,7 @@ var Timeline = (function (window) {
   }
 
   function _onSectionClick(e) {
+    e.preventDefault();
     _emptyTimeline();
     _jumpProgressTo(parseInt(this.getAttribute("data-start")));
   }
