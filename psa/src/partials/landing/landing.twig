@@ -1,7 +1,7 @@
 <div class="landing">
     <div class="wrapper">
         <div class="container-xl">
-            {% include "partials/nav-primary.html" %}
+            {% include "../nav-primary/nav-primary.twig" %}
         </div>
         <div class="container-s">
             <article class="landing__logo">
@@ -16,7 +16,7 @@
                 in 30 seconds for Blender<br>
                 <em>Physical Starlight and Atmosphere</em>
             </h1>
-            {% include "partials/timeline.twig" %}
+            {% include "../timeline/timeline.twig" %}
 <!--            <div class="timeline">-->
 <!--                <a href="#preset-model" class="timeline__link timeline__link&#45;&#45;active">Model</a>-->
 <!--                <a href="#preset-earth" class="timeline__link">Earth</a>-->
@@ -24,7 +24,7 @@
 <!--                <a href="#preset-nishita" class="timeline__link">Nishita</a>-->
 <!--                <a href="#preset-retrowave" class="timeline__link">Retrowave</a>-->
 <!--            </div>-->
-            <div class="tablinks" id="presetlinks">
+            {# <div class="tablinks" id="presetlinks">
                 <ul class="tablinks__list">
                     <li class="tablinks__item">
                         <a href="#preset-model" class="tablinks__link tablinks__link--active">Model</a>
@@ -43,9 +43,9 @@
                     </li>
                 </ul>
                 <div class="tablinks__line"></div>
-            </div>
+            </div> #}
 
         </div>
     </div>
-    {% include "partials/presets.html" %}
+    {% include "../presets/presets.twig" %}
 </div>

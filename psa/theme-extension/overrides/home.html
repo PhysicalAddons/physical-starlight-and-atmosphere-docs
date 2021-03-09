@@ -6,26 +6,157 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    {% for path in config["extra_css"] %}
-    <link rel="stylesheet" href="{{ path | url }}">
-    {% endfor %}
+    <link rel="stylesheet" href="/assets/css/home.css">
+
+
+
 </head>
 <body class="psa">
 <!--    <div class="wrapper">-->
-        {% include "partials/landing.html" %}
-        {% include "partials/nav-secondary.html" %}
+       <div class="landing">
+    <div class="wrapper">
+        <div class="container-xl">
+            <nav class="nav-primary">
+    <a class="nav-primary__logo" href="/" aria-label="Physical Addons">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0V48H11.3333V36V27.3333V20.6667V12H20H28H36.6667V20.6667V27.3333V30V36H20V48H28V38H36.6667V48H48V0H0Z" fill="white"/>
+        </svg>
+    </a>
+    <button class="nav-primary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+    </button>
+    <div class="nav-primary__collapse">
+        <div class="nav-primary__main">
+            <a href="#" class="nav-primary__link">Documentation</a>
+            <a href="#" class="nav-primary__link">Blender market</a>
+        </div>
+        <div class="nav-primary__secondary">
+            <a href="#" class="nav-primary__link">Contacts</a>
+        </div>
+    </div>
+</nav>
+        </div>
+        <div class="container-s">
+            <article class="landing__logo">
+                <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
+                    <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
+                </svg>
+            </article>
+
+            <h1 class="landing__title">
+                Cinematic atmosphere<br>
+                in 30 seconds for Blender<br>
+                <em>Physical Starlight and Atmosphere</em>
+            </h1>
+            <div class="timeline" aria-role="slider" aria-label="Preset Slider">
+    <a href="#preset-model" class="timeline__section" data-duration="1" title="">
+        <div class="timeline__progress"></div>
+    </a>
+    <a href="#preset-retrowave" class="timeline__section" data-duration="4" title="Retro">
+        <div class="timeline__progress"></div>
+    </a>
+    <a href="#preset-nishita" class="timeline__section" data-duration="4" title="Nishita">
+        <div class="timeline__progress"></div>
+    </a>
+    <a href="#preset-earth" class="timeline__section" data-duration="4" title="Earth">
+        <div class="timeline__progress"></div>
+    </a>
+    <a href="#preset-mars" class="timeline__section" data-duration="4" title="Mars">
+        <div class="timeline__progress"></div>
+    </a>
+</div>
+<!--            <div class="timeline">-->
+<!--                <a href="#preset-model" class="timeline__link timeline__link&#45;&#45;active">Model</a>-->
+<!--                <a href="#preset-earth" class="timeline__link">Earth</a>-->
+<!--                <a href="#preset-mars" class="timeline__link">Mars</a>-->
+<!--                <a href="#preset-nishita" class="timeline__link">Nishita</a>-->
+<!--                <a href="#preset-retrowave" class="timeline__link">Retrowave</a>-->
+<!--            </div>-->
+            
+
+        </div>
+    </div>
+    <div class="presets">
+    <img
+            id="preset-model"
+            class="presets__image animatable--active"
+            alt="An astronaut on Earth looking over desert in sun direction"
+            srcset="
+                        /assets/images/model.jpeg?nf_resize=fit&w=300 300w,
+                        /assets/images/model.jpeg?nf_resize=fit&w=600 600w,
+                        /assets/images/model.jpeg?nf_resize=fit&w=1200 1200w,
+                        /assets/images/model.jpeg 1600w,
+                        /assets/images/model.jpeg?nf_resize=fit&w=2000 2000w
+                    "
+            sizes="100vw"
+    >
+    <img
+            id="preset-earth"
+            class="presets__image animatable"
+            alt="An astronaut on Earth looking over desert in sun direction"
+            srcset="
+                        /assets/images/earth.jpeg?nf_resize=fit&w=300 300w,
+                        /assets/images/earth.jpeg?nf_resize=fit&w=600 600w,
+                        /assets/images/earth.jpeg?nf_resize=fit&w=1200 1200w,
+                        /assets/images/earth.jpeg 1600w,
+                        /assets/images/earth.jpeg?nf_resize=fit&w=2000 2000w
+                    "
+            sizes="100vw"
+    >
+    <img
+            id="preset-mars"
+            class="presets__image animatable"
+            alt="An astronaut on Earth looking over desert in sun direction"
+            srcset="
+                        /assets/images/mars.jpeg?nf_resize=fit&w=300 300w,
+                        /assets/images/mars.jpeg?nf_resize=fit&w=600 600w,
+                        /assets/images/mars.jpeg?nf_resize=fit&w=1200 1200w,
+                        /assets/images/mars.jpeg 1600w,
+                        /assets/images/mars.jpeg?nf_resize=fit&w=2000 2000w
+                    "
+            sizes="100vw"
+    >
+    <img
+            id="preset-nishita"
+            class="presets__image animatable"
+            alt="An astronaut on Earth looking over desert in sun direction"
+            srcset="
+                        /assets/images/nishita.jpeg?nf_resize=fit&w=300 300w,
+                        /assets/images/nishita.jpeg?nf_resize=fit&w=600 600w,
+                        /assets/images/nishita.jpeg?nf_resize=fit&w=1200 1200w,
+                        /assets/images/nishita.jpeg 1600w,
+                        /assets/images/nishita.jpeg?nf_resize=fit&w=2000 2000w
+                    "
+            sizes="100vw"
+    >
+    <img
+            id="preset-retrowave"
+            class="presets__image animatable"
+            alt="An astronaut on Earth looking over desert in sun direction"
+            srcset="
+                        /assets/images/retrowave.jpeg?nf_resize=fit&w=300 300w,
+                        /assets/images/retrowave.jpeg?nf_resize=fit&w=600 600w,
+                        /assets/images/retrowave.jpeg?nf_resize=fit&w=1200 1200w,
+                        /assets/images/retrowave.jpeg 1600w,
+                        /assets/images/retrowave.jpeg?nf_resize=fit&w=2000 2000w
+                    "
+            sizes="100vw"
+    >
+</div>
+</div>
         <div class="gap"></div>
         <div class="container-s">
             <h2 class="h2">Simple Workflow</h2>
         </div>
         <div class="workflow">
             <div class="container-m">
-                <video class="videoplayer">
-                    <source src=" {{ 'assets/images/workflow.mp4' | url }}" type="video/mp4" />
-    <!--                <source src="myvideo.ogv" type="video/ogg" />-->
-    <!--                <source src="myvideo.webm" type="video/webm" />-->
-    <!--                <p>Other backup content, eg. a flash version, should go here.</p>-->
-                </video>
+
+
+
+
+
+
             </div>
 
             <div class="container-s">
@@ -70,8 +201,8 @@
 <!--    </div>-->
 
 
-    <script src="{{ 'assets/javascript/presets.js' | url }}"></script>
-    <script src="{{ 'assets/javascript/timeline.js' | url }}"></script>
+   <script src="/assets/javascript/presets.js"></script>
+   <script src="/assets/javascript/timeline.js"></script>
 </body>
 </html>
 

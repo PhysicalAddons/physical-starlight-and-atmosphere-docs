@@ -25,11 +25,13 @@ $nav-secondary-height: 48px;
     min-width: 100%;
 
     transform: translate(-50%, -50%);
+  }
+}
 
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+.animatable {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
     &--active {
       opacity: 1;
     }
-  }
 }

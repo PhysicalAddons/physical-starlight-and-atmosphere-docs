@@ -48,7 +48,6 @@ var Timeline = (function (window) {
       var duration = parseInt(section.getAttribute("data-duration"));
       if (valuenow < start || valuenow > start + duration) return;
       var progress = (valuenow - start) / duration;
-      // progress = (progress < 0.95)? progress : 1; // quickfix
       section.childNodes[1].style.transform = "scaleX(" + progress + ")";
       _setActiveState(section);
     });
@@ -61,6 +60,7 @@ var Timeline = (function (window) {
         active.classList.remove("timeline__section--active");
       }
       section.classList.add("timeline__section--active");
+      setActive(section)
     }
   }
 
@@ -115,3 +115,22 @@ var Timeline = (function (window) {
 })(window);
 
 Timeline.init();
+
+
+// TODO: meant to be an general utility function. Move it.
+function setActive(link) {
+  var targetID = link.hash.substr(1)
+  var targetEl = document.getElementById(targetID)
+  if (!targetEl) {
+    console.warn('timeline: for link with href: '+link.hash+' doesn\'t exist corresponding target element with such ID.')
+    return
+  }
+  var container = targetEl.parentElement
+  var previousActive = container.querySelector('.animatable--active')
+    if (previousActive) {
+      previousActive.classList.remove('animatable--active')
+    }
+    if (targetEl) {
+      targetEl.classList.add('animatable--active')
+    }
+}

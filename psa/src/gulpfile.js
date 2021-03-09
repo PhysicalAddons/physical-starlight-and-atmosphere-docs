@@ -1,3 +1,4 @@
+var destroot = '../theme-extension/'
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	twig = require('gulp-twig'),
@@ -9,22 +10,23 @@ gulp.task('css', function() {
 				// outputStyle: 'compressed'
 			}).on('error', sass.logError)
 		)
-		.pipe(gulp.dest('../theme-extension/assets/css/'))
+		.pipe(gulp.dest(destroot+'assets/css/'))
 		.pipe(browserSync.stream())
 });
 
 gulp.task('compile', function (done) {
-	return gulp.src('./index.twig')
+	return gulp.src('./home.twig')
 		.pipe(twig({data: {}}))
-		.pipe(gulp.dest('./'));
+		.pipe(gulp.dest(destroot+'overrides/'));
 		browserSync.reload();
 	done()
 });
 
 gulp.task('browserSync', function(){
 	browserSync.init({
+		open: false,
 		server: {
-			baseDir: "../theme-extension/"
+			baseDir: destroot
 		}
 	});
 });
@@ -33,7 +35,7 @@ gulp.task('browserSync', function(){
 gulp.task('watch', function(){
 
 	gulp.watch('./**/*.scss', gulp.series('css'));
-	// gulp.watch('../templates/partial/**/*.twig', gulp.series('compile'))
+	gulp.watch('../**/*.twig', gulp.series('compile'))
 });
 
 gulp.task('default', gulp.parallel('browserSync', 'compile', 'watch', 'css'));

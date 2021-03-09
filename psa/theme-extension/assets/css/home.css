@@ -199,11 +199,13 @@ body {
     max-width: none;
     min-height: 100%;
     min-width: 100%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 1s ease-in-out; }
-    .psa .presets__image--active {
-      opacity: 1; }
+    transform: translate(-50%, -50%); }
+
+.psa .animatable {
+  transition: opacity 1s ease-in-out;
+  opacity: 0; }
+  .psa .animatable--active {
+    opacity: 1; }
 
 .psa .nav-secondary {
   position: sticky;
