@@ -14,44 +14,14 @@
 <body class="psa">
 <!--    <div class="wrapper">-->
        {% include "partials/landing/landing.twig" %}
-{#        {% include "partials/nav-secondary.html" %}#}
+       {% include "partials/nav-secondary/nav-secondary.twig" %}
         <div class="gap"></div>
-        <div class="container-s">
+        {# <div class="container-s">
             <h2 class="h2">Simple Workflow</h2>
-        </div>
+        </div> #}
+
         <div class="workflow">
-            <div class="container-m">
-{#                <video class="videoplayer">#}
-{#                    <source src=" {{ 'assets/images/workflow.mp4' | url }}" type="video/mp4" />#}
-{#    <!--                <source src="myvideo.ogv" type="video/ogg" />-->#}
-{#    <!--                <source src="myvideo.webm" type="video/webm" />-->#}
-{#    <!--                <p>Other backup content, eg. a flash version, should go here.</p>-->#}
-{#                </video>#}
-            </div>
-
-            <div class="container-s">
-                <div class="tablinks workflow__links" id="workflowlinks">
-                    <ul class="tablinks__list">
-                        <li class="tablinks__item">
-                            <a href="#select-preset?s=14" class="tablinks__link tablinks__link--active">Select Preset</a>
-                        </li>
-                        <li class="tablinks__item">
-                            <a href="#customize?s=152" class="tablinks__link">Customize</a>
-                        </li>
-                        <li class="tablinks__item">
-                            <a href="#something-else?s=400" class="tablinks__link">Render</a>
-                        </li>
-                    </ul>
-                    <div class="tablinks__line"></div>
-                </div>
-
-                <ul class="steps">
-                    <li id="select-preset" class="steps__description">Use our stunning premade presets or make your own. With one click all configuration will be applied.</li>
-                    <li id="customize" class="steps__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, magni? </li>
-                    <li id="something-else" class="steps__description">Cumque doloremque magni odio optio quidem quis reprehenderit saepe vel.</li>
-                </ul>
-            </div>
-
+            {% include "partials/videoplayer/videoplayer.twig" %}
         </div>
 
         <div class="gap"></div>
@@ -71,8 +41,10 @@
 <!--    </div>-->
 
 
-   <script src="{{ '/assets/javascript/presets.js' }}"></script>
+   {# <script src="{{ '/assets/javascript/presets.js' }}"></script> #}
    <script src="{{ '/assets/javascript/timeline.js' }}"></script>
+   <script src="{{ '/assets/javascript/tablinks.js' }}"></script>
+   <script src="{{ '/assets/javascript/videoplayer.js' }}"></script>
 </body>
 </html>
 

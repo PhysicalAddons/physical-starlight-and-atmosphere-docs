@@ -1,0 +1,25 @@
+.videoplayer {
+  position:relative;
+  video {
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 14px solid #141414;
+
+    cursor: pointer;
+  }
+  // &__overlay {
+  //   display: none;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   cursor: pointer;
+  //   background-color: rgba(#FFF, .05);
+  // }
+  // &--paused .videoplayer__overlay {
+  //   display: block;
+  //   border-radius: 20px;
+  // }
+}

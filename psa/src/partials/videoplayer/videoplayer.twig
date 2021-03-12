@@ -1,0 +1,34 @@
+
+<div class="container-m">
+    <figure class="videoplayer videoplayer--paused"> 
+        <video controls>
+        <source src=" {{ '/assets/videos/psa-video.mp4' }}" type="video/mp4" />
+        <!--                <source src="myvideo.ogv" type="video/ogg" />-->
+        <!--                <source src="myvideo.webm" type="video/webm" />-->
+        </video>
+        {# <div class="videoplayer__overlay">ABC</div> #}
+    </figure>
+</div>
+
+<div class="container-s">
+    <div class="tablinks workflow__links" id="workflowlinks">
+        <ul class="tablinks__list">
+            <li class="tablinks__item">
+                <a href="#select-preset" data-skip-to="14" class="tablinks__link tablinks__link--active">Select Preset</a>
+            </li>
+            <li class="tablinks__item">
+                <a href="#customize" data-skip-to="152" class="tablinks__link">Customize</a>
+            </li>
+            <li class="tablinks__item">
+                <a href="#something-else" data-skip-to="400" class="tablinks__link">Render</a>
+            </li>
+        </ul>
+        <div class="tablinks__line"></div>
+    </div>
+
+    <ul class="steps">
+        <li id="select-preset" class="steps__description animatable animatable--active">With a single click enable addon and make sure that you are in "Rendered" Viewport Shading mode.</li>
+        <li id="customize" class="steps__description animatable">Use our stunning premade presets or make your own. With one click all configuration will be applied.</li>
+        <li id="something-else" class="steps__description animatable">There are more than 30 different parameters to customize atmosphere for your needs.</li>
+    </ul>
+</div>

@@ -30,12 +30,10 @@ gulp.task('browserSync', function(){
 		}
 	});
 });
-
  
 gulp.task('watch', function(){
-
 	gulp.watch('./**/*.scss', gulp.series('css'));
-	gulp.watch('../**/*.twig', gulp.series('compile'))
+	gulp.watch('./**/*.twig', gulp.series('compile'))
 });
 
 gulp.task('default', gulp.parallel('browserSync', 'compile', 'watch', 'css'));
