@@ -120,6 +120,7 @@ Timeline.init();
 
 // TODO: meant to be an general utility function. Move it.
 function setActive(link) {
+  // console.log('calling setActive with' + link)
   var targetID = link.hash.substr(1)
   var targetEl = document.getElementById(targetID)
   if (!targetEl) {

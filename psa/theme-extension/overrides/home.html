@@ -66,22 +66,13 @@
         <div class="timeline__progress"></div>
     </a>
 </div>
-            
-<!--            <div class="timeline">-->
-<!--                <a href="#preset-model" class="timeline__link timeline__link&#45;&#45;active">Model</a>-->
-<!--                <a href="#preset-earth" class="timeline__link">Earth</a>-->
-<!--                <a href="#preset-mars" class="timeline__link">Mars</a>-->
-<!--                <a href="#preset-nishita" class="timeline__link">Nishita</a>-->
-<!--                <a href="#preset-retrowave" class="timeline__link">Retrowave</a>-->
-<!--            </div>-->
-            
 
         </div>
     </div>
     <div class="presets">
     <img
             id="preset-model"
-            class="presets__image animatable--active"
+            class="presets__image animatable animatable--active"
             alt="An astronaut on Earth looking over desert in sun direction"
             srcset="
                         /assets/images/model.jpeg?nf_resize=fit&w=300 300w,
@@ -145,45 +136,60 @@
             sizes="100vw"
     >
 </div>
-</div>
-        <div class="gap"></div>
-        <div class="container-s">
-            <h2 class="h2">Simple Workflow</h2>
-        </div>
+</div>       <nav class="nav-secondary">
+    <a class="nav-secondary__logo" href="/" aria-label="Physical Starlight and Atmosphere">
+        <svg width="48" height="48" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
+            <path d="M28.5972 29C39.3111 29 49.3806 31.0944 58 34.7194V0H0V34.3972C8.45833 31.0139 18.2056 29 28.5972 29ZM44.7083 12.8889C47.6083 12.8889 49.9444 15.225 49.9444 18.125C49.9444 21.025 47.6083 23.3611 44.7083 23.3611C41.8083 23.3611 39.4722 21.025 39.4722 18.125C39.4722 15.225 41.8083 12.8889 44.7083 12.8889Z" fill="white"/>
+        </svg>
+    </a>
+    <button class="nav-secondary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+    </button>
+    <div class="nav-secondary__collapse">
+        <a href="#" class="nav-secondary__link">Features</a>
+        <a href="#" class="nav-secondary__link">Story</a>
+        <a href="#" class="nav-secondary__link">How it works</a>
+    </div>
+    <a href="#" class="nav-secondary__cta btn" type="button">Buy Now</a>
+</nav>        <div class="gap"></div>
+        
+
         <div class="workflow">
-            <div class="container-m">
+            
+<div class="container-m">
+    <figure class="videoplayer videoplayer--paused"> 
+        <video controls>
+        <source src=" /assets/videos/psa-video.mp4" type="video/mp4" />
+        <!--                <source src="myvideo.ogv" type="video/ogg" />-->
+        <!--                <source src="myvideo.webm" type="video/webm" />-->
+        </video>
+        
+    </figure>
+</div>
 
+<div class="container-s">
+    <div class="tablinks workflow__links" id="workflowlinks">
+        <ul class="tablinks__list">
+            <li class="tablinks__item">
+                <a href="#select-preset" data-skip-to="14" class="tablinks__link tablinks__link--active">Select Preset</a>
+            </li>
+            <li class="tablinks__item">
+                <a href="#customize" data-skip-to="152" class="tablinks__link">Customize</a>
+            </li>
+            <li class="tablinks__item">
+                <a href="#something-else" data-skip-to="400" class="tablinks__link">Render</a>
+            </li>
+        </ul>
+        <div class="tablinks__line"></div>
+    </div>
 
-
-
-
-
-            </div>
-
-            <div class="container-s">
-                <div class="tablinks workflow__links" id="workflowlinks">
-                    <ul class="tablinks__list">
-                        <li class="tablinks__item">
-                            <a href="#select-preset?s=14" class="tablinks__link tablinks__link--active">Select Preset</a>
-                        </li>
-                        <li class="tablinks__item">
-                            <a href="#customize?s=152" class="tablinks__link">Customize</a>
-                        </li>
-                        <li class="tablinks__item">
-                            <a href="#something-else?s=400" class="tablinks__link">Render</a>
-                        </li>
-                    </ul>
-                    <div class="tablinks__line"></div>
-                </div>
-
-                <ul class="steps">
-                    <li id="select-preset" class="steps__description">Use our stunning premade presets or make your own. With one click all configuration will be applied.</li>
-                    <li id="customize" class="steps__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, magni? </li>
-                    <li id="something-else" class="steps__description">Cumque doloremque magni odio optio quidem quis reprehenderit saepe vel.</li>
-                </ul>
-            </div>
-
-        </div>
+    <ul class="steps">
+        <li id="select-preset" class="steps__description animatable animatable--active">With a single click enable addon and make sure that you are in "Rendered" Viewport Shading mode.</li>
+        <li id="customize" class="steps__description animatable">Use our stunning premade presets or make your own. With one click all configuration will be applied.</li>
+        <li id="something-else" class="steps__description animatable">There are more than 30 different parameters to customize atmosphere for your needs.</li>
+    </ul>
+</div>        </div>
 
         <div class="gap"></div>
         <div class="container-s">
@@ -202,8 +208,10 @@
 <!--    </div>-->
 
 
-   <script src="/assets/javascript/presets.js"></script>
+   
    <script src="/assets/javascript/timeline.js"></script>
+   <script src="/assets/javascript/tablinks.js"></script>
+   <script src="/assets/javascript/videoplayer.js"></script>
 </body>
 </html>
 
