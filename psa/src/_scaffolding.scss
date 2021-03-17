@@ -20,7 +20,8 @@
     }
     &-m { // used for workflow
       @extend %container;
-      max-width: 930px;
+      max-width: 75%;
+      //max-width: 930px;
     }
     &-l { // used for references
       @extend %container;

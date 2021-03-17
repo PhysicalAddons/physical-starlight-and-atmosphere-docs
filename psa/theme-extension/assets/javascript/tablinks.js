@@ -2,12 +2,9 @@ var Tablinks = (function (window) {
 
   function initialize() {
     var tablinks = document.querySelectorAll('.tablinks')
-    console.log(tablinks)
     tablinks.forEach(function(tablink){
         var links = tablink.querySelectorAll('.tablinks__link')
-        console.log('links', links)
         links.forEach(function(link){
-            console.log('tablinks for each')
             link.addEventListener("click", _onLinkClick);
         })
     })
@@ -15,42 +12,69 @@ var Tablinks = (function (window) {
 
   function _onLinkClick(e) {
     e.preventDefault();
-    console.log('onLinkClick', this)
-    setActive(this)
+    setTabActive(this)
   }
 
-//   function _setActive(id) {
-//     var link = document.querySelector('a[href="#'+id+'"]')
-//     // ### LINK ###
-//     // return if clicked already active link
-//     if (link.classList.contains('tablinks__link--active')) return;
-//     // remove active class from link
-//     var prevActiveLink = document.querySelector('.tablinks__link--active')
-//     if (prevActiveLink) {
-//       prevActiveLink.classList.remove('tablinks__link--active')
-//     }
-//     // set new link active
-//     link.classList.add('tablinks__link--active')
+  function setTabActive(link) {
+    _selectActiveLink(link)
+    setActive(link) // set active text TODO: rename
+    _moveUnderline(link)
+  }
 
+  function _selectActiveLink(clickedLink) {
+    var activeLink = document.querySelector('.tablinks__link--active')
+    if (activeLink === clickedLink) return
+    if (activeLink) {
+      activeLink.classList.remove('tablinks__link--active')
+    }
+    if (clickedLink) {
+      clickedLink.classList.add('tablinks__link--active')
+    }
+  }
 
-//     // ### TARGET ###
-//     // remove active class from image
-//     var prevActiveImg = document.querySelector('.presets__image--active')
-//     if (prevActiveImg) {
-//       prevActiveImg.classList.remove('presets__image--active')
-//     }
-//     var targetimg = document.getElementById(link.hash.substr(1));
-//     if (targetimg) {
-//       targetimg.classList.add('presets__image--active')
-//     }
-//   }
+  function _moveUnderline(link) {
+    var line = link.parentNode.parentNode.nextElementSibling //.closest('.tablinks__line')
+    line.style.transform="translateX("+link.offsetLeft+"px)"
+  }
 
-  
+  var readjustUnderline = debounce(function(){
+    var activeLink = document.querySelector('.tablinks__link--active')
+    _moveUnderline(activeLink)
+  },100)
+
+  window.onresize = function(event) {
+    readjustUnderline()
+  };
 
   return  {
-    init: initialize
+    init: initialize,
+    setTabActive: setTabActive
   };
 
 })(window);
 
 Tablinks.init();
+
+
+//
+// function throttle (callback, limit) {
+//   var waiting = false;
+//   return function () {
+//     if (!waiting) {
+//       callback.apply(this, arguments);
+//       waiting = true;
+//       setTimeout(function () {
+//         waiting = false;
+//       }, limit);
+//     }
+//   }
+// }
+
+
+function debounce(fn, delay){
+  var timer;
+  return function(){
+    if(timer) clearTimeout(timer);
+    timer = setTimeout(fn, delay)
+  }
+}

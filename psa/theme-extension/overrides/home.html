@@ -18,9 +18,7 @@
         <div class="container-xl">
             <nav class="nav-primary">
     <a class="nav-primary__logo" href="/" aria-label="Physical Addons">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0V48H11.3333V36V27.3333V20.6667V12H20H28H36.6667V20.6667V27.3333V30V36H20V48H28V38H36.6667V48H48V0H0Z" fill="white"/>
-        </svg>
+        <svg width="58" height="58" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 37v37h74V0H0v37zm60.154-12.216v10.943l-3.807 3.806-3.81 3.811h-23.27v9.1l-3.853 3.852-3.858 3.858H13.846V21.88l4.015-4.015 4.02-4.02H60.153v10.938zm0 21.538v7.187l-3.325 3.325-3.32 3.32h-8.776V45.706h8.776l3.288-3.288c1.806-1.81 3.301-3.288 3.32-3.288.023 0 .037 3.237.037 7.192z" fill="#fff"/><path d="M29.266 29.59v4.539h15.406l.028-2.371c.019-1.301.032-3.343.032-4.538v-2.167H29.266v4.538z" fill="#fff"/></svg>
     </a>
     <button class="nav-primary__toggle" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="true" aria-label="Toggle mobile navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
@@ -50,7 +48,7 @@
                 <em>Physical Starlight and Atmosphere</em>
             </h1>
             <div class="timeline" aria-role="slider" aria-label="Preset Slider">
-    <a href="#preset-model" class="timeline__section" data-duration="1" title="">
+    <a href="#preset-model" class="timeline__section timeline__section--empty" data-duration="1" title="">
         <div class="timeline__progress"></div>
     </a>
     <a href="#preset-retrowave" class="timeline__section" data-duration="4" title="Retro">
@@ -147,9 +145,9 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
     </button>
     <div class="nav-secondary__collapse">
-        <a href="#" class="nav-secondary__link">Features</a>
-        <a href="#" class="nav-secondary__link">Story</a>
-        <a href="#" class="nav-secondary__link">How it works</a>
+        <a href="#" class="nav-secondary__link">Gallery</a>
+        <a href="#" class="nav-secondary__link">Pricing</a>
+        <a href="#" class="nav-secondary__link">Tech Specs</a>
     </div>
     <a href="#" class="nav-secondary__cta btn" type="button">Buy Now</a>
 </nav>        <div class="gap"></div>
@@ -159,7 +157,7 @@
             
 <div class="container-m">
     <figure class="videoplayer videoplayer--paused"> 
-        <video controls>
+        <video id="how-it-works" controls>
         <source src=" /assets/videos/psa-video.mp4" type="video/mp4" />
         <!--                <source src="myvideo.ogv" type="video/ogg" />-->
         <!--                <source src="myvideo.webm" type="video/webm" />-->
@@ -172,13 +170,13 @@
     <div class="tablinks workflow__links" id="workflowlinks">
         <ul class="tablinks__list">
             <li class="tablinks__item">
-                <a href="#select-preset" data-skip-to="14" class="tablinks__link tablinks__link--active">Select Preset</a>
+                <a href="#select-preset" data-skip-to="0" data-video="#how-it-works" class="tablinks__link tablinks__link--active">Enable</a>
             </li>
             <li class="tablinks__item">
-                <a href="#customize" data-skip-to="152" class="tablinks__link">Customize</a>
+                <a href="#customize" data-skip-to="10" data-video="#how-it-works" class="tablinks__link">Presets</a>
             </li>
             <li class="tablinks__item">
-                <a href="#something-else" data-skip-to="400" class="tablinks__link">Render</a>
+                <a href="#something-else" data-skip-to="120" data-video="#how-it-works" class="tablinks__link">Customize</a>
             </li>
         </ul>
         <div class="tablinks__line"></div>

@@ -1,4 +1,5 @@
 .videoplayer {
+  text-align: center;
   position:relative;
   video {
     box-sizing: border-box;
@@ -7,6 +8,9 @@
     border: 14px solid #141414;
 
     cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
   // &__overlay {
   //   display: none;

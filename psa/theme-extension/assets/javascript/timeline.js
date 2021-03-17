@@ -136,3 +136,16 @@ function setActive(link) {
       targetEl.classList.add('animatable--active')
     }
 }
+
+// TODO: meant to be an general utility function. Move it.
+// function throttle(fn, delay){
+//   var lastCalled = 0;
+//   return function(...args){
+//     var now = new Date().getTime();
+//     if(now - lastCalled < delay) {
+//       return;
+//     }
+//     lastCalled = now;
+//     return fn(...args);
+//   }
+// }

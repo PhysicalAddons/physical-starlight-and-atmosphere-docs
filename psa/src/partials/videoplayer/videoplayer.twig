@@ -1,7 +1,7 @@
 
 <div class="container-m">
     <figure class="videoplayer videoplayer--paused"> 
-        <video controls>
+        <video id="how-it-works" controls>
         <source src=" {{ '/assets/videos/psa-video.mp4' }}" type="video/mp4" />
         <!--                <source src="myvideo.ogv" type="video/ogg" />-->
         <!--                <source src="myvideo.webm" type="video/webm" />-->
@@ -14,13 +14,13 @@
     <div class="tablinks workflow__links" id="workflowlinks">
         <ul class="tablinks__list">
             <li class="tablinks__item">
-                <a href="#select-preset" data-skip-to="14" class="tablinks__link tablinks__link--active">Select Preset</a>
+                <a href="#select-preset" data-skip-to="0" data-video="#how-it-works" class="tablinks__link tablinks__link--active">Enable</a>
             </li>
             <li class="tablinks__item">
-                <a href="#customize" data-skip-to="152" class="tablinks__link">Customize</a>
+                <a href="#customize" data-skip-to="10" data-video="#how-it-works" class="tablinks__link">Presets</a>
             </li>
             <li class="tablinks__item">
-                <a href="#something-else" data-skip-to="400" class="tablinks__link">Render</a>
+                <a href="#something-else" data-skip-to="120" data-video="#how-it-works" class="tablinks__link">Customize</a>
             </li>
         </ul>
         <div class="tablinks__line"></div>

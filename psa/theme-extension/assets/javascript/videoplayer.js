@@ -1,32 +1,46 @@
 var VideoPlayer = (function (window) {
   
-    function initialize() {
-      // videos = document.querySelectorAll(".videoplayer video");
-      // overlays = document.querySelectorAll(".videoplayer .videoplayer__overlay");
-      // videos.forEach(function (video) {
-      //   video.addEventListener("click", function(){ _pause(video) });
-      // });
-      // overlays.forEach(function (overlay) {
-      //   console.log(overlay);
-      //   video = overlay.previousElementSibling;
-      //   overlay.addEventListener("click", function(){ _play(video) });
-      // });
-    }
+    function initialize(videoID, setActiveFn) {
+      var video = document.getElementById(videoID)
+      var controls = document.querySelectorAll('[data-video="#'+videoID+'"]')
+      var checkpoints = []
+      controls.forEach(function (link, index) {
+        var set = []
+        set[0] = parseInt(link.getAttribute("data-skip-to"));
+        set[1] = link
+        checkpoints[index] = set
+      });
 
-    function _play(video) {
-      if (video.paused) {
-        parent = video.parentElement;
-        parent.classList.remove('videoplayer--paused')
-        video.play();
-      }
-    }
+      // watch time and update tablinks
+      video.addEventListener("timeupdate", function () {
+        var video = this
+        checkpoints.forEach(function(checkpoint, index) {
+          if (checkpoint[0] === Math.round(video.currentTime)){
+            // console.log('on point', Math.round(video.currentTime), checkpoint[0]) // set active
+            setActiveFn(checkpoint[1])
+          } else if (Math.round(video.currentTime) > checkpoint[0]){
+            if (index+1 in checkpoints) { // is there a next checkpoint?
+              var nextCheckpoint = checkpoints[index+1]
+              if (Math.round(video.currentTime) < nextCheckpoint[0]) {
+                // console.log('between checkpoints', checkpoint[0], nextCheckpoint[0])
+                setActiveFn(checkpoint[1])
+              }
+            } else {
+              // console.log('last checkpoint', checkpoint[0])
+              setActiveFn(checkpoint[1])
+            }
+          }
+        })
+      }, false);
 
-    function _pause(video) {
-      if (!video.paused) {
-        parent = video.parentElement;
-        parent.classList.add('videoplayer--paused')
-        video.pause();
-      }
+      // on tab click - set video time.
+      controls.forEach(function(link) {
+        link.addEventListener("click", function () {
+          video.currentTime = parseInt(link.getAttribute("data-skip-to"))
+          video.play()
+        })
+      })
+
     }
 
     return {
@@ -34,21 +48,5 @@ var VideoPlayer = (function (window) {
     };
 })(window);
   
-  VideoPlayer.init();
+VideoPlayer.init('how-it-works', Tablinks.setTabActive);
   
-  
-
-
-
-// const constructions = document.querySelectorAll('.animate');
-// function handleIntersection(entries) {
-//   entries.map((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('animated')
-//       observer.unobserve(entry.target);
-//     }
-//   });
-// }
-
-// const observer = new IntersectionObserver(handleIntersection);
-// constructions.forEach(construction => observer.observe(construction));

@@ -17,8 +17,8 @@ gulp.task('css', function() {
 gulp.task('compile', function (done) {
 	return gulp.src('./home.twig')
 		.pipe(twig({data: {}}))
-		.pipe(gulp.dest(destroot+'overrides/'));
-		browserSync.reload();
+		.pipe(gulp.dest(destroot+'overrides/'))
+		.pipe(browserSync.stream());
 	done()
 });
 
