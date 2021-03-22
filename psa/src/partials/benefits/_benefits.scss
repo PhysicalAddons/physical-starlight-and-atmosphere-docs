@@ -1,0 +1,64 @@
+.benefits {
+	&__list {
+		position: relative;
+
+	}
+		&__header {
+			position: relative;
+			display: block;
+			width: 50%;
+			text-decoration: none;
+
+			> h3 {
+				font-size: 28px;
+				line-height: 1.5;
+				color: rgba(#FFFFFF, .4);
+
+			}
+			> p {
+				display: none;
+				margin-top: 16px;
+
+				font-size: 16px;
+				line-height: 1.6;
+				color: #F5F5F5;
+			}
+			&[aria-expanded="true"] {
+				> h3 {
+					color: #FFFFFF
+				}
+				> p {
+					display: block;
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					left: -20%;
+					top:0;
+					bottom: 0;
+					width: 2px;
+					background-color: #FFFFFF;
+
+				}
+			}
+		}
+		&__panel {
+			position: absolute;
+			top: 0;
+			right: -33%;
+			width: 66%;
+			> img {
+				max-width: 100%;
+			}
+			+ .benefits__header {
+				margin-top: 36px;
+			}
+			&[hidden] {
+				display: none;
+			}
+		}
+
+	&__cta {
+		margin-top: 48px;
+	}
+}

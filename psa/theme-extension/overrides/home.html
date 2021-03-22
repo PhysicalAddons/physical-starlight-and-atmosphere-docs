@@ -6,14 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/home.css">
 
 
 
 </head>
 <body class="psa">
-<!--    <div class="wrapper">-->
-       <div class="landing">
+   <div class="landing">
     <div class="wrapper">
         <div class="container-xl">
             <nav class="nav-primary">
@@ -134,7 +135,7 @@
             sizes="100vw"
     >
 </div>
-</div>       <nav class="nav-secondary">
+</div>   <nav class="nav-secondary">
     <a class="nav-secondary__logo" href="/" aria-label="Physical Starlight and Atmosphere">
         <svg width="48" height="48" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M58 0H0V58H58V0Z" fill="black" fill-opacity="0.15"/>
@@ -149,12 +150,10 @@
         <a href="#" class="nav-secondary__link">Pricing</a>
         <a href="#" class="nav-secondary__link">Tech Specs</a>
     </div>
-    <a href="#" class="nav-secondary__cta btn" type="button">Buy Now</a>
-</nav>        <div class="gap"></div>
+    <a href="#" class="nav-secondary__cta btn btn--cta" type="button">Buy Now</a>
+</nav>    <div class="gap"></div>
+    <div class="workflow">
         
-
-        <div class="workflow">
-            
 <div class="container-m">
     <figure class="videoplayer videoplayer--paused"> 
         <video id="how-it-works" controls>
@@ -187,29 +186,278 @@
         <li id="customize" class="steps__description animatable">Use our stunning premade presets or make your own. With one click all configuration will be applied.</li>
         <li id="something-else" class="steps__description animatable">There are more than 30 different parameters to customize atmosphere for your needs.</li>
     </ul>
-</div>        </div>
+</div>    </div>
+    <div class="big-gap"></div>
+    
 
-        <div class="gap"></div>
-        <div class="container-s">
-            <h2 class="h2 underline">Used by industry leaders and profesionals on daily basis.</h2>
+
+<div class="container-s">
+    <div class="benefits">
+        <div class="benefits__list">
+            
+            <a
+                href="javascript:void(0)"
+                class="benefits__header"
+                id="benefit-header-instant-photorealism"
+                aria-expanded="true"
+                aria-controls="benefit-panel-instant-photorealism"
+            >
+                <h3>Instant Photorealism</h3>
+                <p>Use our stunning premade presets or make your own. With one click all configuration will be applied.</p>
+            </a>
+            <section
+                    class="benefits__panel"
+                    id="benefit-panel-instant-photorealism"
+                    aria-labelledby="benefit-header-instant-photorealism"
+                    
+            >
+                <img
+                        src="/assets/images/earth.jpeg"
+                        alt="Instant Photorealism"
+                />
+            </section>
+            
+            <a
+                href="javascript:void(0)"
+                class="benefits__header"
+                id="benefit-header-premade-atmospheres"
+                aria-expanded="false"
+                aria-controls="benefit-panel-premade-atmospheres"
+            >
+                <h3>Premade atmospheres</h3>
+                <p>Presets allow to store a snapshot of your customized atmosphere settings and return to it later or use already predefined presets provided by the addon.</p>
+            </a>
+            <section
+                    class="benefits__panel"
+                    id="benefit-panel-premade-atmospheres"
+                    aria-labelledby="benefit-header-premade-atmospheres"
+                    hidden
+            >
+                <img
+                        src="/assets/images/mars.jpeg"
+                        alt="Premade atmospheres"
+                />
+            </section>
+            
+            <a
+                href="javascript:void(0)"
+                class="benefits__header"
+                id="benefit-header-save-time"
+                aria-expanded="false"
+                aria-controls="benefit-panel-save-time"
+            >
+                <h3>Save time</h3>
+                <p>This addon saves the time that usually is invested in manually creating sky, atmosphere and placing sun object and stars, and automates it within a single click.</p>
+            </a>
+            <section
+                    class="benefits__panel"
+                    id="benefit-panel-save-time"
+                    aria-labelledby="benefit-header-save-time"
+                    hidden
+            >
+                <img
+                        src="/assets/images/nishita.jpeg"
+                        alt="Save time"
+                />
+            </section>
+            
+            <a
+                href="javascript:void(0)"
+                class="benefits__header"
+                id="benefit-header-real-physics"
+                aria-expanded="false"
+                aria-controls="benefit-panel-real-physics"
+            >
+                <h3>Based on a real physics</h3>
+                <p>We use a procedural method of calculating the atmosphere based on many tweakable parameters, so that sky color is not limited only to the Earth's atmosphere.</p>
+            </a>
+            <section
+                    class="benefits__panel"
+                    id="benefit-panel-real-physics"
+                    aria-labelledby="benefit-header-real-physics"
+                    hidden
+            >
+                <img
+                        src="/assets/images/model.jpeg"
+                        alt="Real Physics"
+                />
+            </section>
+            
+            <a
+                href="javascript:void(0)"
+                class="benefits__header"
+                id="benefit-header-any-weather-and-time"
+                aria-expanded="false"
+                aria-controls="benefit-panel-any-weather-and-time"
+            >
+                <h3>Any weather and time</h3>
+                <p>In combination with Blender Sun Position addon, simulate any weather at any time.</p>
+            </a>
+            <section
+                    class="benefits__panel"
+                    id="benefit-panel-any-weather-and-time"
+                    aria-labelledby="benefit-header-any-weather-and-time"
+                    hidden
+            >
+                <img
+                        src="/assets/images/model.jpeg"
+                        alt="Any weather and time"
+                />
+            </section>
+            
         </div>
-        <div class="reviews">
-            <div class="container-l">
-                <div class="tablist tablist--reviews" role="tablist">
-                    <a href="#" role="tab">Jim Cook</a>
+        <a href="#" class="benefits__cta btn btn--primary">Explore plans</a>
 
+    </div>
+</div>
+    <div class="big-gap"></div>
+    
 
-                </div>
+<div class="testimonials">
+    <div class="container-s">
+        <h2 class="testimonials__title">Used by industry leaders and profesionals on daily basis.</h2>
+        <div class="testimonials__list">
+            
+            <a
+                href="javascript:void(0)"
+                class="testimonials__link"
+                id="testimonial-header-ben-mauro"
+                aria-expanded="true"
+                aria-controls="testimonial-panel-ben-mauro"
+            >
+                <img
+                    src="/assets/images/testimonials/ben-mauro.jpg"
+                    alt="Ben Mauro"
+                />
+            </a>
+            <blockquote
+                class="testimonials__blockquote"
+                id="testimonial-blockquote-ben-mauro"
+                aria-labelledby="testimonial-header-ben-mauro"
+                
+            >
+                Physical Starlight and Atmosphere has been an invaluable tool for me in my personal/professional work and a huge missing link for lighting in Blender. It still feels like magic everytime i use it, i can't recommend it highly enough!
+                <cite>
+                    <div>Ben Mauro</div>
+                    <span>Senior Concept Artist at 343 Industries</span>
+                </cite>
 
-            </div>
+            </blockquote>
+            
+            <a
+                href="javascript:void(0)"
+                class="testimonials__link"
+                id="testimonial-header-scott-warren"
+                aria-expanded="false"
+                aria-controls="testimonial-panel-scott-warren"
+            >
+                <img
+                    src="/assets/images/testimonials/ben-mauro.jpg"
+                    alt="Ben Mauro"
+                />
+            </a>
+            <blockquote
+                class="testimonials__blockquote"
+                id="testimonial-blockquote-scott-warren"
+                aria-labelledby="testimonial-header-scott-warren"
+                hidden
+            >
+                Your sky system is incredible and saved a ton of time in iterating on the looks.
+                <cite>
+                    <div>Scott Warren</div>
+                    <span>Senior Concept Artist at 343 Industries</span>
+                </cite>
+
+            </blockquote>
+            
+            <a
+                href="javascript:void(0)"
+                class="testimonials__link"
+                id="testimonial-header-ryan-richmond"
+                aria-expanded="false"
+                aria-controls="testimonial-panel-ryan-richmond"
+            >
+                <img
+                    src="/assets/images/testimonials/ben-mauro.jpg"
+                    alt="Ben Mauro"
+                />
+            </a>
+            <blockquote
+                class="testimonials__blockquote"
+                id="testimonial-blockquote-ryan-richmond"
+                aria-labelledby="testimonial-header-ryan-richmond"
+                hidden
+            >
+                I love the tool. It has been my go-to since I picked it up a couple of months ago.
+                <cite>
+                    <div>Ryan Richmond</div>
+                    <span>Senior Concept Artist at 343 Industries</span>
+                </cite>
+
+            </blockquote>
+            
+            <a
+                href="javascript:void(0)"
+                class="testimonials__link"
+                id="testimonial-header-wolfgang-pereira"
+                aria-expanded="false"
+                aria-controls="testimonial-panel-wolfgang-pereira"
+            >
+                <img
+                    src="/assets/images/testimonials/ben-mauro.jpg"
+                    alt="Ben Mauro"
+                />
+            </a>
+            <blockquote
+                class="testimonials__blockquote"
+                id="testimonial-blockquote-wolfgang-pereira"
+                aria-labelledby="testimonial-header-wolfgang-pereira"
+                hidden
+            >
+                Loved playing with your addon and I'm looking forward to use it in future projects as I\'m slowly transitioning and learning Blender (I\'m a 3ds max user).
+                <cite>
+                    <div>Wolfgang Pereira</div>
+                    <span>Senior Concept Artist at 343 Industries</span>
+                </cite>
+
+            </blockquote>
+            
+            <a
+                href="javascript:void(0)"
+                class="testimonials__link"
+                id="testimonial-header-subin-rajendran"
+                aria-expanded="false"
+                aria-controls="testimonial-panel-subin-rajendran"
+            >
+                <img
+                    src="/assets/images/testimonials/ben-mauro.jpg"
+                    alt="Ben Mauro"
+                />
+            </a>
+            <blockquote
+                class="testimonials__blockquote"
+                id="testimonial-blockquote-subin-rajendran"
+                aria-labelledby="testimonial-header-subin-rajendran"
+                hidden
+            >
+                 I have to say my work life has become super easier since i have started using your addon, it cut down on a lot of technical headache associated with setting up a believable lighting and given me more time to concentrate on the creative part of the process. Looking forward to see what new stuff you guys are cooking up for the blender community.
+                <cite>
+                    <div>Subin Rajendran</div>
+                    <span>Senior Concept Artist at 343 Industries</span>
+                </cite>
+
+            </blockquote>
+            
         </div>
-<!--    </div>-->
-
+    </div>
+</div>
+    <div class="big-gap"></div>
 
    
    <script src="/assets/javascript/timeline.js"></script>
    <script src="/assets/javascript/tablinks.js"></script>
    <script src="/assets/javascript/videoplayer.js"></script>
+   <script src="/assets/javascript/benefits.js"></script>
 </body>
 </html>
 

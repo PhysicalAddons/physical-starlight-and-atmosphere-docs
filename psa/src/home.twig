@@ -6,45 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/home.css">
 {#    {% for path in config["extra_css"] %}#}
 {#    <link rel="stylesheet" href="{{ path | url }}">#}
 {#    {% endfor %}#}
 </head>
 <body class="psa">
-<!--    <div class="wrapper">-->
-       {% include "partials/landing/landing.twig" %}
-       {% include "partials/nav-secondary/nav-secondary.twig" %}
-        <div class="gap"></div>
-        {# <div class="container-s">
-            <h2 class="h2">Simple Workflow</h2>
-        </div> #}
-
-        <div class="workflow">
-            {% include "partials/videoplayer/videoplayer.twig" %}
-        </div>
-
-        <div class="gap"></div>
-        <div class="container-s">
-            <h2 class="h2 underline">Used by industry leaders and profesionals on daily basis.</h2>
-        </div>
-        <div class="reviews">
-            <div class="container-l">
-                <div class="tablist tablist--reviews" role="tablist">
-                    <a href="#" role="tab">Jim Cook</a>
-
-
-                </div>
-
-            </div>
-        </div>
-<!--    </div>-->
-
+   {% include "partials/landing/landing.twig" %}
+   {% include "partials/nav-secondary/nav-secondary.twig" %}
+    <div class="gap"></div>
+    <div class="workflow">
+        {% include "partials/videoplayer/videoplayer.twig" %}
+    </div>
+    <div class="big-gap"></div>
+    {% include "partials/benefits/benefits.twig" %}
+    <div class="big-gap"></div>
+    {% include "partials/testimonials/testimonials.twig" %}
+    <div class="big-gap"></div>
 
    {# <script src="{{ '/assets/javascript/presets.js' }}"></script> #}
    <script src="{{ '/assets/javascript/timeline.js' }}"></script>
    <script src="{{ '/assets/javascript/tablinks.js' }}"></script>
    <script src="{{ '/assets/javascript/videoplayer.js' }}"></script>
+   <script src="{{ '/assets/javascript/benefits.js' }}"></script>
 </body>
 </html>
 

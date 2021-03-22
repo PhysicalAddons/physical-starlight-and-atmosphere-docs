@@ -3,17 +3,34 @@ $nav-font-color: #F5F5F5;
 
 .btn {
   display: inline-block;
-  padding: 4px 12px;
 
   font-weight: 400;
-  line-height: 19px;
-  color: $nav-font-color;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
   user-select: none;
-  border: 2px solid $nav-font-color;
+  color: $nav-font-color;
 
-  font-size: $nav-font-size;
   border-radius: 25px;
+  &--cta {
+    padding: 4px 12px;
+    line-height: 18px;
+    font-size: 12px;
+    border: 2px solid $nav-font-color;
+
+  }
+
+  &--primary {
+    box-sizing: border-box;
+    min-width: 200px;
+    padding: 12px;
+    line-height: 14px;
+    font-size: 14px;
+    background-image: url('../images/primary-btn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &--secondary {
+
+  }
 }

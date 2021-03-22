@@ -1,0 +1,92 @@
+{% set testimonials = [
+    {
+        'active': true,
+        'id': 'ben-mauro',
+        'fullname': 'Ben Mauro',
+        'jobtitle': 'Senior Concept Artist at 343 Industries',
+        'body': 'Physical Starlight and Atmosphere has been an invaluable tool for me in my personal/professional work and a huge missing link for lighting in Blender. It still feels like magic everytime i use it, i can\'t recommend it highly enough!',
+        'image': {
+            'src':'/assets/images/testimonials/ben-mauro.jpg',
+            'alt':'Ben Mauro'
+        }
+    },
+    {
+        'active': false,
+        'id': 'scott-warren',
+        'fullname': 'Scott Warren',
+        'jobtitle': 'Senior Concept Artist at 343 Industries',
+        'body': 'Your sky system is incredible and saved a ton of time in iterating on the looks.',
+        'image': {
+            'src':'/assets/images/testimonials/ben-mauro.jpg',
+            'alt':'Ben Mauro'
+        }
+    },
+    {
+        'active': false,
+        'id': 'ryan-richmond',
+        'fullname': 'Ryan Richmond',
+        'jobtitle': 'Senior Concept Artist at 343 Industries',
+        'body': 'I love the tool. It has been my go-to since I picked it up a couple of months ago.',
+        'image': {
+            'src':'/assets/images/testimonials/ben-mauro.jpg',
+            'alt':'Ben Mauro'
+        }
+    },
+    {
+        'active': false,
+        'id': 'wolfgang-pereira',
+        'fullname': 'Wolfgang Pereira',
+        'jobtitle': 'Senior Concept Artist at 343 Industries',
+        'body': 'Loved playing with your addon and I\'m looking forward to use it in future projects as I\'m slowly transitioning and learning Blender (I\'m a 3ds max user).',
+        'image': {
+            'src':'/assets/images/testimonials/ben-mauro.jpg',
+            'alt':'Ben Mauro'
+        }
+    },
+    {
+        'active': false,
+        'id': 'subin-rajendran',
+        'fullname': 'Subin Rajendran',
+        'jobtitle': 'Senior Concept Artist at 343 Industries',
+        'body': ' I have to say my work life has become super easier since i have started using your addon, it cut down on a lot of technical headache associated with setting up a believable lighting and given me more time to concentrate on the creative part of the process. Looking forward to see what new stuff you guys are cooking up for the blender community.',
+        'image': {
+            'src':'/assets/images/testimonials/ben-mauro.jpg',
+            'alt':'Ben Mauro'
+        }
+    }
+]%}
+
+<div class="testimonials">
+    <div class="container-s">
+        <h2 class="testimonials__title">Used by industry leaders and profesionals on daily basis.</h2>
+        <div class="testimonials__list">
+            {% for testimonial in testimonials %}
+            <a
+                href="javascript:void(0)"
+                class="testimonials__link"
+                id="testimonial-header-{{ testimonial.id }}"
+                aria-expanded="{{ testimonial.active }}"
+                aria-controls="testimonial-panel-{{ testimonial.id }}"
+            >
+                <img
+                    src="{{ testimonial.image.src }}"
+                    alt="{{ testimonial.image.alt }}"
+                />
+            </a>
+            <blockquote
+                class="testimonials__blockquote"
+                id="testimonial-blockquote-{{ testimonial.id }}"
+                aria-labelledby="testimonial-header-{{ testimonial.id }}"
+                {{ testimonial.active ? '' : 'hidden' }}
+            >
+                {{ testimonial.body }}
+                <cite>
+                    <div>{{ testimonial.fullname }}</div>
+                    <span>{{ testimonial.jobtitle }}</span>
+                </cite>
+
+            </blockquote>
+            {% endfor %}
+        </div>
+    </div>
+</div>
