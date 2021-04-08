@@ -1,0 +1,72 @@
+$border-color: #191919;
+$body-min-height: 366px;
+
+.pricing {
+	&__title {
+		@extend .h2;
+		margin-bottom: 36px;
+		max-width: 315px;
+	}
+	&__wrapper {
+		position: relative; // needed so that horizontal lines go inf. both ways
+	}
+	&__plans {
+		margin-left: -20px;
+		&:before, &:after { // horizontal lines
+			content:"";
+			display: block;
+			position: absolute;
+			left:0;
+			right: 0;
+			height: 2px;
+			background-color: $border-color;
+		}
+		&:after {
+			top: $body-min-height;
+		}
+
+		display: flex;
+		> li {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between; // stick footer to bottom
+
+			flex: 1; // take 33.3% of what is given
+			border-left: 2px solid $border-color;
+		}
+	}
+
+	&__body, &__footer {
+		padding: 36px 20px 10px 20px;
+	}
+	&__body {
+		box-sizing: border-box;
+		min-height: $body-min-height;
+		> ul {
+			> li {
+				margin-bottom: 20px;
+				color: $color-text-alt;
+				&.plus {
+					color: $color-text;
+				}
+			}
+		}
+	}
+		&__name {
+			@extend .h3;
+			margin-bottom: 53px;
+		}
+	&__footer {
+		> p {
+			color: $color-text-alt;
+		}
+	}
+		&__price {
+			margin-top: 8px;
+			margin-bottom: 36px;
+			@extend .h3;
+		}
+
+
+
+}

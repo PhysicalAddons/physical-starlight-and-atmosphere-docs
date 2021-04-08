@@ -3,7 +3,7 @@
 @import "typography";
 @import "scaffolding";
 
-.psa {
+//.psa {
   @import "partials/landing/landing";
   @import "partials/workflow";
 
@@ -17,5 +17,9 @@
   @import "partials/timeline/timeline";
   @import "partials/benefits/benefits";
   @import "partials/testimonials/testimonials";
-}
+  @import "partials/our-story/our-story";
+  @import "partials/gallery/gallery";
+  @import "partials/pricing/pricing";
+  @import "partials/footer/footer";
+//}
 

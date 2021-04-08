@@ -6,18 +6,35 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+
+
 .psa {
   background-color: black;
-
+}
   .wrapper {
     max-width: 2000px;
     margin: 0 auto;
   }
+  .left-indent {
+    margin-left: 25%; // most blocks are aligned like this
+    transition: margin-left .3s ease-in-out;
+    @include respond-below(md) {
+      margin-left: 10%;
+    }
+    @include respond-below(xs) {
+      //margin-left: 20px;
+      margin-left: 48px;
+    }
+  }
   .container {
     &-s { // used for MOST CASES
       @extend %container;
-      max-width: 50%;
+      max-width: 50%; // 6 columns
     }
+    //&-smod {
+    //  max-width: 58.33%; // 6+1 columns
+    //}
     &-m { // used for workflow
       @extend %container;
       max-width: 75%;
@@ -29,10 +46,37 @@
     }
     &-xl { // used for primary navigation
       @extend %container;
-      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+
+@for $i from 6 through 9 {
+  .size-#{$i} {
+    width: $i*100%/12;
+    @include respond-below(md) {
+      width: 80%;
+    }
+    @include respond-below(xs) {
+      //width: calc(100% - 40px);
+      width: calc(100% - 96px);
     }
   }
 }
+@for $i from 1 through 2 {
+  .left-indent-#{$i} {
+    margin-left: $i*100%/12;
+    @include respond-below(md) {
+      margin-left: 10%;
+    }
+    @include respond-below(xs) {
+      margin-left: 48px;
+      //background-color: red;
+      //margin-left: 20px;
+    }
+  }
+}
+
 
 .gap {
   width: 100%;
@@ -41,5 +85,8 @@
 
 .big-gap {
   width: 100%;
-  height: 300px;
+  height: 200px;
+  @include respond-below(md) {
+    height: 130px;
+  }
 }

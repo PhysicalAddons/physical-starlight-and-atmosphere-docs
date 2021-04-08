@@ -2,10 +2,15 @@ $nav-font-size: 16px;
 $nav-font-color: #F5F5F5;
 
 .nav-secondary {
+  //background-color: rgba(red, .1);
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  //left: 0;
+  //right: 0;
   z-index: 10;
 
   &__link {
@@ -22,21 +27,34 @@ $nav-font-color: #F5F5F5;
   &__cta {
     position: absolute;
     right: 20px;
-    bottom: 10px;
+    top: 6px;
   }
 
   &__collapse {
-    width: 690px;
-    margin: 0 auto;
-    //@extend .container-s;
+    //width: 690px;
+    //margin: 0 auto;
+    @extend .container-s;
     //@include respond-above(xs) {
     //
     //}
+    @include respond-below(xs) {
+      display: none;
+    }
   }
 
   &__logo {
-    @include respond-above(xs) {
-      display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-top: -78px;
+    opacity: 0;
+    transition: margin-top .1s ease-in-out, opacity .1s linear;
+    //@include respond-above(xs) {
+    //  display: none;
+    //}
+    &--show {
+      opacity: 1;
+      margin-top: 0;
     }
   }
   &__toggle {

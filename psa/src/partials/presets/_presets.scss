@@ -1,4 +1,5 @@
-$nav-secondary-height: 48px;
+$nav-secondary-height: 68px;
+$nav-secondary-height-mobile: 130px;
 
 // simulate background-position: fill;
 .presets {
@@ -7,8 +8,11 @@ $nav-secondary-height: 48px;
   right: 0;
   bottom: -$nav-secondary-height;
   left: 0;
-
   overflow: hidden;
+
+  @include respond-below(xs) {
+    bottom: -$nav-secondary-height-mobile;
+  }
 
   &__image {
     position: absolute;

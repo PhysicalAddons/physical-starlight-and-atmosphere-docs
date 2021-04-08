@@ -37,7 +37,7 @@
         'id': 'wolfgang-pereira',
         'fullname': 'Wolfgang Pereira',
         'jobtitle': 'Senior Concept Artist at 343 Industries',
-        'body': 'Loved playing with your addon and I\'m looking forward to use it in future projects as I\'m slowly transitioning and learning Blender (I\'m a 3ds max user).',
+        'body': "Loved playing with your addon and I'm looking forward to use it in future projects as I'm slowly transitioning and learning Blender (I'm a 3ds max user).",
         'image': {
             'src':'/assets/images/testimonials/ben-mauro.jpg',
             'alt':'Ben Mauro'
@@ -57,32 +57,42 @@
 ]%}
 
 <div class="testimonials">
-    <div class="container-s">
+    <div class="left-indent size-6">
         <h2 class="testimonials__title">Used by industry leaders and profesionals on daily basis.</h2>
+    </div>
+    <div class="testimonials__links">
+        {% for testimonial in testimonials %}
+        <button
+            class="testimonials__link"
+            id="testimonial-link-{{ testimonial.id }}"
+            aria-expanded="{{ testimonial.active }}"
+            aria-controls="blockquote-{{ testimonial.id }}"
+        >
+            <img
+                src="{{ testimonial.image.src }}"
+                alt="{{ testimonial.image.alt }}"
+            />
+        </button>
+        {% endfor %}
+    </div>
+    <div class="left-indent size-6">
         <div class="testimonials__list">
             {% for testimonial in testimonials %}
-            <a
-                href="javascript:void(0)"
-                class="testimonials__link"
-                id="testimonial-header-{{ testimonial.id }}"
-                aria-expanded="{{ testimonial.active }}"
-                aria-controls="testimonial-panel-{{ testimonial.id }}"
-            >
-                <img
-                    src="{{ testimonial.image.src }}"
-                    alt="{{ testimonial.image.alt }}"
-                />
-            </a>
+            <!-- visible only on mobile -->
+            <img
+                src="{{ testimonial.image.src }}"
+                alt="{{ testimonial.image.alt }}"
+            />
             <blockquote
                 class="testimonials__blockquote"
-                id="testimonial-blockquote-{{ testimonial.id }}"
-                aria-labelledby="testimonial-header-{{ testimonial.id }}"
+                id="blockquote-{{ testimonial.id }}"
+                aria-labelledby="testimonial-link-{{ testimonial.id }}"
                 {{ testimonial.active ? '' : 'hidden' }}
             >
-                {{ testimonial.body }}
+                "{{ testimonial.body }}"
                 <cite>
                     <div>{{ testimonial.fullname }}</div>
-                    <span>{{ testimonial.jobtitle }}</span>
+                    <div>{{ testimonial.jobtitle }}</div>
                 </cite>
 
             </blockquote>

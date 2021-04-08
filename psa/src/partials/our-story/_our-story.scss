@@ -1,0 +1,25 @@
+.our-story {
+	&__title {
+		margin-bottom: 28px;
+		@extend .h2;
+
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		div {
+			width: 42.84%;
+		}
+		//&+.our-story__row {
+		//	margin-top: 1px;
+		//}
+	}
+	img {
+		max-width: 100%;
+	}
+	p {
+		font-size: 20px;
+		color: rgba(#FFFFFF, .5);
+		line-height: 1.6;
+	}
+}
