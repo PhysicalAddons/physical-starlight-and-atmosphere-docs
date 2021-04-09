@@ -51,35 +51,36 @@
     }
 ] %}
 
-.cut
-<div class="left-indent size-6">
-    <div class="benefits">
-        <div class="benefits__list">
-            {% for benefit in benefits %}
-            <a
-                href="javascript:void(0)"
-                class="benefits__header"
-                id="benefit-header-{{ benefit.id }}"
-                aria-expanded="{{ benefit.active }}"
-                aria-controls="benefit-panel-{{ benefit.id }}"
-            >
-                <h3>{{ benefit.title }}</h3>
-                <p>{{ benefit.description }}</p>
-            </a>
-            <section
-                    class="benefits__panel"
-                    id="benefit-panel-{{ benefit.id }}"
-                    aria-labelledby="benefit-header-{{ benefit.id }}"
-                    {{ benefit.active ? '' : 'hidden' }}
-            >
-                <img
-                        src="{{ benefit.image.src }}"
-                        alt="{{ benefit.image.alt }}"
-                />
-            </section>
-            {% endfor %}
-        </div>
-        <a href="#" class="benefits__cta btn btn--primary">Explore plans</a>
+<div class="cut-overflow">
+    <div class="left-indent size-6">
+        <div class="benefits">
+            <div class="benefits__list">
+                {% for benefit in benefits %}
+                <a
+                    href="javascript:void(0)"
+                    class="benefits__header"
+                    id="benefit-header-{{ benefit.id }}"
+                    aria-expanded="{{ benefit.active }}"
+                    aria-controls="benefit-panel-{{ benefit.id }}"
+                >
+                    <h3>{{ benefit.title }}</h3>
+                    <p>{{ benefit.description }}</p>
+                </a>
+                <section
+                        class="benefits__panel"
+                        id="benefit-panel-{{ benefit.id }}"
+                        aria-labelledby="benefit-header-{{ benefit.id }}"
+                        {{ benefit.active ? '' : 'hidden' }}
+                >
+                    <img
+                            src="{{ benefit.image.src }}"
+                            alt="{{ benefit.image.alt }}"
+                    />
+                </section>
+                {% endfor %}
+            </div>
+            <a href="#" class="benefits__cta btn btn--primary">Explore plans</a>
 
+        </div>
     </div>
 </div>

@@ -10,7 +10,7 @@ var Timeline = (function (window) {
     sections = timeline.querySelectorAll(".timeline__section");
     _prepareTimeline(); // calculate attributes, set classes
     sections.forEach(function (section) {
-      section.addEventListener("click", _onSectionClick);
+      section.addEventListener("mousedown", _onSectionClick);
     });
     _startTimer(0);
   }

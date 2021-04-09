@@ -97,6 +97,9 @@ body {
 .container-xl {
   width: 100%; }
 
+.cut-overflow {
+  overflow: hidden; }
+
 .size-6 {
   width: 50%; }
   @media (max-width: 929px) {
@@ -501,6 +504,9 @@ body {
       padding-bottom: 15px;
       opacity: 0;
       transition: opacity .1s ease-in-out; }
+      @media (max-width: 575px) {
+        .timeline__section:before {
+          display: none; } }
     .timeline__section:after {
       content: attr(title);
       left: 22px;
@@ -509,6 +515,9 @@ body {
       line-height: 24px;
       color: rgba(255, 255, 255, 0);
       transition: color .1s ease-in-out; }
+      @media (max-width: 575px) {
+        .timeline__section:after {
+          left: 0; } }
     .timeline__section:hover {
       height: 8px; }
       .timeline__section:hover:before {
@@ -516,6 +525,12 @@ body {
         opacity: 1; }
       .timeline__section:hover:after {
         color: rgba(255, 255, 255, 0.2); }
+        @media (max-width: 575px) {
+          .timeline__section:hover:after {
+            color: rgba(255, 255, 255, 0); } }
+      @media (max-width: 575px) {
+        .timeline__section:hover {
+          height: 4px; } }
     .timeline__section--active:before {
       opacity: 1;
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="); }
@@ -710,12 +725,26 @@ body {
   justify-content: space-between; }
   .our-story__row div {
     width: 42.84%; }
+  .our-story__row:last-child {
+    margin-top: 100px; }
+  @media (max-width: 575px) {
+    .our-story__row {
+      flex-direction: column; }
+      .our-story__row:last-child {
+        flex-direction: column-reverse;
+        margin-top: 26px; }
+      .our-story__row div {
+        width: 100%; } }
 
 .our-story img {
   max-width: 100%; }
+  @media (max-width: 575px) {
+    .our-story img {
+      margin-top: 28px; } }
 
 .our-story p {
   font-size: 20px;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.6; }
 
@@ -723,6 +752,9 @@ body {
   margin-bottom: 72px; }
   .gallery__title span {
     color: #ab235d; }
+  @media (max-width: 575px) {
+    .gallery__title {
+      margin-bottom: 36px; } }
 
 .gallery__grid {
   display: grid;
@@ -759,6 +791,9 @@ body {
     height: 90px; }
   .gallery__artwork:hover > figcaption, .gallery__artwork:focus > figcaption {
     opacity: 1; }
+    @media (max-width: 575px) {
+      .gallery__artwork:hover > figcaption, .gallery__artwork:focus > figcaption {
+        display: none; } }
 
 .gallery__author {
   position: absolute;
@@ -777,54 +812,90 @@ body {
   font-size: 12px;
   font-weight: 500; }
 
-.pricing__title {
-  margin-bottom: 36px;
-  max-width: 315px; }
-
-.pricing__wrapper {
-  position: relative; }
-
-.pricing__plans {
-  margin-left: -20px;
-  display: flex; }
-  .pricing__plans:before, .pricing__plans:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: #191919; }
-  .pricing__plans:after {
-    top: 366px; }
-  .pricing__plans > li {
+.pricing {
+  overflow: hidden; }
+  .pricing__title {
+    margin-bottom: 36px;
+    max-width: 315px; }
+  .pricing__wrapper {
+    position: relative; }
+  .pricing__plans {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    border-left: 2px solid #191919; }
-
-.pricing__body, .pricing__footer {
-  padding: 36px 20px 10px 20px; }
-
-.pricing__body {
-  box-sizing: border-box;
-  min-height: 366px; }
-  .pricing__body > ul > li {
-    margin-bottom: 20px;
+    margin-left: -20px; }
+    @media (max-width: 575px) {
+      .pricing__plans {
+        flex-direction: column;
+        margin-left: -26px; } }
+    .pricing__plans:before, .pricing__plans:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #191919; }
+      @media (max-width: 575px) {
+        .pricing__plans:before, .pricing__plans:after {
+          display: none; } }
+    .pricing__plans:after {
+      top: 366px; }
+    .pricing__plans > li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      border-left: 2px solid #191919; }
+      @media (max-width: 575px) {
+        .pricing__plans > li {
+          display: initial;
+          position: relative; }
+          .pricing__plans > li:before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -50px;
+            width: 120vh;
+            height: 2px;
+            background-color: #191919; }
+          .pricing__plans > li:last-child:after {
+            display: block;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: -50px;
+            width: 120vh;
+            height: 2px;
+            background-color: #191919; } }
+  .pricing__body, .pricing__footer {
+    padding: 36px 20px 10px 20px; }
+  .pricing__body {
+    box-sizing: border-box;
+    min-height: 366px; }
+    .pricing__body > ul > li {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.5); }
+      .pricing__body > ul > li.plus {
+        color: #F5F5F5; }
+    @media (max-width: 575px) {
+      .pricing__body {
+        min-height: auto;
+        padding: 0;
+        margin: 32px 28px; } }
+  .pricing__name {
+    margin-bottom: 53px; }
+    @media (max-width: 575px) {
+      .pricing__name {
+        margin-bottom: 8px; } }
+  .pricing__footer > p {
     color: rgba(255, 255, 255, 0.5); }
-    .pricing__body > ul > li.plus {
-      color: #F5F5F5; }
-
-.pricing__name {
-  margin-bottom: 53px; }
-
-.pricing__footer > p {
-  color: rgba(255, 255, 255, 0.5); }
-
-.pricing__price {
-  margin-top: 8px;
-  margin-bottom: 36px; }
+  @media (max-width: 575px) {
+    .pricing__footer {
+      padding: 0;
+      margin: 32px 28px; } }
+  .pricing__price {
+    margin-top: 8px;
+    margin-bottom: 36px; }
 
 .footer {
   padding-bottom: 32px; }

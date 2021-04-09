@@ -5,6 +5,9 @@
 		span {
 			color: #ab235d;
 		}
+		@include respond-below(xs) {
+			margin-bottom: 36px;
+		}
 	}
 	
 	&__grid {
@@ -57,6 +60,9 @@
 		&:hover, &:focus {
 			> figcaption {
 				opacity: 1;
+				@include respond-below(xs) {
+					display: none; // on mobile there is no hover
+				}
 			}
 		}
 	}

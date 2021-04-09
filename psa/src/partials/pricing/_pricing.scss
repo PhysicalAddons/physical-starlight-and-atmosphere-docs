@@ -2,6 +2,7 @@ $border-color: #191919;
 $body-min-height: 366px;
 
 .pricing {
+	overflow: hidden;
 	&__title {
 		@extend .h2;
 		margin-bottom: 36px;
@@ -11,7 +12,14 @@ $body-min-height: 366px;
 		position: relative; // needed so that horizontal lines go inf. both ways
 	}
 	&__plans {
+		display: flex;
 		margin-left: -20px;
+
+		@include respond-below(xs) {
+			flex-direction: column;
+			margin-left: -26px;
+		}
+
 		&:before, &:after { // horizontal lines
 			content:"";
 			display: block;
@@ -20,12 +28,14 @@ $body-min-height: 366px;
 			right: 0;
 			height: 2px;
 			background-color: $border-color;
+			@include respond-below(xs) {
+				display: none;
+			}
 		}
 		&:after {
 			top: $body-min-height;
 		}
 
-		display: flex;
 		> li {
 			display: flex;
 			flex-direction: column;
@@ -33,6 +43,33 @@ $body-min-height: 366px;
 
 			flex: 1; // take 33.3% of what is given
 			border-left: 2px solid $border-color;
+			@include respond-below(xs) {
+				display: initial; // reset
+				position: relative;
+
+				&:before {
+					display: block;
+					position: absolute;
+					content: "";
+					top: 0;
+					left: -50px;
+					width: 120vh;
+					height: 2px;
+					background-color: $border-color;
+				}
+				&:last-child {
+					&:after {
+						display: block;
+						position: absolute;
+						content: "";
+						bottom: 0;
+						left: -50px;
+						width: 120vh;
+						height: 2px;
+						background-color: $border-color;
+					}
+				}
+			}
 		}
 	}
 
@@ -51,14 +88,26 @@ $body-min-height: 366px;
 				}
 			}
 		}
+		@include respond-below(xs) {
+			min-height: auto;
+			padding: 0;
+			margin: 32px 28px;
+		}
 	}
 		&__name {
 			@extend .h3;
 			margin-bottom: 53px;
+			@include respond-below(xs) {
+				margin-bottom: 8px;
+			}
 		}
 	&__footer {
 		> p {
 			color: $color-text-alt;
+		}
+		@include respond-below(xs) {
+			padding: 0;
+			margin: 32px 28px;
 		}
 	}
 		&__price {

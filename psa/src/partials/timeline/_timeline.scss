@@ -25,6 +25,9 @@
 			padding-bottom: 15px;
 			opacity:0;
 			transition: opacity .1s ease-in-out;
+			@include respond-below(xs) {
+				display: none;
+			}
 		}
 		&:after { // Title
 			content: attr(title);
@@ -35,6 +38,9 @@
 			line-height: 24px;
 			color: rgba(255,255,255, 0);
 			transition: color .1s ease-in-out;
+			@include respond-below(xs) {
+				left:0;
+			}
 		}
 
 		&:hover {
@@ -45,6 +51,12 @@
 			}
 			&:after {
 				color: rgba(255,255,255, .2);
+				@include respond-below(xs) {
+					color: rgba(255,255,255, 0);
+				}
+			}
+			@include respond-below(xs) {
+				height: 4px;
 			}
 		}
 
@@ -52,6 +64,7 @@
 			&:before {
 				opacity: 1;
 				content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
+
 			}
 			&:hover:before {
 				opacity: 1;
