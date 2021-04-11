@@ -387,11 +387,11 @@
 	<div class="gallery__grid">
 		{% for artwork in artworks %}
 			<figure class="gallery__artwork {{ (artwork.size == 2) ? 'gallery__artwork--wide' : '' }}">
-				<a href="{{artwork.image.src }}" data-fancybox="gallery">
+				<a href="{{artwork.image.src }}" data-fancybox="galleryfb">
 					<img src="{{artwork.image.thumb }}" alt="{{artwork.image.alt}}">
 				</a>
 				<figcaption>
-					<a href="{{ artwork.url }}" class="gallery__author">{{ artwork.author }}</a>
+					<a href="{{ artwork.url }}" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">{{ artwork.author }}</a>
 					<div class="gallery__jobtitle">{{ artwork.jobtitle }}</div>
 				</figcaption>
 			</figure>

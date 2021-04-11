@@ -79,11 +79,20 @@
     }
   }
 }
+.mobile-wide-layout { // exception for landing & video
+  @include respond-below(xs) {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+}
 
 
 .gap {
   width: 100%;
   height: 148px;
+  @include respond-below(md) {
+    height: 32px;
+  }
 }
 
 .big-gap {

@@ -1,5 +1,8 @@
 .workflow {
   &__links {
     margin-top: 78px;
+    @include respond-below(xs) {
+      margin-top: 32px;
+    }
   }
 }

@@ -37,7 +37,7 @@ var VideoPlayer = (function (window) {
       controls.forEach(function(link) {
         link.addEventListener("click", function () {
           video.currentTime = parseInt(link.getAttribute("data-skip-to"))
-          video.play()
+          // video.play()
         })
       })
 

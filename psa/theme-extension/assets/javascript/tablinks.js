@@ -33,6 +33,7 @@ var Tablinks = (function (window) {
   }
 
   function _moveUnderline(link) {
+    // console.log(link, link.offsetLeft)
     var line = link.parentNode.parentNode.nextElementSibling //.closest('.tablinks__line')
     line.style.transform="translateX("+link.offsetLeft+"px)"
   }

@@ -1,7 +1,7 @@
 var Navigation = (function (window) {
 
   function initialize() {
-    _onEntryShowLogo()
+    // _onEntryShowLogo()
     var toggleBtn = document.querySelector('.nav-primary__toggle')
     toggleBtn.addEventListener('click', function() {
       var expanded = this.getAttribute('aria-expanded')
@@ -15,37 +15,53 @@ var Navigation = (function (window) {
 
     })
   }
+  // function _handleIntersection(entries) {
+  //   entries.map((entry) => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add('nav-secondary__logo--show')
+  //       observer.unobserve(entry.target);
+  //     }
+  //   });
+  // }
+  // function _onEntryShowLogo() {
+  //   var logo = document.querySelector('.nav-secondary__logo ');
+  //
+  //
+  //   const observer = new IntersectionObserver(_handleIntersection);
+  //   observer.observe(logo);
+  //
+  //
+  //   // var nav = document.querySelector('.nav-secondary')
+  //   // var logo = document.querySelector('.nav-secondary__logo')
+  //   // window.onscroll = function() {
+  //   //   if(isScrolledTill(nav)) {
+  //   //     // if(!logo.classList.contains('nav-secondary__logo--show')) {
+  //   //       logo.classList.add('nav-secondary__logo--show')
+  //   //     // }
+  //   //   } else {
+  //   //     // if(logo.classList.contains('nav-secondary__logo--show')) {
+  //   //       logo.classList.remove('nav-secondary__logo--show')
+  //   //     // }
+  //   //   }
+  //   // }
+  // }
 
-  function _onEntryShowLogo() {
-    var nav = document.querySelector('.nav-secondary')
-    var logo = document.querySelector('.nav-secondary__logo')
-    window.onscroll = function() {
-      if(isScrolledTill(nav)) {
-        if(!logo.classList.contains('nav-secondary__logo--show')) {
-          logo.classList.add('nav-secondary__logo--show')
-        }
-      } else {
-        if(logo.classList.contains('nav-secondary__logo--show')) {
-          logo.classList.remove('nav-secondary__logo--show')
-        }
-      }
-    }
-  }
 
-
-  function isScrolledTill(el) {
-    var rect = el.getBoundingClientRect();
-    return rect.top === 0
-
-
-
-    console.log(elemTop, elemBottom)
-    // Only completely visible elements return true:
-    // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-    // Partially visible elements return true:
-    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    // return isVisible;
-  }
+  // function isScrolledTill(el) {
+  //   var rect = el.getBoundingClientRect();
+  //   // box.innerHTML = rect.top
+  //   console.log(rect.top, 0)
+  //   return rect.top <= 0
+  //
+  //
+  //
+  //   // console.log(elemTop, elemBottom)
+  //   // Only completely visible elements return true:
+  //   // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+  //   // Partially visible elements return true:
+  //   //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+  //   // return isVisible;
+  // }
 
   return {
     init: initialize

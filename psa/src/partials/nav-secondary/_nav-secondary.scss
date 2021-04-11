@@ -21,13 +21,17 @@ $nav-font-color: #F5F5F5;
     text-decoration: none;
     &+.nav-secondary__link {
       margin-left: 60px;
+      @include respond-below(xs) {
+        margin-left: 32px;
+        padding-right: 8px;
+      }
     }
   }
 
   &__cta {
     position: absolute;
     right: 20px;
-    top: 6px;
+    top: 30px; //6
   }
 
   &__collapse {
@@ -38,7 +42,8 @@ $nav-font-color: #F5F5F5;
     //
     //}
     @include respond-below(xs) {
-      display: none;
+      display: flex;
+      justify-content: flex-end;
     }
   }
 
@@ -46,18 +51,21 @@ $nav-font-color: #F5F5F5;
     position: absolute;
     top: 20px;
     left: 20px;
-    margin-top: -78px;
+    width: 48px;
+    height: 48px;
     opacity: 0;
-    transition: margin-top .1s ease-in-out, opacity .1s linear;
-    //@include respond-above(xs) {
-    //  display: none;
-    //}
+    transition:  opacity .1s linear;
+    @include respond-below(xs) {
+      width: 40px;
+      height: 40px;
+    }
     &--show {
       opacity: 1;
-      margin-top: 0;
+      //margin-top: 0;
     }
   }
   &__toggle {
+    display: none;
     @include respond-above(xs) {
       display: none;
     }
