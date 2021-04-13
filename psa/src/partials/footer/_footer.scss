@@ -2,6 +2,9 @@
 	padding-bottom: 32px;
 	&__links {
 		display: flex;
+		@include respond-below(xs) {
+			flex-direction: column;
+		}
 	}
 	&__link {
 		color: $color-text;
@@ -10,6 +13,12 @@
 		text-decoration: none;
 		& + .footer__link {
 			margin-left: 32px;
+		}
+		@include respond-below(xs) {
+			& + .footer__link {
+				margin-left: 0px;
+				margin-top: 12px;
+			}
 		}
 	}
 

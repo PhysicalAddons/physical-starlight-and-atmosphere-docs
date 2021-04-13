@@ -15,19 +15,25 @@ var Navigation = (function (window) {
 
     })
   }
-  // function _handleIntersection(entries) {
-  //   entries.map((entry) => {
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add('nav-secondary__logo--show')
-  //       observer.unobserve(entry.target);
-  //     }
-  //   });
+  // function _handleIntersection(entries, observer) {
+  //   console.log(entries, observer)
+    // entries.map((entry) => {
+    //   console.log(entry.isIntersecting, 'asdasdas')
+    //   if (entry.isIntersecting) {
+    //     entry.target.classList.add('nav-secondary__logo--show')
+    //     // observer.unobserve(entry.target);
+    //   }
+    // });
   // }
+
   // function _onEntryShowLogo() {
   //   var logo = document.querySelector('.nav-secondary__logo ');
-  //
-  //
-  //   const observer = new IntersectionObserver(_handleIntersection);
+  //   var options = {
+  //     root: document.body,
+  //     rootMargin: "0px 0px -0px",
+  //     threshold: 0
+  //   }
+  //   var observer = new IntersectionObserver(_handleIntersection, options);
   //   observer.observe(logo);
   //
   //

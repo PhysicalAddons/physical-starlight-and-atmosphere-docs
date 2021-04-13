@@ -83,7 +83,7 @@ body {
       margin-left: 10%; } }
   @media (max-width: 575px) {
     .left-indent {
-      margin-left: 48px; } }
+      margin-left: 40px; } }
 
 .container-s, .nav-primary__main, .nav-secondary__collapse {
   max-width: 50%; }
@@ -107,7 +107,7 @@ body {
       width: 80%; } }
   @media (max-width: 575px) {
     .size-6 {
-      width: calc(100% - 96px); } }
+      width: calc(100% - 80px); } }
 
 .size-7 {
   width: 58.33333%; }
@@ -116,7 +116,7 @@ body {
       width: 80%; } }
   @media (max-width: 575px) {
     .size-7 {
-      width: calc(100% - 96px); } }
+      width: calc(100% - 80px); } }
 
 .size-8 {
   width: 66.66667%; }
@@ -125,7 +125,7 @@ body {
       width: 80%; } }
   @media (max-width: 575px) {
     .size-8 {
-      width: calc(100% - 96px); } }
+      width: calc(100% - 80px); } }
 
 .size-9 {
   width: 75%; }
@@ -134,7 +134,7 @@ body {
       width: 80%; } }
   @media (max-width: 575px) {
     .size-9 {
-      width: calc(100% - 96px); } }
+      width: calc(100% - 80px); } }
 
 .left-indent-1 {
   margin-left: 8.33333%; }
@@ -143,7 +143,7 @@ body {
       margin-left: 10%; } }
   @media (max-width: 575px) {
     .left-indent-1 {
-      margin-left: 48px; } }
+      margin-left: 40px; } }
 
 .left-indent-2 {
   margin-left: 16.66667%; }
@@ -152,7 +152,7 @@ body {
       margin-left: 10%; } }
   @media (max-width: 575px) {
     .left-indent-2 {
-      margin-left: 48px; } }
+      margin-left: 40px; } }
 
 @media (max-width: 575px) {
   .mobile-wide-layout {
@@ -164,14 +164,14 @@ body {
   height: 148px; }
   @media (max-width: 929px) {
     .gap {
-      height: 32px; } }
+      height: 64px; } }
 
 .big-gap {
   width: 100%;
   height: 200px; }
   @media (max-width: 929px) {
     .big-gap {
-      height: 130px; } }
+      height: 96px; } }
 
 .wrapper {
   display: flex;
@@ -190,7 +190,7 @@ body {
   background-position: center; }
   @media (max-width: 575px) {
     .landing {
-      height: calc(100vh - 150px); } }
+      height: calc(100vh - 160px); } }
   .landing__logo {
     margin-bottom: 34px; }
     @media (max-width: 767px) {
@@ -223,7 +223,7 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); }
     @media (max-width: 575px) {
       .landing:after {
-        bottom: -150px; } }
+        bottom: -160px; } }
 
 .workflow__links {
   margin-top: 78px; }
@@ -385,7 +385,7 @@ body {
   overflow: hidden; }
   @media (max-width: 575px) {
     .presets {
-      bottom: -150px; } }
+      bottom: -160px; } }
   .presets__image {
     position: absolute;
     top: 50%;
@@ -414,7 +414,7 @@ body {
   z-index: 10; }
   .nav-secondary__link {
     display: inline-block;
-    padding: 16px 0;
+    padding: 14px 0;
     font-size: 16px;
     color: #F5F5F5;
     text-decoration: none; }
@@ -427,7 +427,7 @@ body {
   .nav-secondary__cta {
     position: absolute;
     right: 20px;
-    top: 30px; }
+    top: 28px; }
   @media (max-width: 575px) {
     .nav-secondary__collapse {
       display: flex;
@@ -438,7 +438,6 @@ body {
     left: 20px;
     width: 48px;
     height: 48px;
-    opacity: 0;
     transition: opacity .1s linear; }
     @media (max-width: 575px) {
       .nav-secondary__logo {
@@ -509,9 +508,10 @@ body {
   min-height: 60px; }
   .steps__description {
     position: absolute;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 25px; }
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.5); }
     .steps__description.animatable {
       transition: none; }
       .steps__description.animatable--active {
@@ -659,23 +659,20 @@ body {
         position: absolute;
         top: 0;
         bottom: 0;
+        left: 0;
         max-height: 100%; }
       .benefits__panel + .benefits__header {
         margin-top: 60px; }
       .benefits__panel[hidden] {
-        display: block; }
-      .benefits__panel:nth-of-type(odd) > img {
-        left: 0; }
-      .benefits__panel:nth-of-type(even) > img {
-        right: 0; } }
+        display: block; } }
 
 .benefits__cta {
   margin-top: 48px; }
 
 .testimonials {
   background-color: rgba(255, 255, 255, 0.05);
-  padding-bottom: 100px;
-  padding-top: 100px; }
+  padding-bottom: 96px;
+  padding-top: 96px; }
   .testimonials__title {
     padding-bottom: 32px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
@@ -709,7 +706,7 @@ body {
       max-width: 100%; }
     .testimonials__link[aria-expanded="true"] {
       transform: scale(1);
-      background-color: #ab235d; }
+      background-image: linear-gradient(to right, #a42250, #cd3a50); }
       .testimonials__link[aria-expanded="true"] > img {
         mix-blend-mode: luminosity; }
     @media (max-width: 929px) {
@@ -733,6 +730,7 @@ body {
       .testimonials__list {
         margin-top: 32px; } }
   .testimonials__blockquote {
+    position: relative;
     color: rgba(255, 255, 255, 0.5);
     font-size: 28px;
     font-weight: 300;
@@ -742,11 +740,23 @@ body {
       margin-top: 20px; }
       .testimonials__blockquote cite > div {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.1; }
         .testimonials__blockquote cite > div:first-child {
           color: #F5F5F5;
           margin-bottom: 9px; }
+        @media (max-width: 575px) {
+          .testimonials__blockquote cite > div {
+            font-size: 14px;
+            line-height: 1.5; }
+            .testimonials__blockquote cite > div:first-child {
+              margin-bottom: 0; } }
+      @media (max-width: 575px) {
+        .testimonials__blockquote cite {
+          position: absolute;
+          bottom: calc(100% + 40px);
+          left: 119px;
+          right: 0; } }
     @media (max-width: 929px) {
       .testimonials__blockquote {
         font-size: 20px;
@@ -873,7 +883,11 @@ body {
   left: 16px;
   color: #ABABAB;
   font-size: 12px;
-  font-weight: 500; }
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 32px); }
 
 .pricing {
   overflow: hidden; }
@@ -964,6 +978,9 @@ body {
   padding-bottom: 32px; }
   .footer__links {
     display: flex; }
+    @media (max-width: 575px) {
+      .footer__links {
+        flex-direction: column; } }
   .footer__link {
     color: #F5F5F5;
     font-size: 16px;
@@ -971,6 +988,10 @@ body {
     text-decoration: none; }
     .footer__link + .footer__link {
       margin-left: 32px; }
+    @media (max-width: 575px) {
+      .footer__link + .footer__link {
+        margin-left: 0px;
+        margin-top: 12px; } }
   .footer__socials {
     margin-top: 32px;
     display: flex; }

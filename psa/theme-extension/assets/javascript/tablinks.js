@@ -39,11 +39,14 @@ var Tablinks = (function (window) {
   }
 
   var readjustUnderline = debounce(function(){
+    console.log('reatjusting')
+
     var activeLink = document.querySelector('.tablinks__link--active')
     _moveUnderline(activeLink)
   },100)
 
   window.onresize = function(event) {
+    console.log('sdsds')
     readjustUnderline()
   };
 

@@ -5,9 +5,10 @@
   min-height: 60px;
   &__description {
     position: absolute;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 25px;
+    color: $color-text-alt;
     &.animatable {
       transition: none;
       &--active {
