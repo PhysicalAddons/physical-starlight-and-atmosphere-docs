@@ -1,3 +1,10 @@
+### 1.3.1 <small>- released 16.04.2021</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue that prevents dynamically creating classes in Blender v2.93 and breaks the preset functionality.
+  {[#38](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/38)}
+
 ### 1.3.0 <small>- released 13.11.2020</small>
 [![Release 1.3.0 banner](img/releases/psa1.3.0.png)](img/releases/psa1.3.0.png)
 
