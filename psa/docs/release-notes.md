@@ -1,21 +1,10 @@
-### 1.3.1 <small>- released xx.xx.2021</small>
-
-`new:`{: .label-new }   
-
-
-`improvements:`{: .label-improvements }   
-
-- Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
-- Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
-- Whenever a blendfile is loaded it correctly loads preset defaults it is based on.
-
+### 1.3.1 <small>- released 16.04.2021</small>
 
 `fixed:`{: .label-fixed }
 
-- Fixed issues when installing a new addon version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)}
-- Fixed issue when addon was not working in multiple scenes. {[#26](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/26)}
-- Fixed issue when _Material Fog_ is active adding a new material caused to lose user made changes in the Shader editor.
-{[#34](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/34)}
+- Fixed issue that prevents dynamically creating classes in Blender v2.93 and breaks the preset functionality.
+  {[#38](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/38)}
+
 
 ### 1.3.0 <small>- released 13.11.2020</small>
 [![Release 1.3.0 banner](img/releases/psa1.3.0.png)](img/releases/psa1.3.0.png)
