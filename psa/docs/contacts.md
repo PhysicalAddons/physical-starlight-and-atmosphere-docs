@@ -8,7 +8,7 @@ and others might help you find what what you are looking for.
 
 - [Physical Addons](https://twitter.com/PhysicalAddons)
 - [Martins Upitis](https://twitter.com/_martinsh) - author
-- [Karlis Upitis](https://twitter.com/_karlisup) - lead UX programmer
+- [Karlis Upitis](https://twitter.com/_karlisup) - developer / customer support
 
 ## Issue Tracker
  
