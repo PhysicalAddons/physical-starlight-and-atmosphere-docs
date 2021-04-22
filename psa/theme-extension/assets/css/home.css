@@ -438,6 +438,7 @@ body {
     left: 20px;
     width: 48px;
     height: 48px;
+    opacity: 0;
     transition: opacity .1s linear; }
     @media (max-width: 575px) {
       .nav-secondary__logo {
@@ -880,6 +881,9 @@ body {
     fill: #F5F5F5;
     opacity: 0;
     transition: opacity .1s ease-in-out; }
+    @media (max-width: 575px) {
+      .gallery__author:after {
+        opacity: 1; } }
   .gallery__author:hover:after {
     opacity: 1; }
 

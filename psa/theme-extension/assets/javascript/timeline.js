@@ -10,7 +10,7 @@ var Timeline = (function (window) {
     sections = timeline.querySelectorAll(".timeline__section");
     _prepareTimeline(); // calculate attributes, set classes
     sections.forEach(function (section) {
-      section.addEventListener("mousedown", _onSectionClick);
+      section.addEventListener("click", _onSectionClick);
     });
     _startTimer(0);
   }
@@ -78,6 +78,7 @@ var Timeline = (function (window) {
         // reset everything to 0
         section.childNodes[1].style.transform = "scaleX(0)";
       });
+      // console.log('executing fn')
     });
   }
 
@@ -93,20 +94,23 @@ var Timeline = (function (window) {
           return;
         }
       });
+      // console.log('executing fn')
     });
   }
 
   function notanimate(fn) {
+    // console.log('no-transition ON')
     timeline.classList.add("no-transition");
     fn();
     setTimeout(function () {
+      // console.log('no-transition OFF')
       timeline.classList.remove("no-transition");
-    }, 1);
+    }, 10);
   }
 
   function _onSectionClick(e) {
     e.preventDefault();
-    _emptyTimeline();
+    // console.log('event', e)
     _jumpProgressTo(parseInt(this.getAttribute("data-start")));
   }
 

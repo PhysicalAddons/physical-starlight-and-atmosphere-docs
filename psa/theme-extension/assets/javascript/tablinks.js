@@ -8,6 +8,9 @@ var Tablinks = (function (window) {
             link.addEventListener("click", _onLinkClick);
         })
     })
+    window.addEventListener("resize", function() {
+      readjustUnderline()
+    });
   }
 
   function _onLinkClick(e) {
@@ -39,16 +42,9 @@ var Tablinks = (function (window) {
   }
 
   var readjustUnderline = debounce(function(){
-    console.log('reatjusting')
-
     var activeLink = document.querySelector('.tablinks__link--active')
     _moveUnderline(activeLink)
   },100)
-
-  window.onresize = function(event) {
-    console.log('sdsds')
-    readjustUnderline()
-  };
 
   return  {
     init: initialize,
