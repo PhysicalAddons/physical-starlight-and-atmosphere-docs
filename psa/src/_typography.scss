@@ -1,16 +1,41 @@
-// In order to maintain page structure (outline) and not break CSS
-// header styles are applied to classes instead of HTML header elements
-
 $color-text: #F5F5F5;
 $color-text-alt: rgba(#FFFFFF, .5);
+$font-path: '../fonts/';
 
-body {
-  //font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  font-family: 'Inter', sans-serif;
-  color: $color-text;
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url($font-path + "Inter-Light.woff2?v=3.18") format("woff2"),
+  url($font-path + "Inter-Light.woff?v=3.18") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url($font-path + "Inter-Regular.woff2?v=3.18") format("woff2"),
+  url($font-path + "Inter-Regular.woff?v=3.18") format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url($font-path + "Inter-Medium.woff2?v=3.18") format("woff2"),
+  url($font-path + "Inter-Medium.woff?v=3.18") format("woff");
 }
 
 
+body {
+  //font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: 'Inter',"Helvetica","Arial",sans-serif;
+  color: $color-text;
+}
+
+// In order to maintain page structure (outline) and not break CSS
+// header styles are applied to classes instead of HTML header elements
 .h2 {
   color: $color-text;
   font-size: 40px;

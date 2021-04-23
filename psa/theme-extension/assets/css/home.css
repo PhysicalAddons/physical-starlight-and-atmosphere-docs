@@ -45,8 +45,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Inter-Light.woff2?v=3.18") format("woff2"), url("../fonts/Inter-Light.woff?v=3.18") format("woff"); }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2?v=3.18") format("woff2"), url("../fonts/Inter-Regular.woff?v=3.18") format("woff"); }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff2?v=3.18") format("woff2"), url("../fonts/Inter-Medium.woff?v=3.18") format("woff"); }
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter',"Helvetica","Arial",sans-serif;
   color: #F5F5F5; }
 
 .h2, .testimonials__title, .our-story__title, .gallery__title, .pricing__title {

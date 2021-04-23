@@ -14,8 +14,8 @@
 	<!-- Do not transfer random numbers into phone numbers -->
 	<meta name="format-detection" content="telephone=no">
 	<!-- Stylesheets -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=auto" rel="stylesheet">
+{#	<link rel="preconnect" href="https://fonts.gstatic.com">#}
+{#	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=auto" rel="stylesheet">#}
 	<link rel="stylesheet" href="/assets/css/home.css">
 	<link rel="stylesheet" href="/assets/css/vendor/jquery.fancybox.min.css">
 	{#    {% for path in config["extra_css"] %}#}
@@ -29,15 +29,14 @@
 	<div class="workflow">
 		{% include "partials/videoplayer/videoplayer.twig" %}
 	</div>
+	{% include "partials/gallery/gallery.twig" %}
 	<div class="big-gap"></div>
 	{% include "partials/benefits/benefits.twig" %}
 	<div class="big-gap"></div>
 	{% include "partials/testimonials/testimonials.twig" %}
 	<div class="big-gap"></div>
 	{% include "partials/our-story/our-story.twig" %}
-{#	<div class="big-gap"></div>#}
-	{% include "partials/gallery/gallery.twig" %}
-{#	<div class="big-gap"></div>#}
+
 	{% include "partials/pricing/pricing.twig" %}
 	<div class="big-gap"></div>
 	{% include "partials/footer/footer.twig" %}
