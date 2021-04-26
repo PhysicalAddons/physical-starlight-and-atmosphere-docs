@@ -1,30 +1,24 @@
 var Testimonials = (function (window) {
 
   function initialize() {
-    var links = document.querySelectorAll('.testimonials__link');
-    links.forEach(function(link) {
-      var target = _getLinkTargetElement(link)
-      link.addEventListener('click', function() {
-        var expanded = link.getAttribute('aria-expanded') === 'true' || false;
-        if (expanded) return; // do not close active project
-        // handle old and new active links & targets
-        var activeLink = document.querySelector('.testimonials__link[aria-expanded="true"]')
-        var activeTarget = _getLinkTargetElement(activeLink)
-        activeLink.setAttribute('aria-expanded', false);
-        activeTarget.hidden = true;
-        link.setAttribute('aria-expanded', !expanded);
-        target.hidden = expanded;
-      })
+    var list = document.querySelector('.testimonials__list')
+    var links = document.querySelectorAll('.testimonials__figure')
+    links.forEach(function(link, index) {
+      // console.log(index)
+        link.addEventListener('click', function() {
+          if (_getWindowsWidth() <= 576) return
+          if (this.classList.contains('testimonials__figure--active')) return false;
+          document.querySelector('.testimonials__figure--active').classList.remove('testimonials__figure--active')
+          this.classList.add('testimonials__figure--active')
+          // console.log("translateX(-"+index*100+"%)")
+          list.style.transform = "translateX(-"+index*100+"%)";
+        })
     })
+
   }
 
-  function _getLinkTargetElement(link) {
-    var targetID = link.getAttribute('aria-controls')
-    if (!targetID) {
-      console.warn('testimonials: link with id '+link.id+' doesn\'t have corresponding target element.')
-      return false
-    }
-    return document.getElementById(targetID);
+  function _getWindowsWidth() {
+    return (window.innerWidth > 0) ? window.innerWidth : screen.width;
   }
 
   return {

@@ -1,122 +1,93 @@
 .testimonials {
-	background-color: rgba(#FFFFFF, .05);
-	padding-bottom: 96px;
-	padding-top: 96px;
+	overflow: hidden;
+	@include respond-below(xs) {
+		padding-top: 48px;
+		background-color: #191919;
+	}
+
+
 	&__title {
 		@extend .h2;
-		padding-bottom: 32px;
-		border-bottom: 2px solid rgba(#FFFFFF, .1);
-		@include respond-below(md) {
-			//max-width: 429px;
-		}
+		padding-bottom: 80px;
 		@include respond-below(xs) {
-			padding-bottom: 0;
-			border-bottom: none;
+			padding-bottom: 48px;
 		}
 	}
-	&__links {
-		margin-top: 42px;
-		display: flex;
-		justify-content: center;
-		@include respond-below(xs) {
-			display: none;
-		}
-	}
-		&__link {
-			// reset btn style
-			background: none;
-			color: inherit;
-			border: none;
-			padding: 0;
-			font: inherit;
-			cursor: pointer;
-			user-select: none;
-			outline: inherit;
 
-			display: block;
-			width: 129px;
-			height: 129px;
-			border-radius: 50%;
-			overflow: hidden;
-			transform: scale(.77);
-			> img {
-				max-width: 100%;
+	&__list {
+		//position: absolute;
+		display: flex;
+		transition: transform .3s ease-in-out;
+		@include respond-below(xs) {
+			flex-direction: column;
+		}
+	}
+	&__figure {
+		box-sizing: border-box;
+		flex: none;
+		width: 100%;
+		padding: 36px;
+		padding-right: 20%;
+		background-color: rgba(#191919, .5);
+		border-right: 2px solid black;
+		transition: background-color .3s ease-in-out;
+		opacity: .5;
+		&:hover {
+			background-color: rgba(#191919, 1);
+			cursor: pointer;
+		}
+		&--active {
+			opacity: 1;
+			&:hover {
+				background-color: rgba(#191919, .5);
+				cursor: default;
 			}
-			&[aria-expanded="true"] {
-				transform: scale(1);
-				background-image: linear-gradient(to right, rgba(164 ,34,80,1), rgba(205,58,80,1));
-				> img {
-					mix-blend-mode: luminosity;
+		}
+		@include respond-below(xs) {
+			padding: 0 0 48px 0;
+			flex: auto;
+			background-color: transparent;
+			border-right: none;
+			opacity: 1;
+		}
+	}
+		&__author {
+			overflow: hidden; // quick clearfix
+			margin-bottom: 72px;
+			@include respond-below(xs) {
+				margin-bottom: 24px;
+			}
+			> img {
+				float: left;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				@include respond-below(xs) {
+					width: 82px;
+					height: 82px;
 				}
 			}
-			@include respond-below(md) {
-				width: 100px;
-				height: 100px;
-			}
-		}
-	&__list {
-		margin-top: 50px;
-		> img { // mobile only images
-			display: none;
-			@include respond-below(xs) {
-				display: block;
-				width: 100px;
-				height: 100px;
-				margin-top: 48px;
-				margin-bottom: 16px;
-
-				border-radius: 50%;
-				overflow: hidden;
-				//&:first-of-type {
-				//	margin-top: 0;
-				//}
-			}
-		}
-		@include respond-below(md) {
-			margin-top: 32px;
-		}
-	}
-
-
-	&__blockquote {
-		position: relative;
-		color: rgba(#FFFFFF, .5);
-		font-size: 28px;
-		font-weight: 300;
-		line-height: 1.3;
-		cite {
-			display: block;
-			margin-top: 20px;
 			> div {
+				margin-left: 136px;
+				color: $color-text-alt;
 				font-size: 16px;
-				font-weight: 300;
-				line-height: 1.1;
-				&:first-child {
-					color: #F5F5F5;
-					margin-bottom: 9px;
+				line-height: 1.6;
+				&:first-of-type {
+					margin-top: 8px;
+					color: $color-text;
 				}
 				@include respond-below(xs) {
 					font-size: 14px;
-					line-height: 1.5;
-					&:first-child {
-						margin-bottom: 0; // reset
-					}
+					margin-left: 96px;
 				}
 			}
+		}
+		&__blockquote {
+			font-size: 20px;
+			line-height: 1.6;
+			color: $color-text-alt;
 			@include respond-below(xs) {
-				position: absolute;
-				bottom: calc(100% + 40px);
-				left: 119px;
-				right: 0;
+				font-size: 16px;
 			}
 		}
-
-		 @include respond-below(md) {
-			 font-size: 20px;
-			 line-height: 1.5;
-		 }
-		@include respond-below(xs) {
-			display: block;
-		}
-	}
 }
