@@ -461,6 +461,8 @@ body {
     height: 48px;
     opacity: 0;
     transition: opacity .1s linear; }
+    .nav-secondary__logo img {
+      max-width: 100%; }
     @media (max-width: 575px) {
       .nav-secondary__logo {
         width: 40px;

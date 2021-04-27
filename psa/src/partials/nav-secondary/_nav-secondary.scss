@@ -55,6 +55,9 @@ $nav-font-color: #F5F5F5;
     height: 48px;
     opacity: 0;
     transition:  opacity .1s linear;
+    img {
+      max-width: 100%;
+    }
     @include respond-below(xs) {
       width: 40px;
       height: 40px;
