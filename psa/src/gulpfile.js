@@ -18,6 +18,7 @@ gulp.task('compile', function (done) {
 	return gulp.src('./home.twig')
 		.pipe(twig({data: {}}))
 		.pipe(gulp.dest(destroot+'overrides/'))
+		.pipe(gulp.dest(destroot))
 		.pipe(browserSync.stream());
 	done()
 });
