@@ -4,13 +4,11 @@ var Testimonials = (function (window) {
     var list = document.querySelector('.testimonials__list')
     var links = document.querySelectorAll('.testimonials__figure')
     links.forEach(function(link, index) {
-      // console.log(index)
-        link.addEventListener('click', function() {
+        link.addEventListener('mousedown', function() {
           if (_getWindowsWidth() <= 576) return
           if (this.classList.contains('testimonials__figure--active')) return false;
           document.querySelector('.testimonials__figure--active').classList.remove('testimonials__figure--active')
           this.classList.add('testimonials__figure--active')
-          // console.log("translateX(-"+index*100+"%)")
           list.style.transform = "translateX(-"+index*100+"%)";
         })
     })

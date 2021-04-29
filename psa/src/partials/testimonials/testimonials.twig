@@ -54,7 +54,7 @@
 {#        </div>#}
         <div class="testimonials__list">
             {% for testimonial in testimonials %}
-            <figure class="testimonials__figure {{ testimonial.active ? 'testimonials__figure--active' : '' }}">
+            <figure class="testimonials__figure {{ testimonial.active ? 'testimonials__figure--active' : '' }}" tabindex="0">
                 <figcaption class="testimonials__author">
                     <img src="{{ testimonial.image.src }}" alt="{{ testimonial.image.alt }}" />
                     <div>{{ testimonial.fullname }}</div>
