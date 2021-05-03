@@ -208,6 +208,44 @@ body {
     .big-gap {
       height: 96px; } }
 
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  color: #F5F5F5;
+  border-radius: 25px; }
+  .btn--cta {
+    padding: 4px 12px;
+    line-height: 18px;
+    font-size: 12px;
+    border: 2px solid #F5F5F5; }
+  .btn--primary {
+    box-sizing: border-box;
+    min-width: 200px;
+    padding: 12px;
+    line-height: 14px;
+    font-size: 14px;
+    background-image: url("../images/primary-btn.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: background-position .3s ease-in-out; }
+    .btn--primary:hover {
+      background-position-x: calc(100% + 20px); }
+  .btn--secondary {
+    box-sizing: border-box;
+    min-width: 200px;
+    padding: 12px;
+    line-height: 14px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color .3s ease-in-out; }
+    .btn--secondary:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -260,10 +298,15 @@ body {
       .landing:after {
         bottom: -160px; } }
 
-.workflow__links {
+.how-it-works__title {
+  position: absolute;
+  width: 0;
+  overflow: hidden; }
+
+.how-it-works__links {
   margin-top: 78px; }
   @media (max-width: 575px) {
-    .workflow__links {
+    .how-it-works__links {
       margin-top: 32px; } }
 
 .nav-primary {
@@ -503,44 +546,6 @@ body {
     .videoplayer video:focus {
       outline: none; }
 
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  user-select: none;
-  color: #F5F5F5;
-  border-radius: 25px; }
-  .btn--cta {
-    padding: 4px 12px;
-    line-height: 18px;
-    font-size: 12px;
-    border: 2px solid #F5F5F5; }
-  .btn--primary {
-    box-sizing: border-box;
-    min-width: 200px;
-    padding: 12px;
-    line-height: 14px;
-    font-size: 14px;
-    background-image: url("../images/primary-btn.jpg");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    transition: background-position .3s ease-in-out; }
-    .btn--primary:hover {
-      background-position-x: calc(100% + 20px); }
-  .btn--secondary {
-    box-sizing: border-box;
-    min-width: 200px;
-    padding: 12px;
-    line-height: 14px;
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color .3s ease-in-out; }
-    .btn--secondary:hover {
-      background-color: rgba(255, 255, 255, 0.2); }
-
 .steps {
   position: relative;
   margin-top: 36px;
@@ -636,6 +641,10 @@ body {
 
 .benefits {
   padding: 5px 0; }
+  .benefits__title {
+    position: absolute;
+    width: 0;
+    overflow: hidden; }
   .benefits__list {
     position: relative; }
   .benefits__header {

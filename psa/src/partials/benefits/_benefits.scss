@@ -1,8 +1,12 @@
 .benefits {
 	padding: 5px 0; // for focus outline to be seen
+	&__title {
+		position: absolute;
+		width: 0;
+		overflow: hidden;
+	}
 	&__list {
 		position: relative;
-
 	}
 		&__header {
 			position: relative;

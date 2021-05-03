@@ -1,4 +1,9 @@
-.workflow {
+.how-it-works {
+  &__title {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+  }
   &__links {
     margin-top: 78px;
     @include respond-below(xs) {

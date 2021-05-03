@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Physical Starlight and Atmosphere</title>
+	<meta name="description" content="Blender addon that gives instant cinematic atmosphere and cuts down technical headache associated with setting up believable lighting.">
 	<link rel="icon" type="image/svg+xml" href="assets/images/psa-logo.svg">
 	<!-- Social Cards -->
 	<meta property="og:title" content="Physical Starlight and Atmosphere">
@@ -14,22 +15,19 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<!-- Do not transfer random numbers into phone numbers -->
 	<meta name="format-detection" content="telephone=no">
+	<!-- Fonts -->
+	<link rel="preload" href="assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
 	<!-- Stylesheets -->
-{#	<link rel="preconnect" href="https://fonts.gstatic.com">#}
-{#	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=auto" rel="stylesheet">#}
 	<link rel="stylesheet" href="assets/css/home.css">
 	<link rel="stylesheet" href="assets/css/vendor/jquery.fancybox.min.css">
-	{#    {% for path in config["extra_css"] %}#}
-	{#    <link rel="stylesheet" href="{{ path | url }}">#}
-	{#    {% endfor %}#}
 </head>
 <body class="psa">
 	{% include "partials/landing/landing.twig" %}
 	{% include "partials/nav-secondary/nav-secondary.twig" %}
 	<div class="gap"></div>
-	<div class="workflow">
-		{% include "partials/videoplayer/videoplayer.twig" %}
-	</div>
+	{% include "partials/how-it-works/how-it-works.twig" %}
 	{% include "partials/gallery/gallery.twig" %}
 	<div class="big-gap"></div>
 	{% include "partials/benefits/benefits.twig" %}

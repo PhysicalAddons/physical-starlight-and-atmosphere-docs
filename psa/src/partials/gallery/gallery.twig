@@ -380,15 +380,15 @@
 <div class="gallery" id="gallery">
 	<div class="big-gap"></div>
 	<div class="left-indent size-6">
-		<div class="gallery__title">
+		<h2 class="gallery__title">
 			Featured Artists
-		</div>
+		</h2>
 	</div>
 	<div class="gallery__grid">
 		{% for artwork in artworks %}
 			<figure class="gallery__artwork {{ (artwork.size == 2) ? 'gallery__artwork--wide' : '' }}">
 				<a href="{{artwork.image.src }}" data-fancybox="galleryfb">
-					<img src="{{artwork.image.thumb }}" alt="{{artwork.image.alt}}">
+					<img src="{{artwork.image.thumb }}" alt="Artwork by {{artwork.author}}">
 				</a>
 				<figcaption>
 					<a href="{{ artwork.url }}" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">{{ artwork.author }}</a>

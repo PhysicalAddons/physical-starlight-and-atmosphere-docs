@@ -1,0 +1,16 @@
+<div class="how-it-works">
+	<h2 class="how-it-works__title">How it works</h2>
+	<div class="left-indent-2 size-8 mobile-wide-layout">
+		{% include "../videoplayer/videoplayer.twig" %}
+	</div>
+
+	<div class="left-indent size-6">
+		{% include "../tablinks/tablinks.twig" with {'class': 'how-it-works__links'} %}
+
+		<ul class="steps">
+			<li id="enable" class="steps__description animatable animatable--active">With a single click enable addon and make sure that you are in "Rendered" Viewport Shading mode.</li>
+			<li id="select-presets" class="steps__description animatable">Use our stunning premade presets or make your own. With one click all configuration will be applied.</li>
+			<li id="customize-params" class="steps__description animatable">There are more than 30 different parameters to customize atmosphere for your needs.</li>
+		</ul>
+	</div>
+</div>
