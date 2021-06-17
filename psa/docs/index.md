@@ -1,5 +1,6 @@
 ---
-redirect: /psa/getting-started
+template: overrides/home.html
+title: Material for MkDocs
 ---
 
 !!! attention

@@ -1,0 +1,15 @@
+.videoplayer {
+  text-align: center;
+  position:relative;
+  video {
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 14px solid #141414;
+
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}
