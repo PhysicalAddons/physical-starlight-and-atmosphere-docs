@@ -2,6 +2,10 @@ site_name: Physical Starlight and Atmosphere
 site_dir: psa
 theme:
   name: material
+  favicon: img/psa-logo.svg
+  logo: img/psa-logo.svg
+  palette:
+    primary: black
   features:
     - tabs
 plugins:
@@ -10,6 +14,7 @@ site_url: https://www.physicaladdons.com/psa/
 google_analytics: ['UA-86947939-2', 'auto']
 markdown_extensions:
   - admonition
+  - pymdownx.details
   - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.keys
@@ -36,6 +41,7 @@ nav:
     - Ground: ground.md
 #    - Stars: stars.md
 #    - Artistic Values: artistic-values.md
+    - Clouds: clouds.md
   - Changelog:
     - Release Notes: release-notes.md
   - About:
@@ -43,3 +49,11 @@ nav:
     - Contacts: contacts.md
 extra_css:
   - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/PhysicalAddons
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/upitismartins_digital/
+    - icon: fontawesome/brands/github
+      link: https://github.com/PhysicalAddons/
