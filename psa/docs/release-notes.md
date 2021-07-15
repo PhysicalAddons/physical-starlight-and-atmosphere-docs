@@ -1,3 +1,9 @@
+### 1.4.1-beta <small>- released 20.06.2021</small>
+
+`improvements:`{: .label-improvements }
+
+- Increase shadow visibility from 200m to 2km.
+
 ### 1.4.0-beta <small>- released 17.06.2021</small>
 
 `new:`{: .label-new }
@@ -5,7 +11,6 @@
 - Procedural Cloud system.
 
 `improvements:`{: .label-improvements }
-
 
 - Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
 - Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
