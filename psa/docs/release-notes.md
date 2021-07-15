@@ -3,6 +3,7 @@
 `improvements:`{: .label-improvements }
 
 - Increase shadow visibility from 200m to 2km.
+- Set Experimental features enabled by default.
 
 ### 1.4.0-beta <small>- released 17.06.2021</small>
 
