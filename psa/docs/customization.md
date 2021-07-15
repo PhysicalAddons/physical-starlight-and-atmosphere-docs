@@ -27,4 +27,3 @@ addon is having real world physical values to support visual consistency.
 Enables features that may not be fully functional and tested for all cases. Current list of experimental features:
 
 * [Binary Sun](/psa/binary-sun/)
-* [Clouds](/psa/clouds/)

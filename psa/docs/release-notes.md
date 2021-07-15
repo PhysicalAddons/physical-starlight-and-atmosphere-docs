@@ -1,9 +1,11 @@
-### 1.4.0 <small>- released xx.xx.2021</small>
+### 1.4.0-beta <small>- released 17.06.2021</small>
 
 `new:`{: .label-new }
 
+- Procedural Cloud system.
 
 `improvements:`{: .label-improvements }
+
 
 - Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
 - Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
