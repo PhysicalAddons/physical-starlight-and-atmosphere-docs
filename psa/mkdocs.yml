@@ -2,7 +2,7 @@ site_name: Physical Starlight and Atmosphere
 site_dir: psa
 theme:
   name: material
-  favicon: img/psa-logo.svg
+  favicon: img/favicon.svg
   logo: img/psa-logo.svg
   palette:
     primary: black
