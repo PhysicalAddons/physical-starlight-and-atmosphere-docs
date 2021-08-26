@@ -1,3 +1,23 @@
+### 1.4.2-beta <small>- released 26.08.2021</small>
+
+`new:`{: .label-new }
+
+- New UI for Object Fog. Better control over when Object Fog should be applied and when removed. 
+
+`improvements:`{: .label-improvements }
+
+- Improved general addon performance.
+- Reduced RAM used by Object Fog.
+- Clouds UI moved to the Atmosphere tab.
+- Added extra rotation and location parameters for the Clouds.
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue when rendering animation (hitting F12 key) gets a consistent crash. {[#43](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/43)}
+- Fixed issue when using cloud feature were not enabled when using Cycles rendering engine by default. {[#42](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/42)}
+- Fixed issue when animating sun via Sun Position addon resulted in incomplete animation. {[#7](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/7)}
+
+
 ### 1.4.1-beta <small>- released 20.06.2021</small>
 
 `improvements:`{: .label-improvements }
