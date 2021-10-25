@@ -16,9 +16,10 @@
 	<!-- Do not transfer random numbers into phone numbers -->
 	<meta name="format-detection" content="telephone=no">
 	<!-- Fonts -->
-	<link rel="preload" href="assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	
+	<link href="assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="assets/css/home.css">
 	<link rel="stylesheet" href="assets/css/vendor/jquery.fancybox.min.css">
@@ -87,11 +88,10 @@
             class="presets__image animatable animatable--active"
             alt="An astronaut on Earth looking over desert in sun direction"
             srcset="
-                        assets/images/presets/model.jpeg?nf_resize=fit&w=300 300w,
-                        assets/images/presets/model.jpeg?nf_resize=fit&w=600 600w,
-                        assets/images/presets/model.jpeg?nf_resize=fit&w=1200 1200w,
-                        assets/images/presets/model.jpeg 1600w,
-                        assets/images/presets/model.jpeg?nf_resize=fit&w=2000 2000w
+                        assets/images/presets/model-300.jpg 300w,
+                        assets/images/presets/model-600.jpg 600w,
+                        assets/images/presets/model-1200.jpg 1200w,
+                        assets/images/presets/model-1600.jpg 1600w
                     "
             sizes="100vw"
     >
@@ -100,11 +100,10 @@
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
             srcset="
-                        assets/images/presets/earth.jpeg?nf_resize=fit&w=300 300w,
-                        assets/images/presets/earth.jpeg?nf_resize=fit&w=600 600w,
-                        assets/images/presets/earth.jpeg?nf_resize=fit&w=1200 1200w,
-                        assets/images/presets/earth.jpeg 1600w,
-                        assets/images/presets/earth.jpeg?nf_resize=fit&w=2000 2000w
+                        assets/images/presets/earth-300.jpg 300w,
+                        assets/images/presets/earth-600.jpg 600w,
+                        assets/images/presets/earth-1200.jpg 1200w,
+                        assets/images/presets/earth-1600.jpg 1600w
                     "
             sizes="100vw"
     >
@@ -113,11 +112,10 @@
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
             srcset="
-                        assets/images/presets/mars.jpeg?nf_resize=fit&w=300 300w,
-                        assets/images/presets/mars.jpeg?nf_resize=fit&w=600 600w,
-                        assets/images/presets/mars.jpeg?nf_resize=fit&w=1200 1200w,
-                        assets/images/presets/mars.jpeg 1600w,
-                        assets/images/presets/mars.jpeg?nf_resize=fit&w=2000 2000w
+                        assets/images/presets/mars-300.jpg 300w,
+                        assets/images/presets/mars-600.jpg 600w,
+                        assets/images/presets/mars-1200.jpg 1200w,
+                        assets/images/presets/mars-1600.jpg 1600w
                     "
             sizes="100vw"
     >
@@ -126,11 +124,10 @@
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
             srcset="
-                        assets/images/presets/nishita.jpeg?nf_resize=fit&w=300 300w,
-                        assets/images/presets/nishita.jpeg?nf_resize=fit&w=600 600w,
-                        assets/images/presets/nishita.jpeg?nf_resize=fit&w=1200 1200w,
-                        assets/images/presets/nishita.jpeg 1600w,
-                        assets/images/presets/nishita.jpeg?nf_resize=fit&w=2000 2000w
+                        assets/images/presets/nishita-300.jpg 300w,
+                        assets/images/presets/nishita-600.jpg 600w,
+                        assets/images/presets/nishita-1200.jpg 1200w,
+                        assets/images/presets/nishita-1600.jpg 1600w
                     "
             sizes="100vw"
     >
@@ -139,11 +136,10 @@
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
             srcset="
-                        assets/images/presets/retrowave.jpeg?nf_resize=fit&w=300 300w,
-                        assets/images/presets/retrowave.jpeg?nf_resize=fit&w=600 600w,
-                        assets/images/presets/retrowave.jpeg?nf_resize=fit&w=1200 1200w,
-                        assets/images/presets/retrowave.jpeg 1600w,
-                        assets/images/presets/retrowave.jpeg?nf_resize=fit&w=2000 2000w
+                        assets/images/presets/retrowave-300.jpg 300w,
+                        assets/images/presets/retrowave-600.jpg 600w,
+                        assets/images/presets/retrowave-1200.jpg 1200w,
+                        assets/images/presets/retrowave-1600.jpg 1600w
                     "
             sizes="100vw"
     >
@@ -216,9 +212,18 @@
 	</div>
 	<div class="gallery__grid">
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/alexander-lortkipanidze/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/alexander-lortkipanidze/1-thumb.jpg" alt="Artwork by Alexander Lortkipanidze">
+					<img
+						alt="Artwork by Alexander Lortkipanidze"
+						srcset="
+							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/varzov" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Alexander Lortkipanidze</a>
@@ -226,9 +231,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jonas-fornerod/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/jonas-fornerod/2-thumb.jpg" alt="Artwork by Jonas Fornerod">
+					<img
+						alt="Artwork by Jonas Fornerod"
+						srcset="
+							assets/images/gallery/jonas-fornerod/2-thumb-300.jpg 300w,
+							assets/images/gallery/jonas-fornerod/2-thumb-575.jpg 575w,
+							assets/images/gallery/jonas-fornerod/2-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/jonasfornerod" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Jonas Fornerod</a>
@@ -236,9 +250,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/lee-petty/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/lee-petty/1-thumb.jpg" alt="Artwork by Lee Petty">
+					<img
+						alt="Artwork by Lee Petty"
+						srcset="
+							assets/images/gallery/lee-petty/1-thumb-300.jpg 300w,
+							assets/images/gallery/lee-petty/1-thumb-575.jpg 575w,
+							assets/images/gallery/lee-petty/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/lpetty" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Lee Petty</a>
@@ -246,9 +269,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/ilmari-kumpunen/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/ilmari-kumpunen/1-thumb.jpg" alt="Artwork by Ilmari Kumpunen">
+					<img
+						alt="Artwork by Ilmari Kumpunen"
+						srcset="
+							assets/images/gallery/ilmari-kumpunen/1-thumb-300.jpg 300w,
+							assets/images/gallery/ilmari-kumpunen/1-thumb-575.jpg 575w,
+							assets/images/gallery/ilmari-kumpunen/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/ilmarik" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Ilmari Kumpunen</a>
@@ -256,9 +288,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jonas-fornerod/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/jonas-fornerod/1-thumb.jpg" alt="Artwork by Jonas Fornerod">
+					<img
+						alt="Artwork by Jonas Fornerod"
+						srcset="
+							assets/images/gallery/jonas-fornerod/1-thumb-300.jpg 300w,
+							assets/images/gallery/jonas-fornerod/1-thumb-575.jpg 575w,
+							assets/images/gallery/jonas-fornerod/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/jonasfornerod" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Jonas Fornerod</a>
@@ -266,9 +307,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/andrei-khrutskii/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/andrei-khrutskii/1-thumb.jpg" alt="Artwork by Andrei Khrutskii">
+					<img
+						alt="Artwork by Andrei Khrutskii"
+						srcset="
+							assets/images/gallery/andrei-khrutskii/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/andrei-khrutskii/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/andrei-khrutskii/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://andreikhrutskii.artstation.com/" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Andrei Khrutskii</a>
@@ -276,9 +326,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/arnaud-imobersteg/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/arnaud-imobersteg/1-thumb.jpg" alt="Artwork by Arnaud Imobersteg">
+					<img
+						alt="Artwork by Arnaud Imobersteg"
+						srcset="
+							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/arnaud_imobersteg" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Arnaud Imobersteg</a>
@@ -286,9 +345,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jan-šarbort/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/jan-šarbort/1-thumb.jpg" alt="Artwork by Jan Šarbort">
+					<img
+						alt="Artwork by Jan Šarbort"
+						srcset="
+							assets/images/gallery/jan-šarbort/1-thumb-300.jpg 300w,
+							assets/images/gallery/jan-šarbort/1-thumb-575.jpg 575w,
+							assets/images/gallery/jan-šarbort/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/jansarbort" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Jan Šarbort</a>
@@ -296,9 +364,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jeff-lange/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/jeff-lange/1-thumb.jpg" alt="Artwork by Jeff Lange">
+					<img
+						alt="Artwork by Jeff Lange"
+						srcset="
+							assets/images/gallery/jeff-lange/1-thumb-300.jpg 300w,
+							assets/images/gallery/jeff-lange/1-thumb-575.jpg 575w,
+							assets/images/gallery/jeff-lange/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://twitter.com/jefftml" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Jeff Lange</a>
@@ -306,9 +383,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/maximilian-schiller/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/maximilian-schiller/1-thumb.jpg" alt="Artwork by Maximilian Schiller">
+					<img
+						alt="Artwork by Maximilian Schiller"
+						srcset="
+							assets/images/gallery/maximilian-schiller/1-thumb-300.jpg 300w,
+							assets/images/gallery/maximilian-schiller/1-thumb-575.jpg 575w,
+							assets/images/gallery/maximilian-schiller/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/maxschiller" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Maximilian Schiller</a>
@@ -316,9 +402,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/maximilian-schiller/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/maximilian-schiller/2-thumb.jpg" alt="Artwork by Maximilian Schiller">
+					<img
+						alt="Artwork by Maximilian Schiller"
+						srcset="
+							assets/images/gallery/maximilian-schiller/2-thumb-300.jpg 300w,
+							assets/images/gallery/maximilian-schiller/2-thumb-575.jpg 575w,
+							assets/images/gallery/maximilian-schiller/2-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/maxschiller" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Maximilian Schiller</a>
@@ -326,9 +421,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/dominick-critelli/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/dominick-critelli/1-thumb.jpg" alt="Artwork by Dominick Critelli">
+					<img
+						alt="Artwork by Dominick Critelli"
+						srcset="
+							assets/images/gallery/dominick-critelli/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/dominick-critelli/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/dominick-critelli/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/dominickcritelli" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Dominick Critelli</a>
@@ -336,9 +440,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/ilmari-kumpunen/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/ilmari-kumpunen/2-thumb.jpg" alt="Artwork by Ilmari Kumpunen">
+					<img
+						alt="Artwork by Ilmari Kumpunen"
+						srcset="
+							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-300.jpg 300w,
+							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-575.jpg 575w,
+							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/ilmarik" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Ilmari Kumpunen</a>
@@ -346,9 +459,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/wolfgang-pereira/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/wolfgang-pereira/1-thumb.jpg" alt="Artwork by Wolfgang Pereira">
+					<img
+						alt="Artwork by Wolfgang Pereira"
+						srcset="
+							assets/images/gallery/wolfgang-pereira/1-thumb-300.jpg 300w,
+							assets/images/gallery/wolfgang-pereira/1-thumb-575.jpg 575w,
+							assets/images/gallery/wolfgang-pereira/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://wolfgangps-blog.tumblr.com/" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Wolfgang Pereira</a>
@@ -356,9 +478,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/noely-ryan/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/noely-ryan/1-thumb.jpg" alt="Artwork by Noely Ryan">
+					<img
+						alt="Artwork by Noely Ryan"
+						srcset="
+							assets/images/gallery/noely-ryan/1-thumb-300.jpg 300w,
+							assets/images/gallery/noely-ryan/1-thumb-575.jpg 575w,
+							assets/images/gallery/noely-ryan/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/enor" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Noely Ryan</a>
@@ -366,9 +497,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/petra-trebješanin/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/petra-trebješanin/1-thumb.jpg" alt="Artwork by Petra Trebješanin">
+					<img
+						alt="Artwork by Petra Trebješanin"
+						srcset="
+							assets/images/gallery/petra-trebješanin/1-thumb-300.jpg 300w,
+							assets/images/gallery/petra-trebješanin/1-thumb-575.jpg 575w,
+							assets/images/gallery/petra-trebješanin/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/petramikulicic" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Petra Trebješanin</a>
@@ -376,9 +516,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/roma-likholob/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/roma-likholob/1-thumb.jpg" alt="Artwork by Roman Likholob">
+					<img
+						alt="Artwork by Roman Likholob"
+						srcset="
+							assets/images/gallery/roma-likholob/1-thumb-300.jpg 300w,
+							assets/images/gallery/roma-likholob/1-thumb-575.jpg 575w,
+							assets/images/gallery/roma-likholob/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/pulsid" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Roman Likholob</a>
@@ -386,9 +535,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/ilmari-kumpunen/3.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/ilmari-kumpunen/3-thumb.jpg" alt="Artwork by Ilmari Kumpunen">
+					<img
+						alt="Artwork by Ilmari Kumpunen"
+						srcset="
+							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-300.jpg 300w,
+							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-575.jpg 575w,
+							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/ilmarik" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Ilmari Kumpunen</a>
@@ -396,29 +554,56 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/marco-iozzi/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/marco-iozzi/2-thumb.jpg" alt="Artwork by Marco Iozzi">
+					<img
+						alt="Artwork by Marco Iozzi"
+						srcset="
+							assets/images/gallery/marco-iozzi/2-thumb-2x-300.jpg 300w,
+							assets/images/gallery/marco-iozzi/2-thumb-2x-575.jpg 575w,
+							assets/images/gallery/marco-iozzi/2-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.marcoiozzi.com/" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Marco Iozzi</a>
-					<div class="gallery__jobtitle">Concept art - Matte painting</div>
+					<div class="gallery__jobtitle">Concept Art and Illustration</div>
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/marco-iozzi/3.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/marco-iozzi/3-thumb.jpg" alt="Artwork by Marco Iozzi">
+					<img
+						alt="Artwork by Marco Iozzi"
+						srcset="
+							assets/images/gallery/marco-iozzi/3-thumb-2x-300.jpg 300w,
+							assets/images/gallery/marco-iozzi/3-thumb-2x-575.jpg 575w,
+							assets/images/gallery/marco-iozzi/3-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.marcoiozzi.com/" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Marco Iozzi</a>
-					<div class="gallery__jobtitle">Concept art - Matte painting</div>
+					<div class="gallery__jobtitle">Concept Art and Illustration</div>
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/jukka-lehto/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/jukka-lehto/1-thumb.jpg" alt="Artwork by Jukka Lehto">
+					<img
+						alt="Artwork by Jukka Lehto"
+						srcset="
+							assets/images/gallery/jukka-lehto/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/jukka-lehto/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/jukka-lehto/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/versaali" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Jukka Lehto</a>
@@ -426,9 +611,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/sterling-osment/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/sterling-osment/1-thumb.jpg" alt="Artwork by Sterling Osment">
+					<img
+						alt="Artwork by Sterling Osment"
+						srcset="
+							assets/images/gallery/sterling-osment/1-thumb-300.jpg 300w,
+							assets/images/gallery/sterling-osment/1-thumb-575.jpg 575w,
+							assets/images/gallery/sterling-osment/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/sterlingosment" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Sterling Osment</a>
@@ -436,9 +630,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/subin-rajendran/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/subin-rajendran/1-thumb.jpg" alt="Artwork by Subin Rajendran">
+					<img
+						alt="Artwork by Subin Rajendran"
+						srcset="
+							assets/images/gallery/subin-rajendran/1-thumb-300.jpg 300w,
+							assets/images/gallery/subin-rajendran/1-thumb-575.jpg 575w,
+							assets/images/gallery/subin-rajendran/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/subinrajendran" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Subin Rajendran</a>
@@ -446,9 +649,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/subin-rajendran/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/subin-rajendran/2-thumb.jpg" alt="Artwork by Subin Rajendran">
+					<img
+						alt="Artwork by Subin Rajendran"
+						srcset="
+							assets/images/gallery/subin-rajendran/2-thumb-300.jpg 300w,
+							assets/images/gallery/subin-rajendran/2-thumb-575.jpg 575w,
+							assets/images/gallery/subin-rajendran/2-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/subinrajendran" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Subin Rajendran</a>
@@ -456,9 +668,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/subin-rajendran/3.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/subin-rajendran/3-thumb.jpg" alt="Artwork by Subin Rajendran">
+					<img
+						alt="Artwork by Subin Rajendran"
+						srcset="
+							assets/images/gallery/subin-rajendran/3-thumb-300.jpg 300w,
+							assets/images/gallery/subin-rajendran/3-thumb-575.jpg 575w,
+							assets/images/gallery/subin-rajendran/3-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/subinrajendran" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Subin Rajendran</a>
@@ -466,9 +687,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/lee-petty/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/lee-petty/2-thumb.jpg" alt="Artwork by Lee Petty">
+					<img
+						alt="Artwork by Lee Petty"
+						srcset="
+							assets/images/gallery/lee-petty/2-thumb-2x-300.jpg 300w,
+							assets/images/gallery/lee-petty/2-thumb-2x-575.jpg 575w,
+							assets/images/gallery/lee-petty/2-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/lpetty" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Lee Petty</a>
@@ -476,19 +706,37 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/marco-iozzi/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/marco-iozzi/1-thumb.jpg" alt="Artwork by Marco Iozzi">
+					<img
+						alt="Artwork by Marco Iozzi"
+						srcset="
+							assets/images/gallery/marco-iozzi/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/marco-iozzi/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/marco-iozzi/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.marcoiozzi.com/" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Marco Iozzi</a>
-					<div class="gallery__jobtitle">Concept art - Matte painting</div>
+					<div class="gallery__jobtitle">Concept Art and Illustration</div>
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/vincent-mactiernan/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/vincent-mactiernan/1-thumb.jpg" alt="Artwork by Vincent MacTiernan">
+					<img
+						alt="Artwork by Vincent MacTiernan"
+						srcset="
+							assets/images/gallery/vincent-mactiernan/1-thumb-300.jpg 300w,
+							assets/images/gallery/vincent-mactiernan/1-thumb-575.jpg 575w,
+							assets/images/gallery/vincent-mactiernan/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/mattewizard" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Vincent MacTiernan</a>
@@ -496,9 +744,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/vincent-mactiernan/2.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/vincent-mactiernan/2-thumb.jpg" alt="Artwork by Vincent MacTiernan">
+					<img
+						alt="Artwork by Vincent MacTiernan"
+						srcset="
+							assets/images/gallery/vincent-mactiernan/2-thumb-300.jpg 300w,
+							assets/images/gallery/vincent-mactiernan/2-thumb-575.jpg 575w,
+							assets/images/gallery/vincent-mactiernan/2-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/mattewizard" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Vincent MacTiernan</a>
@@ -506,9 +763,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/scott-warren/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/scott-warren/1-thumb.jpg" alt="Artwork by Scott Warren">
+					<img
+						alt="Artwork by Scott Warren"
+						srcset="
+							assets/images/gallery/scott-warren/1-thumb-300.jpg 300w,
+							assets/images/gallery/scott-warren/1-thumb-575.jpg 575w,
+							assets/images/gallery/scott-warren/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/fiatlux" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Scott Warren</a>
@@ -516,9 +782,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/tomasz-sadzinica/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/tomasz-sadzinica/1-thumb.jpg" alt="Artwork by Tomasz Sadzinica">
+					<img
+						alt="Artwork by Tomasz Sadzinica"
+						srcset="
+							assets/images/gallery/tomasz-sadzinica/1-thumb-300.jpg 300w,
+							assets/images/gallery/tomasz-sadzinica/1-thumb-575.jpg 575w,
+							assets/images/gallery/tomasz-sadzinica/1-thumb-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/mortom" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Tomasz Sadzinica</a>
@@ -526,9 +801,18 @@
 				</figcaption>
 			</figure>
 		
+			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/ryan-richmond/1.jpg" data-fancybox="galleryfb">
-					<img src="assets/images/gallery/ryan-richmond/1-thumb.jpg" alt="Artwork by Ryan Richmond">
+					<img
+						alt="Artwork by Ryan Richmond"
+						srcset="
+							assets/images/gallery/ryan-richmond/1-thumb-2x-300.jpg 300w,
+							assets/images/gallery/ryan-richmond/1-thumb-2x-575.jpg 575w,
+							assets/images/gallery/ryan-richmond/1-thumb-2x-1704.jpg 1704w,
+						"
+						sizes="100vw"
+					>
 				</a>
 				<figcaption>
 					<a href="https://www.artstation.com/ryanrichmond" class="gallery__author" target="_blank" rel="noreferrer" tabindex="-1">Ryan Richmond</a>
