@@ -8,7 +8,6 @@ var General = (function (window) {
     var links = document.querySelectorAll('a, [tabindex="0"]');
     links.forEach(function(link) {
       link.addEventListener('mousedown', () => {
-        console.log('mousedown!!!!')
         link.setAttribute('data-focus-method', 'mouse');
       });
       // link.addEventListener('touchstart', () => {
