@@ -17,9 +17,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- Fonts -->
 	
-	<link href="assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
-	<link href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link href="assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="assets/fonts/Inter-Light.woff2" type="font/woff2" crossorigin>
+	<link href="assets/fonts/Inter-Regular.woff2" type="font/woff2" crossorigin>
+	<link href="assets/fonts/Inter-Medium.woff2" type="font/woff2" crossorigin>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="assets/css/home.css">
 	<link rel="stylesheet" href="assets/css/vendor/jquery.fancybox.min.css">
@@ -62,7 +62,7 @@
             </h1>
         </div>
         <div class="landing__timeline left-indent size-6 mobile-wide-layout">
-            <div class="timeline" aria-label="Preset Slider">
+            <div class="timeline">
     <a href="#preset-model" class="timeline__section timeline__section--empty" data-duration="1" title="Model">
         <div class="timeline__progress"></div>
     </a>
@@ -87,6 +87,7 @@
             id="preset-model"
             class="presets__image animatable animatable--active"
             alt="An astronaut on Earth looking over desert in sun direction"
+            src="assets/images/presets/model-1600.jpg"
             srcset="
                         assets/images/presets/model-300.jpg 300w,
                         assets/images/presets/model-600.jpg 600w,
@@ -99,6 +100,7 @@
             id="preset-earth"
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
+            src="assets/images/presets/earth-1600.jpg"
             srcset="
                         assets/images/presets/earth-300.jpg 300w,
                         assets/images/presets/earth-600.jpg 600w,
@@ -111,6 +113,7 @@
             id="preset-mars"
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
+            src="assets/images/presets/mars-1600.jpg"
             srcset="
                         assets/images/presets/mars-300.jpg 300w,
                         assets/images/presets/mars-600.jpg 600w,
@@ -123,6 +126,7 @@
             id="preset-nishita"
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
+            src="assets/images/presets/nishita-1600.jpg"
             srcset="
                         assets/images/presets/nishita-300.jpg 300w,
                         assets/images/presets/nishita-600.jpg 600w,
@@ -135,6 +139,7 @@
             id="preset-retrowave"
             class="presets__image animatable"
             alt="An astronaut on Earth looking over desert in sun direction"
+            src="assets/images/presets/retrowave-1600.jpg"
             srcset="
                         assets/images/presets/retrowave-300.jpg 300w,
                         assets/images/presets/retrowave-600.jpg 600w,
@@ -164,7 +169,7 @@
         <a href="#pricing" class="nav-secondary__link">Pricing</a>
 
     </div>
-    <a href="https://blendermarket.com/products/physical-starlight-and-atmosphere" class="nav-secondary__cta btn btn--cta" type="button">Buy</a>
+    <a href="https://blendermarket.com/products/physical-starlight-and-atmosphere" class="nav-secondary__cta btn btn--cta">Buy</a>
 </nav>	<div class="gap"></div>
 	<div class="how-it-works">
 	<h2 class="how-it-works__title">How it works</h2>
@@ -212,17 +217,24 @@
 	</div>
 	<div class="gallery__grid">
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/alexander-lortkipanidze/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Alexander Lortkipanidze"
+						
+						
+						src="assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/alexander-lortkipanidze/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -231,17 +243,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jonas-fornerod/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Jonas Fornerod"
+						
+						
+						src="assets/images/gallery/jonas-fornerod/2-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/jonas-fornerod/2-thumb-300.jpg 300w,
-							assets/images/gallery/jonas-fornerod/2-thumb-575.jpg 575w,
-							assets/images/gallery/jonas-fornerod/2-thumb-1704.jpg 1704w,
+							assets/images/gallery/jonas-fornerod/2-thumb-300.jpg 147w,
+							assets/images/gallery/jonas-fornerod/2-thumb-575.jpg 285w,
+							assets/images/gallery/jonas-fornerod/2-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -250,17 +269,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/lee-petty/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Lee Petty"
+						
+						
+						src="assets/images/gallery/lee-petty/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/lee-petty/1-thumb-300.jpg 300w,
-							assets/images/gallery/lee-petty/1-thumb-575.jpg 575w,
-							assets/images/gallery/lee-petty/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/lee-petty/1-thumb-300.jpg 147w,
+							assets/images/gallery/lee-petty/1-thumb-575.jpg 285w,
+							assets/images/gallery/lee-petty/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -269,17 +295,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/ilmari-kumpunen/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Ilmari Kumpunen"
+						
+						
+						src="assets/images/gallery/ilmari-kumpunen/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/ilmari-kumpunen/1-thumb-300.jpg 300w,
-							assets/images/gallery/ilmari-kumpunen/1-thumb-575.jpg 575w,
-							assets/images/gallery/ilmari-kumpunen/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/ilmari-kumpunen/1-thumb-300.jpg 147w,
+							assets/images/gallery/ilmari-kumpunen/1-thumb-575.jpg 285w,
+							assets/images/gallery/ilmari-kumpunen/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -288,17 +321,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jonas-fornerod/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Jonas Fornerod"
+						
+						
+						src="assets/images/gallery/jonas-fornerod/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/jonas-fornerod/1-thumb-300.jpg 300w,
-							assets/images/gallery/jonas-fornerod/1-thumb-575.jpg 575w,
-							assets/images/gallery/jonas-fornerod/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/jonas-fornerod/1-thumb-300.jpg 147w,
+							assets/images/gallery/jonas-fornerod/1-thumb-575.jpg 285w,
+							assets/images/gallery/jonas-fornerod/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -307,17 +347,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/andrei-khrutskii/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Andrei Khrutskii"
+						
+						
+						src="assets/images/gallery/andrei-khrutskii/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/andrei-khrutskii/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/andrei-khrutskii/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/andrei-khrutskii/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/andrei-khrutskii/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/andrei-khrutskii/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/andrei-khrutskii/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -326,17 +373,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/arnaud-imobersteg/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Arnaud Imobersteg"
+						
+						
+						src="assets/images/gallery/arnaud-imobersteg/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/arnaud-imobersteg/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -345,17 +399,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jan-šarbort/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Jan Šarbort"
+						
+						
+						src="assets/images/gallery/jan-šarbort/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/jan-šarbort/1-thumb-300.jpg 300w,
-							assets/images/gallery/jan-šarbort/1-thumb-575.jpg 575w,
-							assets/images/gallery/jan-šarbort/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/jan-šarbort/1-thumb-300.jpg 147w,
+							assets/images/gallery/jan-šarbort/1-thumb-575.jpg 285w,
+							assets/images/gallery/jan-šarbort/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -364,17 +425,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/jeff-lange/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Jeff Lange"
+						
+						
+						src="assets/images/gallery/jeff-lange/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/jeff-lange/1-thumb-300.jpg 300w,
-							assets/images/gallery/jeff-lange/1-thumb-575.jpg 575w,
-							assets/images/gallery/jeff-lange/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/jeff-lange/1-thumb-300.jpg 147w,
+							assets/images/gallery/jeff-lange/1-thumb-575.jpg 285w,
+							assets/images/gallery/jeff-lange/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -383,17 +451,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/maximilian-schiller/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Maximilian Schiller"
+						
+						
+						src="assets/images/gallery/maximilian-schiller/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/maximilian-schiller/1-thumb-300.jpg 300w,
-							assets/images/gallery/maximilian-schiller/1-thumb-575.jpg 575w,
-							assets/images/gallery/maximilian-schiller/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/maximilian-schiller/1-thumb-300.jpg 147w,
+							assets/images/gallery/maximilian-schiller/1-thumb-575.jpg 285w,
+							assets/images/gallery/maximilian-schiller/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -402,17 +477,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/maximilian-schiller/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Maximilian Schiller"
+						
+						
+						src="assets/images/gallery/maximilian-schiller/2-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/maximilian-schiller/2-thumb-300.jpg 300w,
-							assets/images/gallery/maximilian-schiller/2-thumb-575.jpg 575w,
-							assets/images/gallery/maximilian-schiller/2-thumb-1704.jpg 1704w,
+							assets/images/gallery/maximilian-schiller/2-thumb-300.jpg 147w,
+							assets/images/gallery/maximilian-schiller/2-thumb-575.jpg 285w,
+							assets/images/gallery/maximilian-schiller/2-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -421,17 +503,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/dominick-critelli/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Dominick Critelli"
+						
+						
+						src="assets/images/gallery/dominick-critelli/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/dominick-critelli/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/dominick-critelli/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/dominick-critelli/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/dominick-critelli/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/dominick-critelli/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/dominick-critelli/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -440,17 +529,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/ilmari-kumpunen/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Ilmari Kumpunen"
+						
+						
+						src="assets/images/gallery/ilmari-kumpunen/2-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-300.jpg 300w,
-							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-575.jpg 575w,
-							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-300.jpg 296w,
+							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-575.jpg 571w,
+							assets/images/gallery/ilmari-kumpunen/2-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -459,17 +555,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/wolfgang-pereira/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Wolfgang Pereira"
+						
+						
+						src="assets/images/gallery/wolfgang-pereira/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/wolfgang-pereira/1-thumb-300.jpg 300w,
-							assets/images/gallery/wolfgang-pereira/1-thumb-575.jpg 575w,
-							assets/images/gallery/wolfgang-pereira/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/wolfgang-pereira/1-thumb-300.jpg 147w,
+							assets/images/gallery/wolfgang-pereira/1-thumb-575.jpg 285w,
+							assets/images/gallery/wolfgang-pereira/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -478,17 +581,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/noely-ryan/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Noely Ryan"
+						
+						
+						src="assets/images/gallery/noely-ryan/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/noely-ryan/1-thumb-300.jpg 300w,
-							assets/images/gallery/noely-ryan/1-thumb-575.jpg 575w,
-							assets/images/gallery/noely-ryan/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/noely-ryan/1-thumb-300.jpg 147w,
+							assets/images/gallery/noely-ryan/1-thumb-575.jpg 285w,
+							assets/images/gallery/noely-ryan/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -497,17 +607,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/petra-trebješanin/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Petra Trebješanin"
+						
+						
+						src="assets/images/gallery/petra-trebješanin/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/petra-trebješanin/1-thumb-300.jpg 300w,
-							assets/images/gallery/petra-trebješanin/1-thumb-575.jpg 575w,
-							assets/images/gallery/petra-trebješanin/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/petra-trebješanin/1-thumb-300.jpg 147w,
+							assets/images/gallery/petra-trebješanin/1-thumb-575.jpg 285w,
+							assets/images/gallery/petra-trebješanin/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -516,17 +633,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/roma-likholob/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Roman Likholob"
+						
+						
+						src="assets/images/gallery/roma-likholob/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/roma-likholob/1-thumb-300.jpg 300w,
-							assets/images/gallery/roma-likholob/1-thumb-575.jpg 575w,
-							assets/images/gallery/roma-likholob/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/roma-likholob/1-thumb-300.jpg 147w,
+							assets/images/gallery/roma-likholob/1-thumb-575.jpg 285w,
+							assets/images/gallery/roma-likholob/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -535,17 +659,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/ilmari-kumpunen/3.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Ilmari Kumpunen"
+						
+						
+						src="assets/images/gallery/ilmari-kumpunen/3-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-300.jpg 300w,
-							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-575.jpg 575w,
-							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-300.jpg 296w,
+							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-575.jpg 571w,
+							assets/images/gallery/ilmari-kumpunen/3-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -554,17 +685,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/marco-iozzi/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Marco Iozzi"
+						
+						
+						src="assets/images/gallery/marco-iozzi/2-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/marco-iozzi/2-thumb-2x-300.jpg 300w,
-							assets/images/gallery/marco-iozzi/2-thumb-2x-575.jpg 575w,
-							assets/images/gallery/marco-iozzi/2-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/marco-iozzi/2-thumb-2x-300.jpg 296w,
+							assets/images/gallery/marco-iozzi/2-thumb-2x-575.jpg 571w,
+							assets/images/gallery/marco-iozzi/2-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -573,17 +711,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/marco-iozzi/3.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Marco Iozzi"
+						
+						
+						src="assets/images/gallery/marco-iozzi/3-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/marco-iozzi/3-thumb-2x-300.jpg 300w,
-							assets/images/gallery/marco-iozzi/3-thumb-2x-575.jpg 575w,
-							assets/images/gallery/marco-iozzi/3-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/marco-iozzi/3-thumb-2x-300.jpg 296w,
+							assets/images/gallery/marco-iozzi/3-thumb-2x-575.jpg 571w,
+							assets/images/gallery/marco-iozzi/3-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -592,17 +737,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/jukka-lehto/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Jukka Lehto"
+						
+						
+						src="assets/images/gallery/jukka-lehto/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/jukka-lehto/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/jukka-lehto/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/jukka-lehto/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/jukka-lehto/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/jukka-lehto/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/jukka-lehto/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -611,17 +763,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/sterling-osment/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Sterling Osment"
+						
+						
+						src="assets/images/gallery/sterling-osment/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/sterling-osment/1-thumb-300.jpg 300w,
-							assets/images/gallery/sterling-osment/1-thumb-575.jpg 575w,
-							assets/images/gallery/sterling-osment/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/sterling-osment/1-thumb-300.jpg 147w,
+							assets/images/gallery/sterling-osment/1-thumb-575.jpg 285w,
+							assets/images/gallery/sterling-osment/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -630,17 +789,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/subin-rajendran/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Subin Rajendran"
+						
+						
+						src="assets/images/gallery/subin-rajendran/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/subin-rajendran/1-thumb-300.jpg 300w,
-							assets/images/gallery/subin-rajendran/1-thumb-575.jpg 575w,
-							assets/images/gallery/subin-rajendran/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/subin-rajendran/1-thumb-300.jpg 147w,
+							assets/images/gallery/subin-rajendran/1-thumb-575.jpg 285w,
+							assets/images/gallery/subin-rajendran/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -649,17 +815,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/subin-rajendran/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Subin Rajendran"
+						
+						
+						src="assets/images/gallery/subin-rajendran/2-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/subin-rajendran/2-thumb-300.jpg 300w,
-							assets/images/gallery/subin-rajendran/2-thumb-575.jpg 575w,
-							assets/images/gallery/subin-rajendran/2-thumb-1704.jpg 1704w,
+							assets/images/gallery/subin-rajendran/2-thumb-300.jpg 147w,
+							assets/images/gallery/subin-rajendran/2-thumb-575.jpg 285w,
+							assets/images/gallery/subin-rajendran/2-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -668,17 +841,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/subin-rajendran/3.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Subin Rajendran"
+						
+						
+						src="assets/images/gallery/subin-rajendran/3-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/subin-rajendran/3-thumb-300.jpg 300w,
-							assets/images/gallery/subin-rajendran/3-thumb-575.jpg 575w,
-							assets/images/gallery/subin-rajendran/3-thumb-1704.jpg 1704w,
+							assets/images/gallery/subin-rajendran/3-thumb-300.jpg 147w,
+							assets/images/gallery/subin-rajendran/3-thumb-575.jpg 285w,
+							assets/images/gallery/subin-rajendran/3-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -687,17 +867,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/lee-petty/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Lee Petty"
+						
+						
+						src="assets/images/gallery/lee-petty/2-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/lee-petty/2-thumb-2x-300.jpg 300w,
-							assets/images/gallery/lee-petty/2-thumb-2x-575.jpg 575w,
-							assets/images/gallery/lee-petty/2-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/lee-petty/2-thumb-2x-300.jpg 296w,
+							assets/images/gallery/lee-petty/2-thumb-2x-575.jpg 571w,
+							assets/images/gallery/lee-petty/2-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -706,17 +893,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/marco-iozzi/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Marco Iozzi"
+						
+						
+						src="assets/images/gallery/marco-iozzi/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/marco-iozzi/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/marco-iozzi/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/marco-iozzi/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/marco-iozzi/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/marco-iozzi/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/marco-iozzi/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -725,17 +919,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/vincent-mactiernan/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Vincent MacTiernan"
+						
+						
+						src="assets/images/gallery/vincent-mactiernan/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/vincent-mactiernan/1-thumb-300.jpg 300w,
-							assets/images/gallery/vincent-mactiernan/1-thumb-575.jpg 575w,
-							assets/images/gallery/vincent-mactiernan/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/vincent-mactiernan/1-thumb-300.jpg 147w,
+							assets/images/gallery/vincent-mactiernan/1-thumb-575.jpg 285w,
+							assets/images/gallery/vincent-mactiernan/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -744,17 +945,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/vincent-mactiernan/2.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Vincent MacTiernan"
+						
+						
+						src="assets/images/gallery/vincent-mactiernan/2-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/vincent-mactiernan/2-thumb-300.jpg 300w,
-							assets/images/gallery/vincent-mactiernan/2-thumb-575.jpg 575w,
-							assets/images/gallery/vincent-mactiernan/2-thumb-1704.jpg 1704w,
+							assets/images/gallery/vincent-mactiernan/2-thumb-300.jpg 147w,
+							assets/images/gallery/vincent-mactiernan/2-thumb-575.jpg 285w,
+							assets/images/gallery/vincent-mactiernan/2-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -763,17 +971,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/scott-warren/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Scott Warren"
+						
+						
+						src="assets/images/gallery/scott-warren/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/scott-warren/1-thumb-300.jpg 300w,
-							assets/images/gallery/scott-warren/1-thumb-575.jpg 575w,
-							assets/images/gallery/scott-warren/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/scott-warren/1-thumb-300.jpg 147w,
+							assets/images/gallery/scott-warren/1-thumb-575.jpg 285w,
+							assets/images/gallery/scott-warren/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -782,17 +997,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork ">
 				<a href="assets/images/gallery/tomasz-sadzinica/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Tomasz Sadzinica"
+						
+						
+						src="assets/images/gallery/tomasz-sadzinica/1-thumb-1704.jpg"
 						srcset="
-							assets/images/gallery/tomasz-sadzinica/1-thumb-300.jpg 300w,
-							assets/images/gallery/tomasz-sadzinica/1-thumb-575.jpg 575w,
-							assets/images/gallery/tomasz-sadzinica/1-thumb-1704.jpg 1704w,
+							assets/images/gallery/tomasz-sadzinica/1-thumb-300.jpg 147w,
+							assets/images/gallery/tomasz-sadzinica/1-thumb-575.jpg 285w,
+							assets/images/gallery/tomasz-sadzinica/1-thumb-1704.jpg 424w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -801,17 +1023,24 @@
 				</figcaption>
 			</figure>
 		
-			
 			<figure class="gallery__artwork gallery__artwork--wide">
 				<a href="assets/images/gallery/ryan-richmond/1.jpg" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by Ryan Richmond"
+						
+						
+						src="assets/images/gallery/ryan-richmond/1-thumb-2x-1704.jpg"
 						srcset="
-							assets/images/gallery/ryan-richmond/1-thumb-2x-300.jpg 300w,
-							assets/images/gallery/ryan-richmond/1-thumb-2x-575.jpg 575w,
-							assets/images/gallery/ryan-richmond/1-thumb-2x-1704.jpg 1704w,
+							assets/images/gallery/ryan-richmond/1-thumb-2x-300.jpg 296w,
+							assets/images/gallery/ryan-richmond/1-thumb-2x-575.jpg 571w,
+							assets/images/gallery/ryan-richmond/1-thumb-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						
 					>
 				</a>
 				<figcaption>
@@ -1106,7 +1335,7 @@
 	</div>
 </div>	<div class="big-gap"></div>
 	<div class="left-indent size-6">
-	<footer class="footer" role="navigation" aria-label="Footer">
+	<footer class="footer" aria-label="Footer">
 		<div class="footer__links">
 			<a href="https://www.physicaladdons.com/psa/getting-started/" class="footer__link">Documentation</a>
 			<a href="https://blenderartists.org/t/physical-starlight-and-atmosphere-addon-for-2-8-v1-2/1185314/371" class="footer__link">Blender Artists forum</a>

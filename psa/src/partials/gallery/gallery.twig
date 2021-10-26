@@ -376,17 +376,36 @@
 	</div>
 	<div class="gallery__grid">
 		{% for artwork in artworks %}
-			{% set size = (artwork.size == 2) ? '-2x' : '' %}
 			<figure class="gallery__artwork {{ (artwork.size == 2) ? 'gallery__artwork--wide' : '' }}">
 				<a href="{{artwork.image.src }}" data-fancybox="galleryfb">
 					<img
 						alt="Artwork by {{artwork.author}}"
+						
+						{% if artwork.size == 2 %}
+						src="{{artwork.image.thumb }}-2x-1704.jpg"
 						srcset="
-							{{artwork.image.thumb }}{{size}}-300.jpg 300w,
-							{{artwork.image.thumb }}{{size}}-575.jpg 575w,
-							{{artwork.image.thumb }}{{size}}-1704.jpg 1704w,
+							{{artwork.image.thumb }}-2x-300.jpg 296w,
+							{{artwork.image.thumb }}-2x-575.jpg 571w,
+							{{artwork.image.thumb }}-2x-1704.jpg 849w
 						"
-						sizes="100vw"
+						sizes="
+							(max-width: 576px) calc(100vw - 4px),
+							(max-width: 1700px) calc(50vw - 3px),
+            				847px
+						"
+						{% else %}
+						src="{{artwork.image.thumb }}-1704.jpg"
+						srcset="
+							{{artwork.image.thumb }}-300.jpg 147w,
+							{{artwork.image.thumb }}-575.jpg 285w,
+							{{artwork.image.thumb }}-1704.jpg 424w
+						"
+						sizes="
+							(max-width: 576px) calc(50vw - 3px),
+							(max-width: 1700px) calc(25vw - 2,5px),
+            				423px
+						"
+						{% endif %}
 					>
 				</a>
 				<figcaption>
