@@ -155,6 +155,71 @@ gulp.task("images-presets", function () {
 	  .pipe(gulp.dest(destroot + "assets/images/gallery"));
   });
 
+  gulp.task("images-testimonials", function () {
+	return gulp
+	  .src("images/testimonials/*.jpg")
+	  .pipe(
+		responsive(
+		  {
+			"*.jpg": [
+			  {
+				width: 100,
+				rename: { suffix: "-100" },
+			  },
+			  {
+				width: 200,
+				rename: { suffix: "-200" },
+			  },
+			],
+		  },
+		  {
+			// Global configuration for all images
+			quality: 95,
+			progressive: true,
+			withMetadata: false,
+		  }
+		)
+	  )
+	  .pipe(gulp.dest(destroot + "assets/images/testimonials"));
+  });
+
+  gulp.task("images-ourstory", function () {
+	return gulp
+	  .src("images/our-story/*.jpg")
+	  .pipe(
+		responsive(
+		  {
+			"*.jpg": [
+			  {
+				width: 100,
+				rename: { suffix: "-200" },
+			  },
+			  {
+				width: 320,
+				rename: { suffix: "-320" },
+			  },
+			  {
+				width: 450,
+				rename: { suffix: "-450" },
+			  },
+			  {
+				width: 600,
+				rename: { suffix: "-600" },
+			  },
+			],
+		  },
+		  {
+			// Global configuration for all images
+			quality: 95,
+			progressive: true,
+			withMetadata: false,
+		  }
+		)
+	  )
+	  .pipe(gulp.dest(destroot + "assets/images/our-story"));
+  });
+
+
 gulp.task("watch", function () {
   gulp.watch("./**/*.scss", gulp.series("css"));
   gulp.watch("./**/*.twig", gulp.series("compile"));

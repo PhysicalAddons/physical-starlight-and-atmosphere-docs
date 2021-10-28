@@ -6,7 +6,7 @@
         'jobtitle': 'Senior Concept Artist at 343 Industries',
         'body': 'Physical Starlight and Atmosphere has been an invaluable tool for me in my personal/professional work and a huge missing link for lighting in Blender. It still feels like magic everytime i use it, i can\'t recommend it highly enough!',
         'image': {
-            'src':'assets/images/testimonials/ben-mauro.jpg',
+            'src':'assets/images/testimonials/ben-mauro',
             'alt':'Ben Mauro'
         }
     },
@@ -18,7 +18,7 @@
         'body': 'As a lighting artist, focusing on the overall mood of an image is super important. Physical Starlight and Atmosphere is based on reality, so I can spend all of my time iterating on the look without worrying about how to achieve it.
 ',
         'image': {
-            'src':'assets/images/testimonials/scott-warren.jpg',
+            'src':'assets/images/testimonials/scott-warren',
             'alt':'Scott Warren'
         }
     },
@@ -29,7 +29,7 @@
         'jobtitle': 'Concept Artist',
         'body': 'I love the tool. It has been my go-to since I picked it up a couple of months ago.',
         'image': {
-            'src':'assets/images/testimonials/ryan-richmond.jpg',
+            'src':'assets/images/testimonials/ryan-richmond',
             'alt':'Ryan Richmond'
         }
     },
@@ -40,7 +40,7 @@
         'jobtitle': 'Concept Artist',
         'body': 'My work life has become super easier since I started using Physical Starlight and Atmosphere, it cut down a lot of technical headache associated with setting up a believable lighting condition and gave me more time to concentrate on the creative part of my design process.',
         'image': {
-            'src':'assets/images/testimonials/subin-rajendran.jpg',
+            'src':'assets/images/testimonials/subin-rajendran',
             'alt':'Subin Rajendran'
         }
     }
@@ -56,7 +56,18 @@
             {% for testimonial in testimonials %}
             <figure class="testimonials__figure {{ testimonial.active ? 'testimonials__figure--active' : '' }}" tabindex="0">
                 <figcaption class="testimonials__author">
-                    <img src="{{ testimonial.image.src }}" alt="{{ testimonial.image.alt }}" />
+                    <img
+                        src="{{ testimonial.image.src }}-200.jpg"
+                        alt="{{ testimonial.image.alt }}"
+						srcset="
+							{{ testimonial.image.src }}-100.jpg 100w,
+							{{ testimonial.image.src }}-200.jpg 200w
+						"
+						sizes="
+							(max-width: 576px) 82px,
+							100px
+						"
+                    />
                     <div>{{ testimonial.fullname }}</div>
                     <div>{{ testimonial.jobtitle }}</div>
                     <div>{{ testimonial.knownfor }}</div>
