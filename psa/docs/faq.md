@@ -2,7 +2,22 @@
 No. If you have bought it already then all future updates are included for free (Royalty Free). To get the new version
 of the addon go to the store you made your purchase (either 
 [BlenderMarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or
-[Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version.
+[Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version. For more information see [updating](/psa/updating/) procedure.
+
+### What is the difference between [Nishita sky](https://www.blender.org/download/releases/2-90/) texture and this addon?
+'Nishita Sky' is one of many mathematical methods of rendering Earth's atmosphere in daylight.
+It is an analytical model meaning it uses color and luminance values measured during daylight by scientists on Earth.
+Its advantage is that it is simple and fast and delivers realistic renders on ground level during the daytime.
+Disadvantages:
+
+- it only works in Cycles for now (no Eevee support)
+- No full day/night cycle
+- no correct appearance above the ground level
+- only works for limited weather conditions on Earth
+
+PSA on the other hand uses a procedural method of calculating the atmosphere based on many tweakable parameters.
+So it does not limit the sky color to only Earth's atmosphere. It has a full day/night cycle and looks correct above ground
+level. And it has object fog included. PSA works in Eevee render as well as Cycles.
 
 ### _Physical Starlight and Atmosphere_ is not installing!      
 - Please remove the old addon folder before [installing](/psa/getting-started/#installation) a new version.

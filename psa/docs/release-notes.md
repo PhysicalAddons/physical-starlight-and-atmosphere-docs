@@ -1,4 +1,60 @@
+### 1.4.2-beta <small>- released 26.08.2021</small>
+
+`new:`{: .label-new }
+
+- New UI for Object Fog. Better control over when Object Fog should be applied and when removed. 
+
+`improvements:`{: .label-improvements }
+
+- Improved general addon performance.
+- Reduced RAM used by Object Fog.
+- Clouds UI moved to the Atmosphere tab.
+- Added extra rotation and location parameters for the Clouds.
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue when rendering animation (hitting F12 key) gets a consistent crash. {[#43](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/43)}
+- Fixed issue when using cloud feature were not enabled when using Cycles rendering engine by default. {[#42](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/42)}
+- Fixed issue when animating sun via Sun Position addon resulted in incomplete animation. {[#7](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/7)}
+- Alpha fix. {[#45](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/45)}
+
+
+### 1.4.1-beta <small>- released 20.06.2021</small>
+
+`improvements:`{: .label-improvements }
+
+- Increase shadow visibility from 200m to 2km.
+- Set Experimental features enabled by default.
+
+### 1.4.0-beta <small>- released 17.06.2021</small>
+
+`new:`{: .label-new }
+
+- Procedural Cloud system.
+
+`improvements:`{: .label-improvements }
+
+- Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
+- Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
+- Whenever a blendfile is loaded it correctly loads preset defaults it is based on.
+
+
+`fixed:`{: .label-fixed }
+
+- Fixed issues when installing a new addon version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)}
+- Fixed issue when addon was not working in multiple scenes. {[#26](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/26)}
+- Fixed issue when _Material Fog_ is active adding a new material caused to lose user made changes in the Shader editor.
+  {[#34](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/34)}
+
+### 1.3.1 <small>- released 16.04.2021</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue that prevents dynamically creating classes in Blender v2.93 and breaks the preset functionality.
+  {[#38](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/38)}
+
 ### 1.3.0 <small>- released 13.11.2020</small>
+
 [![Release 1.3.0 banner](img/releases/psa1.3.0.png)](img/releases/psa1.3.0.png)
 
 `new:`{: .label-new }   
