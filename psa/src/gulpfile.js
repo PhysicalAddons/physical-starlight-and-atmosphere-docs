@@ -39,11 +39,11 @@ gulp.task("browserSync", function () {
 
 gulp.task("images-presets", function () {
   return gulp
-    .src("images/presets/**/*.jpg")
+    .src("images/presets/**/*.png")
     .pipe(
       responsive(
         {
-          "*.jpg": [
+          "*.png": [
             {
               width: 300,
               rename: { suffix: "-300" },
@@ -64,6 +64,7 @@ gulp.task("images-presets", function () {
         },
         {
           // Global configuration for all images
+          format: 'jpeg',
           quality: 95,
           progressive: true,
           withMetadata: false,
@@ -73,41 +74,6 @@ gulp.task("images-presets", function () {
     .pipe(gulp.dest(destroot + "assets/images/presets"));
 });
 
-gulp.task("images-presets", function () {
-  return gulp
-    .src("images/presets/*.jpg")
-    .pipe(
-      responsive(
-        {
-          "*.jpg": [
-            {
-              width: 300,
-              rename: { suffix: "-300" },
-            },
-            {
-              width: 600,
-              rename: { suffix: "-600" },
-            },
-            {
-              width: 1200,
-              rename: { suffix: "-1200" },
-            },
-            {
-              width: 1600,
-              rename: { suffix: "-1600" },
-            },
-          ],
-        },
-        {
-          // Global configuration for all images
-          quality: 95,
-          progressive: true,
-          withMetadata: false,
-        }
-      )
-    )
-    .pipe(gulp.dest(destroot + "assets/images/presets"));
-});
 
 gulp.task("images-gallery", function () {
   return gulp
