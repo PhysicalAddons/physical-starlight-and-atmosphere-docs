@@ -1,3 +1,25 @@
+Whenever a new version is released, it will appear in either Blendermarket or Gumroad marketplace where you bought the addon.
+To find the latest addon version, navigate to:
+
+=== "Blendermarket"
+    1. Go to [Blendermarket Orders](https://blendermarket.com/account/orders){:target="_blank"}
+    ```
+    Menu (right top corner)  > Orders > Downloads (Go to Downloads link)
+    ```
+    2. Download the `.zip` file with the latest version.
+    3. _If exists_, remove the previous `physical-starlight-atmosphere` version from Blender .
+    4. Install `.zip` file by following normal Blender addon [installation process](/psa/getting-started/#installation).
+=== "Gumroad"
+    1. Go to [Gumroad Library](https://gumroad.com/library){:target="_blank"}
+    ```
+    Library > (hover on a product) View content
+    ```
+    2. Download the `.zip` file with the latest version.
+    3. _If exists_, remove the previous `physical-starlight-atmosphere` version from Blender .
+    4. Install `.zip` file by following normal Blender addon [installation process](/psa/getting-started/#installation).
+    
+
+## Troubleshooting 
 If updating to a newer add-on version (or the installation method did not work) recommendation is to remove previous
  a version of the addon. For now this is the only option we can assure that addon will work properly. To do that go to
  the Blender addons location:
