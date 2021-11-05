@@ -39,11 +39,11 @@ gulp.task("browserSync", function () {
 
 gulp.task("images-presets", function () {
   return gulp
-    .src("images/presets/**/*.png")
+    .src("images/presets/*.jpg")
     .pipe(
       responsive(
         {
-          "*.png": [
+          "*.jpg": [
             {
               width: 300,
               rename: { suffix: "-300" },
