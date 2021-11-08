@@ -1,8 +1,49 @@
+{% set timeline = [
+    {
+        'empty': true,
+        'title': 'Model',
+        'link': '#preset-model',
+        'duration': 1.5
+    },
+    {
+        'empty': false,
+        'title': 'Earth',
+        'link': '#preset-earth',
+        'duration': 4
+    },
+    {
+        'empty': false,
+        'title': 'Night',
+        'link': '#preset-night',
+        'duration': 4
+    },
+    {
+        'empty': false,
+        'title': 'Nishita',
+        'link': '#preset-nishita',
+        'duration': 4
+    },
+    {
+        'empty': false,
+        'title': 'Mars',
+        'link': '#preset-mars',
+        'duration': 4
+    },
+    {
+        'empty': false,
+        'title': 'Retro',
+        'link': '#preset-retro',
+        'duration': 4
+    },
+] %} 
+
 <div class="timeline">
-    <a href="#preset-model" class="timeline__section timeline__section--empty" data-duration="1" title="Model">
+    {% for element in timeline %}
+    <a href="{{element.link}}" class="timeline__section{{ element.empty ? ' timeline__section--empty' : '' }}" data-duration="{{element.duration}}" title="{{element.title}}">
         <div class="timeline__progress"></div>
     </a>
-    <a href="#preset-earth" class="timeline__section" data-duration="4" title="Earth">
+    {% endfor %}
+    {# <a href="#preset-earth" class="timeline__section" data-duration="4" title="Earth">
         <div class="timeline__progress"></div>
     </a>
     <a href="#preset-earth1" class="timeline__section" data-duration="4" title="Earth #2">
@@ -27,5 +68,5 @@
     </a>
     <a href="#preset-retrowave" class="timeline__section" data-duration="4" title="Retro">
         <div class="timeline__progress"></div>
-    </a>
+    </a> #}
 </div>
