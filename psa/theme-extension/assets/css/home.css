@@ -692,18 +692,23 @@ body {
 }
 
 .videoplayer {
-  text-align: center;
   position: relative;
+  display: block;
+  overflow: hidden;
 }
-.videoplayer video {
-  box-sizing: border-box;
-  max-width: 100%;
-  border-radius: 20px;
-  border: 14px solid #141414;
-  cursor: pointer;
+.videoplayer:before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
 }
-.videoplayer video:focus {
-  outline: none;
+.videoplayer > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .steps {
