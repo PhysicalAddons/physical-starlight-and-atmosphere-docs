@@ -3,10 +3,32 @@ $body-min-height: 366px;
 
 .pricing {
 	overflow: hidden;
+	&__badge {
+		position: relative;
+		> .badge {
+			position: absolute;
+			bottom: calc(100% - 90px);
+			right: calc(100% - 90px);
+			@include respond-below(sm) {
+				top: -40px;
+				left: auto;
+				right: 50px;
+			}
+			@include respond-below(ml) {
+				top: 90px;
+				right: -50px;
+			}
+			@include respond-below(mm) {
+				top: 140px;
+			}
+		}
+	}
 	&__title {
 		@extend .h2;
 		margin-bottom: 36px;
 		max-width: 315px;
+		position: relative;
+		z-index: 2;
 	}
 	&__wrapper {
 		position: relative; // needed so that horizontal lines go inf. both ways
@@ -114,6 +136,16 @@ $body-min-height: 366px;
 			margin-top: 8px;
 			margin-bottom: 36px;
 			@extend .h3;
+			&:after {
+				display: inline-block;
+				content: attr(data-before);
+				margin-left: 12px;
+				color: #312DFF;
+				text-decoration: line-through;
+				@include respond-below(lg) {
+					font-size: 16px;
+				}
+			}
 		}
 
 
