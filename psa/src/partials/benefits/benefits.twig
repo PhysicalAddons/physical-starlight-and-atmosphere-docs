@@ -5,7 +5,7 @@
         'title': 'Save time',
         'description': 'This addon saves hours that usually are invested in manually creating sky, atmosphere and placing sun object and stars, and automates it within a single click.',
         'image': {
-            'src':'assets/images/benefits/antenna3.png',
+            'src':'assets/images/benefits/click',
             'alt':'Save time'
         }
     },
@@ -15,7 +15,7 @@
         'title': 'By professionals',
         'description': 'We have more than a decade of experience with atmosphere rendering techniques in computer graphics industry. Physical Starlight and atmosphere addon is used in entertainment, film, automotive, aerospace and archvis industries.',
         'image': {
-            'src':'assets/images/benefits/antenna1.png',
+            'src':'assets/images/benefits/artists',
             'alt':'By professionals'
         }
     },
@@ -25,7 +25,7 @@
         'title': 'Premade presets',
         'description': 'Presets allow to store a snapshot of your customized atmosphere settings and return to it later or use already predefined presets provided by the addon.',
         'image': {
-            'src':'assets/images/benefits/presets.jpg',
+            'src':'assets/images/benefits/presets',
             'alt':'Premade presets'
         }
     },
@@ -36,7 +36,7 @@
         'title': 'Highly customizable',
         'description': 'We use a procedural method of calculating the atmosphere based on many tweakable parameters, so that sky color is not limited only to the Earth\'s atmosphere.',
         'image': {
-            'src':'assets/images/benefits/antenna4.png',
+            'src':'assets/images/benefits/customize',
             'alt':'Highly customizable'
         }
     },
@@ -46,7 +46,7 @@
         'title': 'Control time and weather',
         'description': 'Works well in combination with Blender Sun Position addon. You can simulate any weather at any time.',
         'image': {
-            'src':'assets/images/benefits/timeofday.jpg',
+            'src':'assets/images/benefits/timeofday',
             'alt':'Control time and weather'
         }
     }
@@ -74,10 +74,22 @@
                         aria-labelledby="benefit-header-{{ benefit.id }}"
                         {{ benefit.active ? '' : 'hidden' }}
                 >
-                   <img
-                           src="{{ benefit.image.src }}"
-                           alt="{{ benefit.image.alt }}"
+                   <img 
+                        src="{{ benefit.image.src }}-845.jpg"
+                        srcset="
+                            {{ benefit.image.src }}-365.jpg 365w,
+                            {{ benefit.image.src }}-475.jpg 475w,
+                            {{ benefit.image.src }}-845.jpg 845w
+                        "
+                        
+                        sizes="
+                            (max-width: 576px) 364px,
+                            (max-width: 930px) 52.8vw,
+                            33.vw
+                        "
+                        alt="{{ benefit.image.alt }}"
                    />
+                    
                 </section>
                 {% endfor %}
             </div>

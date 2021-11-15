@@ -1446,10 +1446,6 @@ body {
   flex-direction: column;
   justify-content: center;
   transform: rotate(-16deg);
-  transition: transform 0.1s ease-in-out;
-}
-.badge:hover {
-  transform: rotate(8deg);
 }
 .badge__title {
   font-size: 16px;

@@ -45,20 +45,28 @@ gulp.task("images-presets", function () {
         {
           "*.jpg": [
             {
-              width: 300,
-              rename: { suffix: "-300" },
+              width: 1220,
+              rename: { suffix: "-1220" },
             },
             {
-              width: 600,
-              rename: { suffix: "-600" },
+              width: 1300,
+              rename: { suffix: "-1300" },
             },
             {
-              width: 1200,
-              rename: { suffix: "-1200" },
+              width: 1500,
+              rename: { suffix: "-1500" },
             },
             {
-              width: 1600,
-              rename: { suffix: "-1600" },
+              width: 1700,
+              rename: { suffix: "-1700" },
+            },
+            {
+              width: 2050,
+              rename: { suffix: "-2050" },
+            },
+            {
+              width: 2560,
+              rename: { suffix: "-2560" },
             },
           ],
         },
@@ -202,6 +210,38 @@ gulp.task("images-ourstory", function () {
       )
     )
     .pipe(gulp.dest(destroot + "assets/images/our-story"));
+});
+
+gulp.task("images-benefits", function () {
+  return gulp
+    .src("images/benefits/*.jpg")
+    .pipe(
+      responsive(
+        {
+          "*.jpg": [
+            {
+              width: 365,
+              rename: { suffix: "-365" },
+            },
+            {
+              width: 475,
+              rename: { suffix: "-475" },
+            },
+            {
+              width: 845,
+              rename: { suffix: "-845" },
+            },
+          ],
+        },
+        {
+          // Global configuration for all images
+          quality: 95,
+          progressive: true,
+          withMetadata: false,
+        }
+      )
+    )
+    .pipe(gulp.dest(destroot + "assets/images/benefits"));
 });
 
 gulp.task("watch", function () {
