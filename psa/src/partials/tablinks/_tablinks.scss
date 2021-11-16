@@ -14,12 +14,12 @@
     display: block;
     position: relative; // for cutting space
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 500;
     text-decoration: none;
     @include respond-below(xs) {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     &:after { // the cutting space in line below
@@ -35,6 +35,7 @@
     }
 
     &:before { // play btn
+      display: none;
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2em0uNjY2LTE0LjIwNnYxMi40MTJMMTIuNjE3IDggMS4zMzIgMS43OTR6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9Ii41Ii8+PC9zdmc+");
       margin-right: 8px;
       @include respond-below(xs) {
@@ -60,7 +61,7 @@
   }
   &__line {
     background-color: white;
-    width: 33%;
+    width: 19.5%;
     transition: transform .3s ease-in-out;
   }
 }
