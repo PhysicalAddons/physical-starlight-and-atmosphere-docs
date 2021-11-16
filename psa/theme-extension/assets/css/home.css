@@ -923,7 +923,7 @@ body {
   right: -33%;
   width: 66%;
 }
-.benefits__panel > img {
+.benefits__panel img {
   max-width: 100%;
 }
 .benefits__panel + .benefits__header {

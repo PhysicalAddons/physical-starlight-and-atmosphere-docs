@@ -74,6 +74,7 @@
                         aria-labelledby="benefit-header-{{ benefit.id }}"
                         {{ benefit.active ? '' : 'hidden' }}
                 >
+                    <a href="{{ benefit.image.src }}-845.jpg" data-fancybox="benefits-{{ benefit.id }}">
                    <img 
                         src="{{ benefit.image.src }}-845.jpg"
                         srcset="
@@ -89,6 +90,7 @@
                         "
                         alt="{{ benefit.image.alt }}"
                    />
+                   </a>
                     
                 </section>
                 {% endfor %}
