@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/"
+  to = "/psa"
+  status = 301
+  force = false
