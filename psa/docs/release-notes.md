@@ -1,3 +1,21 @@
+### 1.4.3-beta <small>- released 07.12.2021</small>
+
+`improvements:`{: .label-improvements }
+
+- Now clouds can be added to the presets.
+
+`fixed:`{: .label-fixed }
+
+- Fixed blender 3.0 compatibility issues.
+
+### 1.3.2 <small>- released 07.12.2021</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed blender 3.0 compatibility issues.
+
+
+
 ### 1.4.2-beta <small>- released 26.08.2021</small>
 
 `new:`{: .label-new }
