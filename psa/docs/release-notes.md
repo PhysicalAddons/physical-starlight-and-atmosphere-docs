@@ -1,3 +1,15 @@
+### 1.4.0 <small>- released xx.12.2021</small>
+[![Release 1.4.0 banner](img/releases/psa1.3.0.png)](img/releases/psa1.3.0.png)
+
+`new:`{: .label-new }
+
+- Added support for ACES color space
+
+`improvements:`{: .label-improvements }
+
+- Binary Sun is now out of the experimental features
+- Improved UI for preferences
+
 ### 1.4.3-beta <small>- released 07.12.2021</small>
 
 `improvements:`{: .label-improvements }
