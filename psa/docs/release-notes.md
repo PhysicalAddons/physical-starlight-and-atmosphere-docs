@@ -1,3 +1,19 @@
+### 1.4.4-beta <small>- released 14.01.2021</small>
+
+`new:`{: .label-new }
+
+- Added support for ACES color space
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue that after update to v1.4.x gave incorrect values when using 'Use real world physical values' feature
+- Fixed issue that gave an TypeError when resetting clouds to defaults using reset button.
+
+`improvements:`{: .label-improvements }
+
+- Binary Sun is now out of the experimental features
+- Improved UI for preferences
+
 ### 1.4.3-beta <small>- released 07.12.2021</small>
 
 `improvements:`{: .label-improvements }
