@@ -105,6 +105,9 @@ $body-min-height: 366px;
 			> li {
 				margin-bottom: 20px;
 				color: $color-text-alt;
+				> a {
+					color: $color-text-alt;
+				}
 				&.plus {
 					color: $color-text;
 				}
