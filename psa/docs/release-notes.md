@@ -1,4 +1,22 @@
-### 1.4.4-beta <small>- released 14.01.2021</small>
+### 1.5.0 <small>- released 03.03.2022</small>
+`new:`{: .label-new }
+
+- Now storing information in **world data block** instead of scene.
+- Now using built in Blender **Asset Browser** instead of custom preset functionality.
+- **5 new presets** (assets) - earth2, earth3, overcast, tatooine, thick haze
+- Implemented update script which allows without issues to transfer existing projects with older PSA versions to PSA v1.5.0.  
+
+`improvements:`{: .label-improvements }
+
+- Atmosphere is applied to the existing world, instead of creating a new world with a PSA atmosphere.
+- Improved garbage collection for Node Groups.  
+
+`fixed:`{: .label-fixed }
+
+- **Fixed Blender crash** that occured when rendering. {[#43](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/43)}
+- Fixed overexposed Mars preset {[#61](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/61)}
+
+### 1.4.4-beta <small>- released 14.12.2021</small>
 
 `new:`{: .label-new }
 
