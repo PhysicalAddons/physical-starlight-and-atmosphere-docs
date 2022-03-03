@@ -1,5 +1,5 @@
 ### Do I have to pay for updates?
-No. If you have bought it already then all future updates are included for free (Royalty Free). To get the new version
+No. If you have bought it already then all future updates are included for free. To get the new version
 of the addon go to the store you made your purchase (either 
 [BlenderMarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or
 [Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version. For more information see [updating](/psa/updating/) procedure.
