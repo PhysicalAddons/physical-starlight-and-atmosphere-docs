@@ -1,22 +1,22 @@
-Presets allow to store a snapshot of your customized atmosphere settings and return to it later
+
+
+
+
+Assets allow to store a snapshot of your customized atmosphere settings and return to it later
 or use already predefined presets provided by the addon.
 
 !!! info
-    Presets are introduced in [v1.3.0](/psa/release-notes/#130-released-13112020). Till then default values were the
-    current values of the _Earth_ preset.
+     To be able to use PSA predefined assets you have to use Blender version 3.0 and above.
 
+## Importing assets
+1. download *assets.blend* file
+2. in Blender go to* Edit > Preferences* and open *File Paths* tab
+3. Under *Asset Libraries* click + symbol and point to the folder where *assets.blend* file is located.
+4. Assign a name to this library
 
-## Good to know
-* You can store presets with or without `azimuth` and `elevation` properties. This allows creating 2 kinds of presets: 
-    * sun position based (e.g. _Early morning_, _Foggy night_, etc.)
-    * atmosphere based (e.g. _Titan Atmosphere_, _Big Sun_, etc.)
-* There are 4 presets offered by addon - _Earth_, _Mars_, _Nishita_ and _Retrowave_.
-    * These are prefixed by `·` _(e.g. · Mars)_ and always located at the bottom of the preset list.
-    * If deleted, after re-enabling the addon they will be available again.
-* Whenever Blender is newly loaded or any preset gets deleted, `· Earth` is set as a default world.
-* Resetting sets properties to _selected preset_ default values.
+## Using assets
+1. In one of the Blender [existing Areas]((https://docs.blender.org/manual/en/3.0/interface/window_system/areas.html#areas))  open *Data > Asset Browser*
+2. Under the dropdown select a name you assigned to the library when importing assets.
+3. Select an asset and drop it in the view.
 
-### How to reset?
-* To _reset single property_, hover on it and press ++backspace++ (Blender default behavior)
-* To _reset section_ of properties to their defaults, click on the `reset` button in the bottom right corner
-of the property set (this doesn't reset `azimuth` and `elevation`).
+[![Asset Browser](img/UI/asset-browser.jpg)](img/UI/asset-browser.jpg)
