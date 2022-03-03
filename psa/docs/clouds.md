@@ -1,6 +1,3 @@
-!!! info
-    Clouds are introduced in [v1.4.0](/psa/release-notes/#140-released-17062021).
-
 Physical Clouds are based on Blender noise texture and projected on the atmosphere sphere. Sphere height can be modified by `Atmosphere > Scale Height` parameter.
 
 ## Parameters
