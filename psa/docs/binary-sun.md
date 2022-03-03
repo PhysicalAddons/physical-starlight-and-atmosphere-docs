@@ -1,6 +1,3 @@
-!!! warning "Experimental Feature"
-    This is an experimental feature and it may not be fully tested
-
 > A _binary star_ is a star system consisting of two stars orbiting around their common barycenter.
 > — <cite>[Wikipedia][1]</cite>
 
