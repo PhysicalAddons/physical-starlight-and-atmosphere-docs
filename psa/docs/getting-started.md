@@ -36,11 +36,11 @@ Older versions of the addon v1.0 and v1.1 work on [Blender 2.80](https://www.ble
 !!! important
     To see the sky, you have to be in "Rendered" Viewport Shading mode (click on the 4th sphere in the list up in the right corner of 3D viewport)
 
-[![First Run](img/first-run.png)](img/first-run.png)
+[![First Run](img/first-run.jpg)](img/first-run.jpg)
 
 !!! summary "What happens when addon is being enabled/disabled?"
-    - Default world shader node is replaced with "StarlightAtmosphere" node. When you uncheck the _Physical Atmosphere_ checkbox, it will be set back to the default world.
-    - Sun lamp `Sarlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you uncheck the _Physical Atmosphere_ checkbox, it will be removed.
+    - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you uncheck the _Physical Atmosphere_ checkbox, these nodes will be removed.
+    - Sun lamp `Sarlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you uncheck the _Physical Atmosphere_ checkbox, if no active PSA instances are found in other worlds it will be removed.
 
 ## Troubleshooting
 
