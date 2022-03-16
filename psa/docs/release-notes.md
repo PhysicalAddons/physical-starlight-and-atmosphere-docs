@@ -2,13 +2,13 @@
 
 `improvements:`{: .label-improvements }
 
-- Apply ACES modifier to applied assets.
 - Space out shader nodes when the addon is enabled.
 - Space out shader nodes for existing 10 atmosphere assets.
 - Reduced size of assets file.
 
 `fixed:`{: .label-fixed }
 
+- Apply ACES modifier to applied assets.
 - Removed reset buttons as they became obsolete after migrating presets to the asset browser.
 - Fixed Nishita preset by removing green hue.
 - Fixed fog to include physical value multiplier.
