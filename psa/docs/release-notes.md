@@ -1,4 +1,24 @@
+### 1.5.1 <small>- released 17.03.2022</small>
+
+`improvements:`{: .label-improvements }
+
+- Space out shader nodes when the addon is enabled.
+- Space out shader nodes for existing 10 atmosphere assets.
+- Reduced size of assets file.
+
+`fixed:`{: .label-fixed }
+
+- Apply ACES modifier to applied assets.
+- Removed reset buttons as they became obsolete after migrating presets to the asset browser.
+- Fixed Nishita preset by removing green hue.
+- Fixed fog to include physical value multiplier.
+- Fixed `toolbar enabled` setting not functioning properly.
+
+
 ### 1.5.0 <small>- released 03.03.2022</small>
+
+[![Release 1.3.0 banner](img/releases/psa1.5.0.jpg)](img/releases/psa1.5.0.jpg)
+
 `new:`{: .label-new }
 
 - Now storing information in **world data block** instead of scene.
