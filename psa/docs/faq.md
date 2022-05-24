@@ -3,12 +3,6 @@
     of the addon go to the store you made your purchase (either 
     [BlenderMarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or
     [Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version. For more information see [updating](/psa/updating/) procedure.
-    
-??? cite "Do I have to pay for updates?"
-    No. If you have bought it already then all future updates are included for free. To get the new version
-    of the addon go to the store you made your purchase (either 
-    [BlenderMarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or
-    [Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version. For more information see [updating](/psa/updating/) procedure.
 
 ??? cite "Everything looks blown-out (all white)! What am I missing?"
     Most probobly you may have enabled an advanced feature that enables usage of [physical values](/psa/customization/#use-real-world-physical-values). This feature is meant for users that work with photography tools or want that extra detail. This requires a bit more fiddling but require to manually adjust exposure settings. This [forum reply](https://blenderartists.org/t/physical-starlight-and-atmosphere-addon-for-2-9-v1-4-now-with-clouds/1185314/516) may give more insight what it is all about. To make it look "normal" uncheck the `use real world physical values` option in the addon preferences.
