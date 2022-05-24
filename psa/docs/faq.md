@@ -1,4 +1,4 @@
-???+ cite "Do I have to pay for updates?"
+???+ cite "Do I have to pay for the addon?"
     No. If you have bought it already then all future updates are included for free. To get the new version
     of the addon go to the store you made your purchase (either 
     [BlenderMarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or
