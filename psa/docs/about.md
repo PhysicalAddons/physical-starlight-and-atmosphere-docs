@@ -46,7 +46,7 @@ Procedural skies are more common in games industry, and there the industry have 
 
 During the years I have been working with, probably, every existing atmosphere system, starting from the good old O'Neil's "Accurate Atmospheric Scattering" method, to Preetham model, Eric Bruneton's planet rendering, and Hosek-Wilkie's physical sky model. Each of them have their strengths and, unfortunately, also weaknesses. In fact, none of the existing methods proved versatile enough worth my time making an addon for Blender.
 
-So I decided to develop a method from (mostly) a scratch - The starlight and skylight system I wish existed!
+So I decided to develop a method mostly from a scratch - The starlight and skylight system I wish existed!
 
 ___
 ###Story of "Physical Starlight and Atmosphere"
