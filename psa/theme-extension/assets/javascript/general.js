@@ -2,6 +2,7 @@ var General = (function (window) {
 
   function initialize() {
     _setFocusMethodForLinks();
+    _passReferalCodeToLinks();
   }
 
   function _setFocusMethodForLinks() {
@@ -21,6 +22,20 @@ var General = (function (window) {
       //   link.removeAttribute('data-focus-method');
       // });
     })
+  }
+
+  function _passReferalCodeToLinks() {
+    
+    var url = new URL(window.location);
+    var rcode = url.searchParams.get("v");
+    if(rcode!==null) {
+      var bmlinks = document.querySelectorAll("a[href*='blendermarket']")
+      bmlinks.forEach(function(link) {
+        href = link.href
+        conjugator = href.indexOf('?') !== -1 ? '&' : '?'
+        link.setAttribute('href', href+conjugator+'ref='+rcode);
+      })
+    }
   }
 
   return {
