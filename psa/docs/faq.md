@@ -35,7 +35,7 @@
     - _Physical Starlight and Atmosphere_ only works with Blender 2.8 and above.
 
 ??? cite "I use Cycles and see fireflies (strange white artifacts)"
-    Fireflies are abnormally bright pixels relative to their surroundings. Unfortunately using Cycles in combination with scenes that have low light levels will cause     fireflies. This effect can be avoided by increasing samples (Render properties > Sampling) or using Super Image Denoiser. For more detailed information see this       issue.
+    Fireflies are abnormally bright pixels relative to their surroundings. Unfortunately using Cycles in combination with scenes that have low light levels will cause     fireflies. This effect can be avoided by increasing samples (Render properties > Sampling) or using Super Image Denoiser. For more detailed information see [this       issue](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/22).
 
 
 !!! info "Didn't find your answer?"
