@@ -8,6 +8,8 @@
 
 - Fixed issue when moving azimuth or elevation values sometimes scene would not be redrawn. This issue also affected animations that animated azimuth and elevation properties. Now instead of using **azimuth** & **elevation** properties, **sun horizontal and vertical rotation** is used. The migration script should ensure swift version migration.
 
+- Fixed issue when preset from the Asset Browser was dropped into the scene, sun position were not updated. 
+
 ### 1.5.1 <small>- released 17.03.2022</small>
 
 `improvements:`{: .label-improvements }
