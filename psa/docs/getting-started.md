@@ -42,14 +42,68 @@ Older versions of the addon v1.0 and v1.1 work on [Blender 2.80](https://www.ble
     - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you uncheck the _Physical Atmosphere_ checkbox, these nodes will be removed.
     - Sun lamp `Sarlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you uncheck the _Physical Atmosphere_ checkbox, if no active PSA instances are found in other worlds it will be removed.
 
-## Troubleshooting
-
-Something didn't work as expected? Check out [Frequently Asked Questions](/psa/faq/). 
-
+## Addon panel location
+As the atmosphere is a part of a world, it is stored in the World Properties. For your convenience, you will also find the panel available in the *N bar* which is turned on by default (panel [name](https://www.physicaladdons.com/psa/customization/#toolbar-label) and [visibility](https://www.physicaladdons.com/psa/customization/#toolbar-enabled) can be configured).
 
 
+## Customisation
+There is no _The One_ way to use this addon. That is why we encourage you to find the way
+it works best for you. Addon [preferences panel](img/UI/UI_preferences.png) is located under
+`Edit > Preferences > Add-ons`.
+
+### Toolbar Enabled
+:octicons-milestone-24: _Default_: `true`
+
+By default, the _Atmosphere_ tab is in the sidebar of Blender 3D viewport (`N` key) and "World Properties" tab in
+Properties panel. Setting this to `false` will hide the toolbar. Reveal panel by clicking on _Atmosphere_ tab. 
+
+### Toolbar Label
+:octicons-milestone-24: _Default_: `"Atmosphere"`
+
+By default, Toolbar tab for _Physical Starlight and Atmosphere_ is _Atmosphere_. It might be useful to rename it
+to something shorter like `PSA` to reduce space the tab is taking. 
+
+### Use ACES color space
+:octicons-milestone-24: _Default_: `false`
+
+The Academy Color Encoding System[^1] (ACES) is a color image encoding system created by hundreds of industry professionals. ACES allows for a fully encompassing color accurate workflow, with seamless interchange of high quality motion picture images regardless of source.
 
 
+### Use real world physical values
+:octicons-milestone-24: _Default_: `false`
+
+By default, addon reduces `atmosphere`, `sun` and `stars` intensity values to get the feeling _it just works_, and you 
+don't have to modify extra parameter `Exposure` in order to get realistic atmosphere. But very important part of this 
+addon is having real world physical values to support visual consistency.
+
+<!-- ### Experimental Features
+:octicons-milestone-24: _Default_: `false`
+
+Enables features that may not be fully functional and tested for all cases. Current list of experimental features:
+
+* [Binary Sun](/psa/binary-sun/) -->
+
+[^1]: [https://en.wikipedia.org/wiki/Academy_Color_Encoding_System](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System)
 
 
+## Presets
+
+Assets allow to store a snapshot of your customized atmosphere settings and return to it later
+or use already predefined presets provided by the addon.
+
+!!! info
+     To be able to use PSA predefined assets you have to use Blender version 3.0 and above.
+
+### Importing assets
+1. download *assets.blend* file
+2. in Blender go to* Edit > Preferences* and open *File Paths* tab
+3. Under *Asset Libraries* click + symbol and point to the folder where *assets.blend* file is located.
+4. Assign a name to this library
+
+### Using assets
+1. In one of the Blender [existing Areas]((https://docs.blender.org/manual/en/3.0/interface/window_system/areas.html#areas))  open *Data > Asset Browser*
+2. Under the dropdown select a name you assigned to the library when importing assets.
+3. Select an asset and drop it in the view.
+
+[![Asset Browser](img/UI/asset-browser.jpg)](img/UI/asset-browser.jpg)
 

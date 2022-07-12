@@ -7,8 +7,8 @@ theme:
   logo: img/psa-logo.svg
   palette:
     primary: black
-  features:
-    - tabs
+  # features:
+  #   - tabs
 plugins:
   - search
 site_url: https://www.physicaladdons.com/psa/
@@ -29,26 +29,27 @@ markdown_extensions:
       permalink: true
 nav:
   - Home: index.md
-  - Getting Started:
-    - Installation: getting-started.md
-    - Customization: customization.md
-    - Updating: updating.md
-    - Frequently Asked Questions: faq.md
-  - Documentation:
-    - Overview: overview.md
-    - Presets: presets.md
-    - Sun: sun.md
-    - Binary Sun: binary-sun.md
-#    - Atmosphere: atmosphere.md
-    - Ground: ground.md
-#    - Stars: stars.md
-#    - Artistic Values: artistic-values.md
-    - Clouds: clouds.md
-  - Changelog:
-    - Release Notes: release-notes.md
-  - About:
-    - Physical Starlight and Atmosphere: about.md
-    - Contacts: contacts.md
+  - Getting Started: getting-started.md
+    # - Installation: getting-started.md
+    # - Customization: customization.md
+    # - Updating: updating.md
+    # - Frequently Asked Questions: faq.md
+  - Documentation: documentation.md
+  - FAQ and contacts: faq.md
+#     - Overview: overview.md
+#     - Presets: presets.md
+#     - Sun: sun.md
+#     - Binary Sun: binary-sun.md
+# #    - Atmosphere: atmosphere.md
+#     - Ground: ground.md
+# #    - Stars: stars.md
+# #    - Artistic Values: artistic-values.md
+#     - Clouds: clouds.md
+  - Changelog: release-notes.md
+    # - Release Notes: 
+  # - About:
+  #   - Physical Starlight and Atmosphere: about.md
+  #   - Contacts: contacts.md
 extra_css:
   - stylesheets/extra.css
   - stylesheets/home.css

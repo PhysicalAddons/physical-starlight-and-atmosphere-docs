@@ -2,8 +2,7 @@
 
 Take a deep breath and have a look at the user interface. At first addon interface may look a bit complex. It is due to many tweakable parameters and fancy names like Kelvins, radiance, and absorption that we use those to standardize the variables names.
 
-## Addon panel location
-As the atmosphere is a part of a world, it is stored in the World Properties. For your convenience, you will also find the panel available in the *N bar* which is turned on by default (panel [name](https://www.physicaladdons.com/psa/customization/#toolbar-label) and [visibility](https://www.physicaladdons.com/psa/customization/#toolbar-enabled) can be configured).
+
 
 ## General controls
 [Sun](https://www.physicaladdons.com/psa/sun/) can be moved using azimuth and elevation properties or you can move it by rotating the Sun object itself or using the [Sun Position](https://docs.blender.org/manual/en/latest/addons/lighting/sun_position.html) addon that comes with the Blender.
