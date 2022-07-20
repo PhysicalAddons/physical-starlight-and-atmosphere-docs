@@ -19,6 +19,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.critic
   - attr_list
   - abbr
   - footnotes
@@ -26,6 +27,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
+      toc_depth: '1-2'
       permalink: true
 nav:
   - Home: index.md
