@@ -1,4 +1,5 @@
 var destroot = "../theme-extension/";
+var docsroot = "../docs/"
 var gulp = require("gulp"),
   sass = require("gulp-sass")(require("sass")),
   twig = require("gulp-twig"),
@@ -24,6 +25,15 @@ gulp.task("compile", function (done) {
     .pipe(twig({ data: {} }))
     .pipe(gulp.dest(destroot + "overrides/"))
     .pipe(gulp.dest(destroot))
+    .pipe(browserSync.stream());
+  done();
+});
+
+gulp.task("compile_docs", function (done) {
+  return gulp
+    .src("./documentation.twig")
+    .pipe(twig({ extname: '.md' }))
+    .pipe(gulp.dest(docsroot))
     .pipe(browserSync.stream());
   done();
 });
@@ -246,10 +256,10 @@ gulp.task("images-benefits", function () {
 
 gulp.task("watch", function () {
   gulp.watch("./**/*.scss", gulp.series("css"));
-  gulp.watch("./**/*.twig", gulp.series("compile"));
+  gulp.watch("./**/*.twig", gulp.series("compile", "compile_docs"));
 });
 
-gulp.task("default", gulp.parallel("browserSync", "compile", "watch", "css"));
+gulp.task("default", gulp.parallel("browserSync", "compile", "compile_docs", "watch", "css"));
 
 // npm install <--
 // gulp

@@ -4,6 +4,8 @@ theme:
   name: material
   custom_dir: theme-extension
   favicon: img/favicon.svg
+  font:
+    text: Inter
   logo: img/psa-logo.svg
   palette:
     primary: black

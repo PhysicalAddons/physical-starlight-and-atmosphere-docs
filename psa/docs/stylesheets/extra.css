@@ -1,3 +1,4 @@
+
 [data-md-color-primary=black] {
     --md-footer-bg-color:        rgba(0,0,0,.95);
     --md-footer-bg-color--dark: #000000;
@@ -17,3 +18,37 @@ code.label-fixed {
     color: #8bc34b;
 }
 
+/* styles for documentation */
+.parameter {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 32px
+}
+.parameter__info {
+    margin-right: 32px;
+    flex: 1 1 0;
+}
+.parameter__video {
+    flex: 1 1 0;
+}
+.parameter__video video {
+    width: 100%
+}
+
+@media only screen and (max-width: 960px) {
+    .parameter {
+        max-width: 396px;
+        display: block;
+    }
+    .parameter__video {
+        margin-top: 8px;
+    }
+
+}
+
+
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
