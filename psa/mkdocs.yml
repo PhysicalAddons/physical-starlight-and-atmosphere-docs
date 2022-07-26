@@ -57,6 +57,8 @@ nav:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/home.css
+extra_javascript:
+  - javascripts/extra.js
 extra:
   social:
     - icon: fontawesome/brands/twitter
