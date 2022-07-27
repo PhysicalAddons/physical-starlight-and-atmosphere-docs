@@ -19,7 +19,7 @@ function playPauseVideo() {
                                 // console.log('- pausing video')
                             } else if (video.paused) {
                                 video.play();
-                                console.log('+ playing video')
+                                // console.log('+ playing video')
                             }
                         });
                     },
