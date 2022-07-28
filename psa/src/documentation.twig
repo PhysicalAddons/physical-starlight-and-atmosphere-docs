@@ -14,7 +14,7 @@
             },
             {
                 'name': 'Sun disk',
-                'excerpt': 'Choose to see a physical sun disk in the sky',
+                'excerpt': 'Choose to see a physical sun disk in the sky.',
                 'description': 'Disk can be removed in a specific edge cases when sun disk in renders appears too bright.',
                 'image': {
                     'src':'',
@@ -228,7 +228,7 @@
 
     {
         'name': 'Clouds',
-        'icon': 'icons/blender-icons/shaderfx.svg',
+        'icon': 'icons/blender-icons/mod_fluid.svg',
         'parameters': [
             {
                 'name': 'Scale',
@@ -311,8 +311,17 @@
         'parameters': [
             {
                 'name': 'Type',
-                'excerpt': 'Use procedurally generated stars or image texture for the stars.',
-                'description': 'Procedurally stars are generated using noise texture. When using image texture it is applied using equirectangular projection.',
+                'excerpt': 'Chose manually or automatically to apply fog material node for every material in the scene.',
+                'description': 'Manual allows to chose when fog material node is applied for materials. Auto applies fog material node whenever new material is added to an object.',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Apply / Clear',
+                'excerpt': 'Adds or removes fog material from every material in the scene.',
+                'description': 'If user has manually disconnected fog node for material or relinked it in a different way we apply custom property `psa_user_modified` to object. This prevents our script from overriding user changes.',
                 'image': {
                     'src':'../img/horizontal_256x128.mp4',
                     'alt':''
@@ -320,8 +329,84 @@
             },
         ]
     },
+
+    {
+        'name': 'Ground',
+        'icon': 'icons/blender-icons/view_perspective.svg',
+        'parameters': [
+            {
+                'name': 'Color',
+                'excerpt': 'Control the base color of the ground plane.',
+                'description': '',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Ground',
+                'excerpt': 'If enabled, creates an infinite ground plane. Makes the horizon visible.',
+                'description': '',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Ground offset',
+                'excerpt': 'Move the ground plane vertically by offset.',
+                'description': 'Useful for low orbit and aerial shots.',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Horizon offset',
+                'excerpt': 'Move only horizon line up or down.',
+                'description': '',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+        ]
+    },
+
+     {
+        'name': 'Artistic Controls',
+        'icon': 'icons/blender-icons/shaderfx.svg',
+        'parameters': [
+            {
+                'name': 'Distance scalar',
+                'excerpt': 'Control all distance values globally.',
+                'description': '',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Falloff',
+                'excerpt': 'Control how fast the atmospheric mist changes density.',
+                'description': 'Atmospheric fog distance falloff curve.',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Sun radiance gamma',
+                'excerpt': 'Control how intense Sun color appears.',
+                'description': 'Sun color gamma curve.',
+                'image': {
+                    'src':'../img/horizontal_256x128.mp4',
+                    'alt':''
+                }
+            },
+        ]
+     }
    
-	
 ]%}
 
 Take a deep breath and have a look at the user interface. At a glance, it may look a bit complex. It is due to many tweakable parameters and fancy names like *Kelvins*, *radiance*, and *absorption* that we use to standardize variable names.
@@ -340,7 +425,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### {{ parameter.name }}
 <div class="parameter">
     <div class="parameter__info">
-        <div>{{ parameter.excerpt }}</div>{% if parameter.description != '' %}<div style="color: rgba(0,0,0,.5)">{{ parameter.description }}</div>{% endif %}
+        <span>{{ parameter.excerpt }}</span>{% if parameter.description != '' %}<span style="margin-left: 4px; color: rgba(0,0,0,.5)">{{ parameter.description }}</span>{% endif %}
     </div>
     <div class="parameter__video">
         <video autoplay loop >
@@ -351,6 +436,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 {% endfor %}
 {% endfor %}
+
 
 {# 959 #}
 {# 1219+ 328 #}
