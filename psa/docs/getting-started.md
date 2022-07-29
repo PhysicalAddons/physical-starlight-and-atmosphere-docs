@@ -46,7 +46,7 @@ Older versions of the addon v1.0 and v1.1 work on [Blender 2.80](https://www.ble
 As the atmosphere is a part of a world, it is stored in the World Properties. For your convenience, you will also find the panel available in the *N bar* which is turned on by default (panel [name](https://www.physicaladdons.com/psa/customization/#toolbar-label) and [visibility](https://www.physicaladdons.com/psa/customization/#toolbar-enabled) can be configured).
 
 
-## Customisation
+## Preferences
 There is no _The One_ way to use this addon. That is why we encourage you to find the way
 it works best for you. Addon [preferences panel](img/UI/UI_preferences.png) is located under
 `Edit > Preferences > Add-ons`.

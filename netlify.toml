@@ -3,3 +3,27 @@
   to = "/psa"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/psa/presets/"
+  to = "/psa/getting-started/#presets"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/psa/ground/"
+  to = "/psa/documentation/#ground"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/psa/clouds/"
+  to = "/psa/documentation/#clouds"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/psa/customization/"
+  to = "/psa/getting-started/#preferences"
+  status = 200
+  force = true
