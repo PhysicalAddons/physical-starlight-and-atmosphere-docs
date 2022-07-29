@@ -47,7 +47,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>The size of the sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Affects shadow and lighting softness and the visual appearance of the sun disk. </span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/ang_diameter_256x128.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ang_diameter_256x128.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -56,7 +56,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Physical temperature (in Kelvins) of the sun changes the color of the sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the value, the bluer the sun.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/temperature_256x128.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/temperature_256x128.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -65,7 +65,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Intensity of the binary sun emission.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Higher intensity makes the sun brighter, thus illuminating the scene more.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/intensity_256x128.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/intensity_256x128.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -183,7 +183,25 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 </div>
 
 
-### Anisotropy
+### Absorption
+<div class="parameter">
+    <div class="parameter__info">
+        <span>In real life situation, this should be an invert of inscattering value to give a physically accurate appearance.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">This control is exposed to give more artistic freedom.</span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/absorption.mp4" type="video/mp4"></video></div>
+</div>
+
+
+### Mie Scattering Intensity
+<div class="parameter">
+    <div class="parameter__info">
+        <span>Aura around the sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Light scattering around the sun in the lower atmospheric layer.</span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/mie_intensity.mp4" type="video/mp4"></video></div>
+</div>
+
+
+### Mie Scattering Anisotropy
 <div class="parameter">
     <div class="parameter__info">
         <span>How concentrated is the light scattering around the sun.</span>
