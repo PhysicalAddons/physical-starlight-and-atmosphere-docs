@@ -4,11 +4,15 @@ theme:
   name: material
   custom_dir: theme-extension
   favicon: img/favicon.svg
+  font: false
+    # text: Inter
   logo: img/psa-logo.svg
   palette:
     primary: black
   features:
-    - tabs
+    - navigation.top
+  # features:
+  #   - tabs
 plugins:
   - search
 site_url: https://www.physicaladdons.com/psa/
@@ -19,6 +23,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.critic
   - attr_list
   - abbr
   - footnotes
@@ -26,32 +31,36 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
+      toc_depth: '1-2'
       permalink: true
 nav:
   - Home: index.md
-  - Getting Started:
-    - Installation: getting-started.md
-    - Customization: customization.md
-    - Updating: updating.md
-    - Frequently Asked Questions: faq.md
-  - Documentation:
-    - Overview: overview.md
-    - Presets: presets.md
-    - Sun: sun.md
-    - Binary Sun: binary-sun.md
-#    - Atmosphere: atmosphere.md
-    - Ground: ground.md
-#    - Stars: stars.md
-#    - Artistic Values: artistic-values.md
-    - Clouds: clouds.md
-  - Changelog:
-    - Release Notes: release-notes.md
-  - About:
-    - Physical Starlight and Atmosphere: about.md
-    - Contacts: contacts.md
+  - Getting Started: getting-started.md
+    # - Installation: getting-started.md
+    # - Customization: customization.md
+    # - Updating: updating.md
+    # - Frequently Asked Questions: faq.md
+  - Documentation: documentation.md
+  - FAQ and contacts: faq.md
+#     - Overview: overview.md
+#     - Presets: presets.md
+#     - Sun: sun.md
+#     - Binary Sun: binary-sun.md
+# #    - Atmosphere: atmosphere.md
+#     - Ground: ground.md
+# #    - Stars: stars.md
+# #    - Artistic Values: artistic-values.md
+#     - Clouds: clouds.md
+  - Changelog: release-notes.md
+    # - Release Notes: 
+  # - About:
+  #   - Physical Starlight and Atmosphere: about.md
+  #   - Contacts: contacts.md
 extra_css:
   - stylesheets/extra.css
   - stylesheets/home.css
+extra_javascript:
+  - javascripts/extra.js
 extra:
   social:
     - icon: fontawesome/brands/twitter

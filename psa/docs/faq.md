@@ -43,4 +43,3 @@
     for more help. If you think that you might have found a new bug go to [Issue tracker](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues)
     to see if it hasn't been already reported or in a process of fixing.
 
-
