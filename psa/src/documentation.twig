@@ -130,7 +130,7 @@
                 'excerpt': 'Control how much atmosphere is present on the planet.',
                 'description': 'For example, 0 is the vacuum of the space, but 1.22 kg/m3 is the atmosphere density for the Earth.',
                 'image': {
-                    'src':'../img/horizontal_256x128.mp4',
+                    'src':'../img/documentation/density.mp4',
                     'alt':''
                 }
             },
@@ -139,7 +139,7 @@
                 'excerpt': 'Determines how high the atmosphere goes in the scene, affecting density distribution.',
                 'description': 'Mostly affects vertical transitions in the atmosphere, where lower scale heights will make effects of changing altitude appear quicker.',
                 'image': {
-                    'src':'../img/horizontal_256x128.mp4',
+                    'src':'../img/documentation/no_audio.mp4',
                     'alt':''
                 }
             },
@@ -430,7 +430,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>{{ parameter.excerpt }}</span>{% if parameter.description != '' %}<span style="margin-left: 4px; color: rgba(0,0,0,.5)">{{ parameter.description }}</span>{% endif %}
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="{{parameter.image.src}}" type="video/mp4">
         </video>
     </div>

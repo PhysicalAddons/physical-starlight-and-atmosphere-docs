@@ -21,7 +21,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Horizontal and vertical movement of the sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Allow to position sun in specific position creating feeling that it is a morning, midday or an evening.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -34,7 +34,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Choose to see a physical sun disk in the sky.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Disk can be removed in a specific edge cases when sun disk in renders appears too bright.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="" type="video/mp4">
         </video>
     </div>
@@ -47,7 +47,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Choose to use a sun lamp or sun disk in the world for illumination.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Enabling this will ensure that there are sun shadows present in Eevee, as well as potentially help Cycles render quicker by requiring slightly fewer samples. Disabling this will mostly benefit Cycles renders, where the result will be more accurate with better matching reflections.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="" type="video/mp4">
         </video>
     </div>
@@ -60,7 +60,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>The size of the sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Affects shadow and lighting softness and the visual appearance of the sun disk. </span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/ang_diameter_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -73,7 +73,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Physical temperature (in Kelvins) of the sun changes the color of the sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the value, the bluer the sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/temperature_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -86,7 +86,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Intensity of the binary sun emission.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Higher intensity makes the sun brighter, thus illuminating the scene more.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/intensity_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -99,7 +99,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Enables a second sun that is bound to the main sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="" type="video/mp4">
         </video>
     </div>
@@ -115,7 +115,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Distance from the main sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -128,7 +128,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>The angle at which the binary sun is placed relative to the main sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -141,7 +141,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>The size of the binary sun disc.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -154,7 +154,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Physical temperature (in Kelvins) of the binary sun changes the color of the binary sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the value, the bluer the sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/temperature_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -167,7 +167,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Intensity of the binary sun emission.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Changes the binary sun radiance intensity in Watt·sr/m2.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -183,8 +183,8 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control how much atmosphere is present on the planet.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">For example, 0 is the vacuum of the space, but 1.22 kg/m3 is the atmosphere density for the Earth.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
-            <source src="../img/horizontal_256x128.mp4" type="video/mp4">
+        <video autoplay loop muted playsinline >
+            <source src="../img/documentation/density.mp4" type="video/mp4">
         </video>
     </div>
 </div>
@@ -196,8 +196,8 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Determines how high the atmosphere goes in the scene, affecting density distribution.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Mostly affects vertical transitions in the atmosphere, where lower scale heights will make effects of changing altitude appear quicker.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
-            <source src="../img/horizontal_256x128.mp4" type="video/mp4">
+        <video autoplay loop muted playsinline >
+            <source src="../img/documentation/no_audio.mp4" type="video/mp4">
         </video>
     </div>
 </div>
@@ -209,7 +209,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Artistical control that affects how bright the atmosphere appears.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Atmosphere intensity multiplier.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -222,7 +222,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Artistical control that affects how bright the atmosphere appears at night.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Atmosphere intensity multiplier.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -235,7 +235,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Artistical control that gives a tint to the atmosphere particle.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -248,7 +248,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control how much light is scattered through the particle for each wavelength (RGB).</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Atmosphere scattering coefficients.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -261,7 +261,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>How concentrated is the light scattering around the sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -277,7 +277,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Use procedurally generated stars or image texture for the stars.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Procedurally stars are generated using noise texture. When using image texture it is applied using equirectangular projection.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -290,7 +290,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Artistic control that affects how bright the stars are.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -303,7 +303,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>How dense stars appear in the sky.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Changes star brightness distribution curve.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -319,7 +319,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Changes scale of the cloud noise texture.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -332,7 +332,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control how opaque clouds appear overall.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -345,7 +345,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control minimum and maximum of how much clouds are covering the sky.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -358,7 +358,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control the amount of shadows forming on clouds.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -371,7 +371,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>How much light is concentrated around the sun.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -384,7 +384,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control how much light is scattered through the particle for each wavelength (RGB).</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Cloud scattering coefficients.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -397,7 +397,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Cloud coordinate position offset.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -410,7 +410,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Cloud coordinate rotation offset.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -426,7 +426,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Chose manually or automatically to apply fog material node for every material in the scene.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Manual allows to chose when fog material node is applied for materials. Auto applies fog material node whenever new material is added to an object.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -439,7 +439,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Adds or removes fog material from every material in the scene.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">If user has manually disconnected fog node for material or relinked it in a different way we apply custom property `psa_user_modified` to object. This prevents our script from overriding user changes.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -455,7 +455,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control the base color of the ground plane.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -468,7 +468,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>If enabled, creates an infinite ground plane. Makes the horizon visible.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -481,7 +481,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Move the ground plane vertically by offset.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Useful for low orbit and aerial shots.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -494,7 +494,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Move only horizon line up or down.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -510,7 +510,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control all distance values globally.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -523,7 +523,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control how fast the atmospheric mist changes density.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Atmospheric fog distance falloff curve.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
@@ -536,7 +536,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
         <span>Control how intense Sun color appears.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Sun color gamma curve.</span>
     </div>
     <div class="parameter__video">
-        <video autoplay loop >
+        <video autoplay loop muted playsinline >
             <source src="../img/horizontal_256x128.mp4" type="video/mp4">
         </video>
     </div>
