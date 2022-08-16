@@ -233,7 +233,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Artistic control that affects how bright the stars are.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_rintensity.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -242,7 +242,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>How dense stars appear in the sky.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Changes star brightness distribution curve.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_gamma.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -255,7 +255,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Changes scale of the cloud noise texture.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_scale.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -264,7 +264,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Control how opaque clouds appear overall.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_thickness.mp4" type="video/mp4"></video></div>
 </div>
 
 
