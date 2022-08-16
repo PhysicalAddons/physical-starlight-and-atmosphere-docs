@@ -323,7 +323,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 
 
-!!! tip "Advanced: HDRI clouds"
+??? tip "Advanced: HDRI clouds"
     1. Open Shader Editor
     2. Add environment texture `Add > Texture > Environment Texture`
     3. Add mask `Add > Converter > Map Range`

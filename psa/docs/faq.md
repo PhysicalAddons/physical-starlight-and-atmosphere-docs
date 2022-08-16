@@ -5,7 +5,7 @@
     [Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version. For more information see [updating](/psa/updating/) procedure.
 
 ??? cite "Everything looks blown-out (all white)! What am I missing?"
-    Most probobly you have enabled an advanced feature that enables usage of [physical values](/psa/customization/#use-real-world-physical-values). This feature is meant for users that work with photography tools or want that extra detail. This requires a bit more fiddling but require to manually adjust exposure settings. This [forum reply](https://blenderartists.org/t/physical-starlight-and-atmosphere-addon-for-2-9-v1-4-now-with-clouds/1185314/516) may give more insight what it is all about. To make it look "normal" uncheck the `use real world physical values` option in the addon preferences.
+    Most probobly you have enabled an advanced feature that enables usage of [physical values](/psa/getting-started/#preferences). This feature is meant for users that work with photography tools or want that extra detail. This requires a bit more fiddling but require to manually adjust exposure settings. This [forum reply](https://blenderartists.org/t/physical-starlight-and-atmosphere-addon-for-2-9-v1-4-now-with-clouds/1185314/516) may give more insight what it is all about. To make it look "normal" uncheck the `use real world physical values` option in the addon preferences.
 
 ??? cite "What is the difference between [Nishita sky](https://www.blender.org/download/releases/2-90/) texture and this addon?"
     'Nishita Sky' is one of many mathematical methods of rendering Earth's atmosphere in daylight.
