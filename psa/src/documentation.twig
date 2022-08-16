@@ -320,7 +320,16 @@
                     'alt':''
                 }
             },
-        ]
+        ],
+        'post_block': '
+??? tip "Advanced: HDRI clouds"
+    1. Open Shader Editor
+    2. Add environment texture `Add > Texture > Environment Texture`
+    3. Add mask `Add > Converter > Map Range`
+    4. Link them as shown in the image below:
+
+    [![HDRI Clouds](img/clouds/hdri-node-setup.jpg)](img/clouds/hdri-node-setup.jpg)
+        '
     },
 
     {
@@ -427,6 +436,9 @@
    
 ]%}
 
+!!! tip ""
+    Hey :wave:, first time here? You can find the installation guide and first run in the [getting started](/psa/getting-started/) section.
+
 Take a deep breath and have a look at the user interface. At a glance, it may look a bit complex. It is due to many tweakable parameters and fancy names like *Kelvins*, *radiance*, and *absorption* that we use to standardize variable names.
 
 
@@ -451,6 +463,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 </div>
 
 {% endfor %}
+{% if section.post_block %}{{section.post_block}}{% endif %}
 {% endfor %}
 
 

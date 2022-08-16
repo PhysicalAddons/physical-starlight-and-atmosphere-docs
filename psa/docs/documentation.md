@@ -1,5 +1,8 @@
 
 
+!!! tip ""
+    Hey :wave:, first time here? You can find the installation guide and first run in the [getting started](/psa/getting-started/) section.
+
 Take a deep breath and have a look at the user interface. At a glance, it may look a bit complex. It is due to many tweakable parameters and fancy names like *Kelvins*, *radiance*, and *absorption* that we use to standardize variable names.
 
 
@@ -79,6 +82,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 
 
+
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><path d="M9.492 2.996A.5.5 0 0 0 9 3.504v2.654a3.98 3.98 0 0 0-1.955 1.184L4.854 5.15a.5.5 0 1 0-.707.707l2.32 2.32A3.941 3.941 0 0 0 6 10.004H3.5c-.667 0-.667 1 0 1h2.64a3.98 3.98 0 0 0 1.192 1.96L5.146 15.15c-.471.472.236 1.18.708.708l2.316-2.317c.55.286 1.162.463 1.822.463H10v2.5c0 .667 1 .667 1 0v-2.646a3.982 3.982 0 0 0 1.953-1.194l2.194 2.194c.471.505 1.214-.237.707-.708l-2.325-2.324a3.934 3.934 0 0 0 .458-1.814v-.008H16.5c.667 0 .667-1 0-1h-2.66a3.983 3.983 0 0 0-1.186-1.947l2.2-2.2a.5.5 0 1 0-.708-.707l-2.33 2.33A3.942 3.942 0 0 0 10 6.018V3.504a.5.5 0 0 0-.508-.508zm.5 4.022a2.987 2.987 0 0 1 2.994 2.994 2.986 2.986 0 0 1-2.994 2.992A2.984 2.984 0 0 1 7 10.012a2.986 2.986 0 0 1 2.992-2.994z"/></svg></span> Binary Sun
 
 ### Distance
@@ -124,6 +128,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     </div>
     <div class="parameter__video"></div>
 </div>
+
 
 
 
@@ -211,6 +216,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 
 
+
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><path d="M7.5 3.5A.5.5 0 0 0 7 4v3a.5.5 0 0 0 .5.5h3A.5.5 0 0 0 11 7V4a.5.5 0 0 0-.5-.5zm.5 1h2v2H8zm4.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm.5 1h2v2h-2zm-8.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3A.5.5 0 0 0 8 16v-3a.5.5 0 0 0-.5-.5zm.5 1h2v2H5z"/></svg></span> Stars
 
 ### Type
@@ -238,6 +244,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     </div>
     <div class="parameter__video"></div>
 </div>
+
 
 
 
@@ -316,6 +323,15 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 
 
+??? tip "Advanced: HDRI clouds"
+    1. Open Shader Editor
+    2. Add environment texture `Add > Texture > Environment Texture`
+    3. Add mask `Add > Converter > Map Range`
+    4. Link them as shown in the image below:
+
+    [![HDRI Clouds](img/clouds/hdri-node-setup.jpg)](img/clouds/hdri-node-setup.jpg)
+        
+
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><path d="M10 3c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 1a5.991 5.991 0 0 1 5.998 5.959C14.887 10.903 12.995 12 10 12v4c-3.32 0-6-2.68-6-6l.002-.043C5.113 10.901 7.003 12 10 12z"/></svg></span> Object Fog
 
 ### Type
@@ -334,6 +350,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     </div>
     <div class="parameter__video"></div>
 </div>
+
 
 
 
@@ -376,6 +393,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 
 
+
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><g><path d="M10.488 8.004a.5.5 0 0 0-.346.146L8.996 9.297l1.707 1.707 1.147-1.146a.5.5 0 0 0 0-.708l-1-1a.5.5 0 0 0-.362-.146zm-2.199 2L3.142 15.15a.5.5 0 0 0 0 .708l1 1a.5.5 0 0 0 .708 0l5.146-5.147zM6.488 2.996a.5.5 0 0 0-.492.508v1.5h-1.5a.5.5 0 1 0 0 1h1.5v1.5a.5.5 0 1 0 1 0v-1.5h1.5a.5.5 0 1 0 0-1h-1.5v-1.5a.5.5 0 0 0-.508-.508zm8 .5a.5.5 0 0 0-.492.508v1h-1a.5.5 0 1 0 0 1h1v1a.5.5 0 1 0 1 0v-1h1a.5.5 0 1 0 0-1h-1v-1a.5.5 0 0 0-.508-.508zm0 7.5a.5.5 0 0 0-.492.508v1.5h-1.5a.5.5 0 1 0 0 1h1.5v1.5a.5.5 0 1 0 1 0v-1.5h1.5a.5.5 0 1 0 0-1h-1.5v-1.5a.5.5 0 0 0-.508-.508z"/></g></svg></span> Artistic Controls
 
 ### Distance scalar
@@ -403,6 +421,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     </div>
     <div class="parameter__video"></div>
 </div>
+
 
 
 

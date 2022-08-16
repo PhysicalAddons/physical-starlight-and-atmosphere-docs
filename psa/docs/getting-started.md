@@ -29,7 +29,7 @@ Older versions of the addon v1.0 and v1.1 work on [Blender 2.80](https://www.ble
 
 ## First Run
 - Locate _Physical Starlight and Atmosphere_ panel in [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
-(also called _N Panel_). Click on the tab _Atmosphere_ to reveal it.
+also called _N Panel_ (You can also find addon panel in the World Properties). Click on the tab _Atmosphere_ to reveal it.
 - Enable addon by ticking the uppermost checkbox.
 
  
@@ -41,9 +41,6 @@ Older versions of the addon v1.0 and v1.1 work on [Blender 2.80](https://www.ble
 !!! summary "What happens when addon is being enabled/disabled?"
     - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you uncheck the _Physical Atmosphere_ checkbox, these nodes will be removed.
     - Sun lamp `Sarlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you uncheck the _Physical Atmosphere_ checkbox, if no active PSA instances are found in other worlds it will be removed.
-
-## Addon panel location
-As the atmosphere is a part of a world, it is stored in the World Properties. For your convenience, you will also find the panel available in the *N bar* which is turned on by default (panel [name](https://www.physicaladdons.com/psa/customization/#toolbar-label) and [visibility](https://www.physicaladdons.com/psa/customization/#toolbar-enabled) can be configured).
 
 
 ## Preferences
