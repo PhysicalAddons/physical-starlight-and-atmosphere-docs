@@ -1,3 +1,10 @@
+### 1.5.3 <small>- released 17.08.2022</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue when disabling addon that had linked Material Fog node resulted in Missing Data-Block node. 
+
+
 ### 1.5.2 <small>- released 01.07.2022</small>
 
 `improvements:`{: .label-improvements }
