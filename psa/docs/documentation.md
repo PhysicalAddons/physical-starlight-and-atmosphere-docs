@@ -277,12 +277,21 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 </div>
 
 
+### Lighting Intensity
+<div class="parameter">
+    <div class="parameter__info">
+        <span>Artistic control that allows control over how much sunlight is affecting the clouds.</span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_lighting_intensity.mp4" type="video/mp4"></video></div>
+</div>
+
+
 ### Self Shadowing
 <div class="parameter">
     <div class="parameter__info">
         <span>Control the amount of shadows forming on clouds.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_self_shadow.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -291,7 +300,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>How much light is concentrated around the sun.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_direction.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -300,7 +309,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Control how much light is scattered through the particle for each wavelength (RGB).</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Cloud scattering coefficients.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_inscattering.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -309,7 +318,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Cloud coordinate position offset.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_location.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -318,7 +327,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Cloud coordinate rotation offset.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_rotation.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -348,7 +357,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Adds or removes fog material from every material in the scene.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">If user has manually disconnected fog node for material or relinked it in a different way we apply custom property `psa_user_modified` to object. This prevents our script from overriding user changes.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><img src="../img/documentation/safter_fog.png" alt="" /></div>
 </div>
 
 
@@ -361,7 +370,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Control the base color of the ground plane.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ground_color.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -370,7 +379,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>If enabled, creates an infinite ground plane. Makes the horizon visible.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><img src="" alt="" /></div>
 </div>
 
 
@@ -379,7 +388,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Move the ground plane vertically by offset.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Useful for low orbit and aerial shots.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ground_offset.mp4" type="video/mp4"></video></div>
 </div>
 
 
