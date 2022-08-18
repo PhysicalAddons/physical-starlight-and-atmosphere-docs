@@ -61,7 +61,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/temperature_256x128.mp4" type="video/mp4"></video></div>
 </div>
-
+<div class="parameter mb-64"><img src="../img/documentation/temperature_kelvins.png" alt="" /></div>
 
 ### Intensity
 <div class="parameter">

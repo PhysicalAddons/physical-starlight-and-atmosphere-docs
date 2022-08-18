@@ -51,7 +51,6 @@ code.label-fixed {
     .parameter__video {
         margin-top: 8px;
     }
-
 }
 
 /* redefining heading styles */
@@ -76,7 +75,10 @@ code.label-fixed {
     }
 }
 
-
+/* spacing utility classes */
+.mb-64 {
+    margin-bottom: 64px;
+}
 
 /* Add smooth scrolling */
 html {
