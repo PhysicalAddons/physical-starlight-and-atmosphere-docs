@@ -410,7 +410,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Control all distance values globally.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/distance_scalar.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -419,7 +419,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Control how fast the atmospheric mist changes density.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Atmospheric fog distance falloff curve.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/falloff.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -428,7 +428,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Control how intense Sun color appears.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Sun color gamma curve.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/sun_radiance_gamma.mp4" type="video/mp4"></video></div>
 </div>
 
 
