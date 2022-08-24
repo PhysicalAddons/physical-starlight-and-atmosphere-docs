@@ -1,3 +1,20 @@
+### 1.6.0 <small>- released 24.08.2022</small>
+
+[![Release 1.6.0 banner](img/releases/psa1.6.0.jpg)](img/releases/psa1.6.0.jpg)
+
+`new:`{: .label-new }
+
+Refined controls for stars
+
+- **Clouds now can have a texture** projected as HDRI or planar projection. Procedural clouds can be modified using previous options and additionally seed, detail, dimension and lacunarity parameters (same as Musgrave texture). Textured clouds can be modified by coverage parameter.
+
+- **Refined controls for stars**. Stars amount, scale and seed can now be controlled to get more unique results.
+
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue when animating binary sun didn't work. 
+
 ### 1.5.3 <small>- released 17.08.2022</small>
 
 `fixed:`{: .label-fixed }
@@ -36,7 +53,7 @@
 
 ### 1.5.0 <small>- released 03.03.2022</small>
 
-[![Release 1.3.0 banner](img/releases/psa1.5.0.jpg)](img/releases/psa1.5.0.jpg)
+[![Release 1.5.0 banner](img/releases/psa1.5.0.jpg)](img/releases/psa1.5.0.jpg)
 
 `new:`{: .label-new }
 
