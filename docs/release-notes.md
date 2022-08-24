@@ -4,7 +4,6 @@
 
 `new:`{: .label-new }
 
-Refined controls for stars
 
 - **Clouds now can have a texture** projected as HDRI or planar projection. Procedural clouds can be modified using previous options and additionally seed, detail, dimension and lacunarity parameters (same as Musgrave texture). Textured clouds can be modified by coverage parameter.
 
@@ -13,7 +12,8 @@ Refined controls for stars
 
 `fixed:`{: .label-fixed }
 
-- Fixed issue when animating binary sun didn't work. 
+- Fixed issue when **animating sun** via horizontal and vertical rotation or Sun Position addon did cause sun to stutter. **Important Note**: in order for old projects to work with PSA v1.6 - disable and re-enable checkbox in the panel.  
+- Fixed issue when animating binary sun didn't work.
 
 ### 1.5.3 <small>- released 17.08.2022</small>
 
