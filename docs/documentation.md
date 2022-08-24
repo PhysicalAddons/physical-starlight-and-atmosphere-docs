@@ -50,7 +50,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>The size of the sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Affects shadow and lighting softness and the visual appearance of the sun disk. </span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ang_diameter_256x128.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/angular_diameter.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -59,7 +59,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Physical temperature (in Kelvins) of the sun changes the color of the sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the value, the bluer the sun.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/temperature_256x128.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/temperaturek.mp4" type="video/mp4"></video></div>
 </div>
 <div class="parameter mb-64"><img src="../img/documentation/temperature_kelvins.png" alt="" /></div>
 
@@ -117,7 +117,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Physical temperature (in Kelvins) of the binary sun changes the color of the binary sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the value, the bluer the sun.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/temperature_256x128.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"></div>
 </div>
 
 
@@ -157,7 +157,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Artistical control that affects how bright the atmosphere appears.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Atmosphere intensity multiplier.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmo_intensity.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmosphere_intensity.mp4" type="video/mp4"></video></div>
 </div>
 
 
@@ -175,7 +175,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Artistical control that gives a tint to the atmosphere particle.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmo_color.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmosphere_color.mp4" type="video/mp4"></video></div>
 </div>
 
 
