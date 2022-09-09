@@ -16,7 +16,7 @@ theme:
 plugins:
   - search
 site_url: https://www.physicaladdons.com/psa/
-google_analytics: ['UA-86947939-2', 'auto']
+# google_analytics: ['UA-86947939-2', 'auto']
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -62,6 +62,8 @@ extra_css:
 extra_javascript:
   - javascripts/extra.js
 extra:
+  analytics:
+    provider: plausible
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/PhysicalAddons
