@@ -332,14 +332,6 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 
 
-??? tip "Advanced: HDRI clouds"
-    1. Open Shader Editor
-    2. Add environment texture `Add > Texture > Environment Texture`
-    3. Add mask `Add > Converter > Map Range`
-    4. Link them as shown in the image below:
-
-    [![HDRI Clouds](img/clouds/hdri-node-setup.jpg)](img/clouds/hdri-node-setup.jpg)
-        
 
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><path d="M10 3c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 1a5.991 5.991 0 0 1 5.998 5.959C14.887 10.903 12.995 12 10 12v4c-3.32 0-6-2.68-6-6l.002-.043C5.113 10.901 7.003 12 10 12z"/></svg></span> Object Fog
 
