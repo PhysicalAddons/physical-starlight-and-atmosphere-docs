@@ -1,3 +1,13 @@
+### 1.6.1 <small>- released 23.11.2022</small>
+
+`improvements:`{: .label-improvements }
+
+- Changed star and cloud textures to use a more convenient user interface.
+- Added a way to control star temperature.
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue where during animation on the frame change sun jumps or gets stuck. This was done by completely migrating parameters to drivers.
 ### 1.6.0 <small>- released 24.08.2022</small>
 
 [![Release 1.6.0 banner](img/releases/psa1.6.0.jpg)](img/releases/psa1.6.0.jpg)
