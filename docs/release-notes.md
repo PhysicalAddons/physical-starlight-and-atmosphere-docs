@@ -1,4 +1,4 @@
-<!-- ### 1.6.1 <small>- released 23.11.2022</small>
+### 1.6.1 <small>- released 23.11.2022</small>
 
 `improvements:`{: .label-improvements }
 
@@ -7,7 +7,8 @@
 
 `fixed:`{: .label-fixed }
 
-- Fixed issue where during animation on the frame change sun jumps or gets stuck. This was done by completely migrating parameters to drivers. -->
+- Fixed issue where during animation on the frame change sun jumps or gets stuck. It was done by completely migrating parameters to drivers.
+- Fixed issue when stars texture was not affected by radiance gamma and intensity parameters.
 
 
 ### 1.6.0 <small>- released 24.08.2022</small>
