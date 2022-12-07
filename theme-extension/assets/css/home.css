@@ -534,6 +534,7 @@ body {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    text-align: right;
   }
   .nav-primary__collapse .nav-primary__link {
     margin-right: 32px !important;
