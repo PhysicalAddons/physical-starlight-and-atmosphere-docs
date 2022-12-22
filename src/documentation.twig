@@ -82,7 +82,7 @@
                 'excerpt': 'Distance from the main sun.',
                 'description': '',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/bi_sun_distance.mov',
                     'alt':''
                 }
             },
@@ -91,7 +91,7 @@
                 'excerpt': 'The angle at which the binary sun is placed relative to the main sun.',
                 'description': '',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/bi_sun_phase.mov',
                     'alt':''
                 }
             },
@@ -100,7 +100,7 @@
                 'excerpt': 'The size of the binary sun disc.',
                 'description': '',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/bi_sun_angular_diameter.mov',
                     'alt':''
                 }
             },
@@ -109,7 +109,7 @@
                 'excerpt': 'Physical temperature (in Kelvins) of the binary sun changes the color of the binary sun disk.',
                 'description': 'The bigger the value, the bluer the sun.',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/bi_sun_temperaturek.mov',
                     'alt':''
                 }
             },
@@ -118,7 +118,7 @@
                 'excerpt': 'Intensity of the binary sun emission.',
                 'description': 'Changes the binary sun radiance intensity in Watt·sr/m2.',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/bi_sun_intensity.mov',
                     'alt':''
                 }
             },
@@ -206,7 +206,7 @@
                 'excerpt': 'How concentrated is the light scattering around the sun.',
                 'description': '',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/atmosphere_mie_scattering_anisotropy.mov',
                     'alt':''
                 }
             },
@@ -245,6 +245,42 @@
                     'alt':''
                 }
             },
+            {
+                'name': 'Amount',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/stars_amount.mov',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Scale',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Seed',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/stars_seed.mov',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Temperature',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/stars_temperature.mov',
+                    'alt':''
+                }
+            },
         ]
     },
 
@@ -252,6 +288,24 @@
         'name': 'Clouds',
         'icon': 'icons/blender-icons/mod_fluid.svg',
         'parameters': [
+            {
+                'name': 'Type',
+                'excerpt': 'Use procedurally generated clouds or image texture for the clouds.',
+                'description': '',
+                'video': {
+                    'src':'',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Seed',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/cloud_seed.mov',
+                    'alt':''
+                }
+            },
             {
                 'name': 'Scale',
                 'excerpt': 'Changes scale of the cloud noise texture.',
@@ -271,11 +325,38 @@
                 }
             },
             {
+                'name': 'Detail',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/clouds_detail.mov',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Dimension',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/clouds_dimension.mov',
+                    'alt':''
+                }
+            },
+            {
+                'name': 'Lacunarity',
+                'excerpt': '',
+                'description': '',
+                'video': {
+                    'src':'../img/documentation/clouds_lacunarity.mov',
+                    'alt':''
+                }
+            },
+            {
                 'name': 'Coverage',
                 'excerpt': 'Control minimum and maximum of how much clouds are covering the sky.',
                 'description': '',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/cloud_coverage.mov',
                     'alt':''
                 }
             },
@@ -397,7 +478,7 @@
                 'excerpt': 'Move only horizon line up or down.',
                 'description': '',
                 'video': {
-                    'src':'',
+                    'src':'../img/documentation/ground_horizon_offset.mov',
                     'alt':''
                 }
             },
@@ -442,6 +523,9 @@
 
 !!! tip ""
     Hey :wave:, first time here? You can find the installation guide and first run in the [getting started](/psa/getting-started/) section.
+
+!!! warning ""
+    Noticed some of the stars and cloud parameter descriptions are empty? We are working on it :mechanic: .
 
 Take a deep breath and have a look at the user interface. At a glance, it may look a bit complex. It is due to many tweakable parameters and fancy names like *Kelvins*, *radiance*, and *absorption* that we use to standardize variable names.
 

@@ -3,6 +3,9 @@
 !!! tip ""
     Hey :wave:, first time here? You can find the installation guide and first run in the [getting started](/psa/getting-started/) section.
 
+!!! warning ""
+    Noticed some of the stars and cloud parameter descriptions are empty? We are working on it :mechanic: .
+
 Take a deep breath and have a look at the user interface. At a glance, it may look a bit complex. It is due to many tweakable parameters and fancy names like *Kelvins*, *radiance*, and *absorption* that we use to standardize variable names.
 
 
@@ -90,7 +93,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Distance from the main sun.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_distance.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -99,7 +102,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>The angle at which the binary sun is placed relative to the main sun.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_phase.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -108,7 +111,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>The size of the binary sun disc.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_angular_diameter.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -117,7 +120,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Physical temperature (in Kelvins) of the binary sun changes the color of the binary sun disk.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the value, the bluer the sun.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_temperaturek.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -126,7 +129,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Intensity of the binary sun emission.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Changes the binary sun radiance intensity in Watt·sr/m2.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_intensity.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -211,7 +214,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>How concentrated is the light scattering around the sun.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmosphere_mie_scattering_anisotropy.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -246,9 +249,63 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 </div>
 
 
+### Amount
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_amount.mov" type="video/mp4"></video></div>
+</div>
+
+
+### Scale
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"></div>
+</div>
+
+
+### Seed
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_seed.mov" type="video/mp4"></video></div>
+</div>
+
+
+### Temperature
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_temperature.mov" type="video/mp4"></video></div>
+</div>
+
+
 
 
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><path d="M10.69 3.012A4.003 4.003 0 0 0 7 7a.5.5 0 0 0 .016.133 3.973 3.973 0 0 0-1.059.427 3.994 3.994 0 0 0-1.879 4.145A2.998 2.998 0 0 0 3.002 14.1a3.005 3.005 0 0 0 2.672 2.881 3 3 0 0 0 3.152-2.008 3.97 3.97 0 0 0 2.499-.746 3.498 3.498 0 0 0 3.789.377 3.5 3.5 0 0 0-.322-6.357 3.998 3.998 0 0 0-.885-3.996 4.024 4.024 0 0 0-3.217-1.24zm.521.996a2.996 2.996 0 0 1 2.51 4.256.5.5 0 0 0-.053.216.5.5 0 0 0 .387.582 2.498 2.498 0 0 1 .598 4.656 2.499 2.499 0 0 1-2.84-.372.5.5 0 0 0-.203-.12.5.5 0 0 0-.282-.097.5.5 0 0 0-.351.129 3 3 0 0 1-2.399.713.5.5 0 0 0-.543.33.5.5 0 0 0-.097.197 1.994 1.994 0 0 1-2.154 1.49 1.993 1.993 0 0 1-.957-3.598.5.5 0 0 0 .166-.117c.198-.115.418-.2.656-.242a.5.5 0 0 0-.09-.994.5.5 0 0 0-.084.01c-.16.028-.313.075-.463.127a2.992 2.992 0 0 1 5.057-2.346.5.5 0 0 0 .69-.724 3.995 3.995 0 0 0-2.31-1.079C8.302 7.008 8.15 7.01 8 7.01A.5.5 0 0 0 8 7a2.996 2.996 0 0 1 3.211-2.992z"/></svg></span> Clouds
+
+### Type
+<div class="parameter">
+    <div class="parameter__info">
+        <span>Use procedurally generated clouds or image texture for the clouds.</span>
+    </div>
+    <div class="parameter__video"></div>
+</div>
+
+
+### Seed
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_seed.mov" type="video/mp4"></video></div>
+</div>
+
 
 ### Scale
 <div class="parameter">
@@ -268,12 +325,39 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 </div>
 
 
+### Detail
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_detail.mov" type="video/mp4"></video></div>
+</div>
+
+
+### Dimension
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_dimension.mov" type="video/mp4"></video></div>
+</div>
+
+
+### Lacunarity
+<div class="parameter">
+    <div class="parameter__info">
+        <span></span>
+    </div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_lacunarity.mov" type="video/mp4"></video></div>
+</div>
+
+
 ### Coverage
 <div class="parameter">
     <div class="parameter__info">
         <span>Control minimum and maximum of how much clouds are covering the sky.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_coverage.mov" type="video/mp4"></video></div>
 </div>
 
 
@@ -389,7 +473,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
     <div class="parameter__info">
         <span>Move only horizon line up or down.</span>
     </div>
-    <div class="parameter__video"></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ground_horizon_offset.mov" type="video/mp4"></video></div>
 </div>
 
 
