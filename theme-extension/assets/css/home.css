@@ -1453,11 +1453,16 @@ body {
   transform: rotate(-16deg);
 }
 .badge__title {
-  font-size: 16px;
+  font-size: 32px;
 }
 .badge__subtitle {
   margin-top: 4px;
   font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+}
+.badge__title em, .badge__subtitle em {
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   .badge {
