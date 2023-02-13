@@ -1,3 +1,10 @@
+### 1.6.2 <small>- released 27.01.2022</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue that prevented stars from showing up. 
+-   
+
 ### 1.6.1 <small>- released 23.11.2022</small>
 
 `improvements:`{: .label-improvements }
