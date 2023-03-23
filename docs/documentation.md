@@ -252,7 +252,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Amount
 <div class="parameter">
     <div class="parameter__info">
-        <span>Magnitude of stars in the night sky.</span>
+        <span>Magnitude of stars in the night sky.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Magnitude measures celestial object brightness, affected by luminosity, distance from Earth, and atmospheric absorption. Adjusting star objects brightness in PSA can simulate the night sky and represent relative brightness. How big of a % of the scene is filled with stars.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_amount.mov" type="video/mp4"></video></div>
 </div>
@@ -279,7 +279,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Temperature
 <div class="parameter">
     <div class="parameter__info">
-        <span>How hot or bright the stars appear.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Black body temperature in kelvins. "black body" is an object that absorbs all of the electromagnetic radiation (such as light or heat) that falls on it, and doesn't reflect or transmit any of it. This means that the object appears completely black, hence the name "black body". Black bodies are important in physics because they help us understand how radiation behaves, and they are used as a standard for measuring things like temperature and energy.</span>
+        <span>How hot or bright the stars appear.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Black body temperature is measured in kelvins. A "black body" absorbs all electromagnetic radiation, appearing black. They aid in understanding radiation and are used to measure temperature and energy standards in physics</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_temperature.mov" type="video/mp4"></video></div>
 </div>
@@ -310,7 +310,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Scale
 <div class="parameter">
     <div class="parameter__info">
-        <span>Changes scale of the cloud noise texture.</span>
+        <span>Changes scale of the cloud noise texture.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Changes the scale of the cloud texture</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_scale.mp4" type="video/mp4"></video></div>
 </div>
@@ -337,7 +337,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Dimension
 <div class="parameter">
     <div class="parameter__info">
-        <span>How dimensional the clouds appear to be (flat to rough).</span>
+        <span>How dimensional the clouds appear to be (flat to rough).</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Adjust the amount of the detail level of the main texture. Smaller the dimension the more detailed the clouds will appear.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_dimension.mov" type="video/mp4"></video></div>
 </div>
@@ -346,7 +346,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Lacunarity
 <div class="parameter">
     <div class="parameter__info">
-        <span>The degree of spatial variability or patchiness of the cloud cover.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">It is a measure of how clustered or dispersed the clouds are in a particular area of the sky.</span>
+        <span>The degree of spatial variability or patchiness of the cloud cover.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Adjust the scales of the detail texture. Increasing lacunarity will increase the detail of the smaller clouds</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_lacunarity.mov" type="video/mp4"></video></div>
 </div>
