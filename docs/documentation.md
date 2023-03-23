@@ -78,7 +78,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Binary sun
 <div class="parameter">
     <div class="parameter__info">
-        <span>Enables a second sun that is bound to the main sun.</span>
+        <span>Enables a second sun that is bound to the main sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">In a binary star system, there are two stars that orbit around a common center of mass.</span>
     </div>
     <div class="parameter__video"><img src="../img/documentation/binary-sun.jpg" alt="" /></div>
 </div>
@@ -91,7 +91,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Distance
 <div class="parameter">
     <div class="parameter__info">
-        <span>Distance from the main sun.</span>
+        <span>Distance from the main sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">More accurately the distance between the primary and binary sun.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_distance.mov" type="video/mp4"></video></div>
 </div>
@@ -100,7 +100,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Phase
 <div class="parameter">
     <div class="parameter__info">
-        <span>The angle at which the binary sun is placed relative to the main sun.</span>
+        <span>The angle at which the binary sun is placed relative to the main sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The phase angle is the angle formed between the two suns relative to the observer.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_phase.mov" type="video/mp4"></video></div>
 </div>
@@ -109,7 +109,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Angular diameter
 <div class="parameter">
     <div class="parameter__info">
-        <span>The size of the binary sun disc.</span>
+        <span>The size of the binary sun disc.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The angular diameter is the angle formed between two imaginary lines that extend from the observer's eye to opposite edges of the binary sun disc. Larger the angular diameter, less bright the sun disc will appear, and softer the shadows will form.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/bi_sun_angular_diameter.mov" type="video/mp4"></video></div>
 </div>
@@ -176,7 +176,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Color
 <div class="parameter">
     <div class="parameter__info">
-        <span>Artistical control that gives a tint to the atmosphere particle.</span>
+        <span>Artistical control that gives a tint to the atmosphere particle.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The tint or hue of the atmospheric particles, that are added to the scene, simulate the appearance of a realistic sky. This can include the color of the sky during different times of the day, such as blue during the day, orange and red during sunset, and dark blue or black during the night.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmosphere_color.mp4" type="video/mp4"></video></div>
 </div>
@@ -212,7 +212,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Mie Scattering Anisotropy
 <div class="parameter">
     <div class="parameter__info">
-        <span>How concentrated is the light scattering around the sun.</span>
+        <span>How concentrated is the light scattering around the sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">It refers to the concentration of scattered light around the sun as viewed from a particular point in space. Mie scattering is a type of scattering that occurs when light interacts with particles that are of a larger size than the wavelength of the light.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/atmosphere_mie_scattering_anisotropy.mov" type="video/mp4"></video></div>
 </div>
@@ -234,7 +234,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Radiance Intensity
 <div class="parameter">
     <div class="parameter__info">
-        <span>Artistic control that affects how bright the stars are.</span>
+        <span>Artistic control that affects how bright the stars are.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Radiance intensity refers to the brightness of stars and can be adjusted for artistic effect or to simulate the actual brightness of stars in the night sky, allowing for the creation of different moods or atmospheres in a star field scene.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_rintensity.mp4" type="video/mp4"></video></div>
 </div>
@@ -252,7 +252,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Amount
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>Magnitude of stars in the night sky.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_amount.mov" type="video/mp4"></video></div>
 </div>
@@ -261,7 +261,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Scale
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>Global scale of the star texture.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The bigger the scale the smaller the stars and more clustered together they appear. If the stars are too large or too sparse, or if they are too small or too dense, the scene may look unrealistic or cluttered.</span>
     </div>
     <div class="parameter__video"></div>
 </div>
@@ -270,7 +270,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Seed
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>Randomly redistributed star texture for different star configurations/placement.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Different seed values can generate a new star texture with unique configurations and placements, where the seed value determines the starting point of randomization. In PSA, this technique allows for creating diverse star configurations and placements with the same texture and settings.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_seed.mov" type="video/mp4"></video></div>
 </div>
@@ -279,7 +279,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Temperature
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>How hot or bright the stars appear.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Black body temperature in kelvins. "black body" is an object that absorbs all of the electromagnetic radiation (such as light or heat) that falls on it, and doesn't reflect or transmit any of it. This means that the object appears completely black, hence the name "black body". Black bodies are important in physics because they help us understand how radiation behaves, and they are used as a standard for measuring things like temperature and energy.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/stars_temperature.mov" type="video/mp4"></video></div>
 </div>
@@ -292,7 +292,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Type
 <div class="parameter">
     <div class="parameter__info">
-        <span>Use procedurally generated clouds or image texture for the clouds.</span>
+        <span>Use procedurally generated clouds or image texture for the clouds.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Clouds with PSA can be created using either procedurally generated algorithms or image texture-based methods. Procedural clouds offer greater control over the appearance and are quick to render, while image texture-based clouds can achieve a specific look or style but are limited by the chosen image or texture.</span>
     </div>
     <div class="parameter__video"></div>
 </div>
@@ -301,7 +301,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Seed
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>Randomly generated codes for different cloud configurations/placement.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Procedural cloud generation uses algorithms that determine the cloud's shape, size, and density, but the same set of parameters will always produce the same cloud formation due to determinism. Use seed to create different variations.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_seed.mov" type="video/mp4"></video></div>
 </div>
@@ -319,16 +319,16 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Thickness
 <div class="parameter">
     <div class="parameter__info">
-        <span>Control how opaque clouds appear overall.</span>
+        <span>Control how opaque clouds appear overall.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Adjusting the thickness parameter can affect the appearance of clouds, making them more or less opaque by controlling how much light passes through. Thicker clouds block more light, appearing more opaque, while thinner clouds appear more transparent.</span>
     </div>
-    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_thickness.mp4" type="video/mp4"></video></div>
+    <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_thickness.mp4" type="video/mp4"></video></div>
 </div>
 
 
 ### Detail
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>How detailed the clouds appear.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The detail parameter adjusts the complexity of cloud texture, allowing the creation of clouds with varying levels of intricacy using noise textures. It controls the size of shapes and contrast between them.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_detail.mov" type="video/mp4"></video></div>
 </div>
@@ -337,7 +337,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Dimension
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>How dimensional the clouds appear to be (flat to rough).</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_dimension.mov" type="video/mp4"></video></div>
 </div>
@@ -346,7 +346,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Lacunarity
 <div class="parameter">
     <div class="parameter__info">
-        <span></span>
+        <span>The degree of spatial variability or patchiness of the cloud cover.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">It is a measure of how clustered or dispersed the clouds are in a particular area of the sky.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_lacunarity.mov" type="video/mp4"></video></div>
 </div>
@@ -355,7 +355,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Coverage
 <div class="parameter">
     <div class="parameter__info">
-        <span>Control minimum and maximum of how much clouds are covering the sky.</span>
+        <span>Control minimum and maximum of how much clouds are covering the sky.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Adjust the coverage parameter to control the minimum and maximum coverage of clouds in the sky, allowing you to create various weather conditions and atmospheric effects, ranging from a completely clear sky to a sky that is completely covered by clouds.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_coverage.mov" type="video/mp4"></video></div>
 </div>
@@ -364,7 +364,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Lighting Intensity
 <div class="parameter">
     <div class="parameter__info">
-        <span>Artistic control that allows control over how much sunlight is affecting the clouds.</span>
+        <span>Artistic control that allows control over how much sunlight is affecting the clouds.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Control cloud brightness and contrast, along with creating atmospheric effects using the lighting intensity parameter.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/clouds_lighting_intensity.mp4" type="video/mp4"></video></div>
 </div>
@@ -373,7 +373,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Self Shadowing
 <div class="parameter">
     <div class="parameter__info">
-        <span>Control the amount of shadows forming on clouds.</span>
+        <span>Control the amount of shadows forming on clouds.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The self-shadowing parameter simulates light passing through and around the clouds, adding depth and realism to the scene. Directly influences how much the shadows the cloud casts against itself are expressed.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_self_shadow.mp4" type="video/mp4"></video></div>
 </div>
@@ -382,7 +382,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Directional Power
 <div class="parameter">
     <div class="parameter__info">
-        <span>How much light is concentrated around the sun.</span>
+        <span>How much light is concentrated around the sun.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">This parameter adjusts the sun's effect on cloud appearance. A higher directional power focuses more light around the sun, making clouds brighter near it. Lower values distribute light more evenly across the sky for a less bright, diffuse appearance. </span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_direction.mp4" type="video/mp4"></video></div>
 </div>
@@ -400,7 +400,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Location
 <div class="parameter">
     <div class="parameter__info">
-        <span>Cloud coordinate position offset.</span>
+        <span>Cloud coordinate position offset.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The location parameter moves clouds from their default position to create dynamic formations or achieve a specific visual effect.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_location.mp4" type="video/mp4"></video></div>
 </div>
@@ -409,7 +409,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Rotation
 <div class="parameter">
     <div class="parameter__info">
-        <span>Cloud coordinate rotation offset.</span>
+        <span>Cloud coordinate rotation offset.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Rotation parameter rotates clouds around their center or pivot point. It's useful for creating dynamic cloud formations or visual effects.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/cloud_rotation.mp4" type="video/mp4"></video></div>
 </div>
@@ -444,7 +444,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Color
 <div class="parameter">
     <div class="parameter__info">
-        <span>Control the base color of the ground plane.</span>
+        <span>Control the base color of the ground plane.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Ground color/texture parameter controls the hue, saturation, and brightness of the ground plane, affecting the overall mood, lighting, and environment of the scene.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ground_color.mp4" type="video/mp4"></video></div>
 </div>
@@ -453,7 +453,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Ground
 <div class="parameter">
     <div class="parameter__info">
-        <span>If enabled, creates an infinite ground plane. Makes the horizon visible.</span>
+        <span>If enabled, creates an infinite ground plane. Makes the horizon visible.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Enabling this option creates a continuous ground plane, useful for outdoor scenes, landscapes, and visible horizon.</span>
     </div>
     <div class="parameter__video"><img src="" alt="" /></div>
 </div>
@@ -471,7 +471,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Horizon offset
 <div class="parameter">
     <div class="parameter__info">
-        <span>Move only horizon line up or down.</span>
+        <span>Move only horizon line up or down.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Adjusting the horizon offset can change the horizon line position, affecting the scene's appearance. It creates the illusion of a higher or lower viewpoint, emphasizing specific elements and producing atmospheric effects.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/ground_horizon_offset.mov" type="video/mp4"></video></div>
 </div>
@@ -484,7 +484,7 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 ### Distance scalar
 <div class="parameter">
     <div class="parameter__info">
-        <span>Control all distance values globally.</span>
+        <span>Control all distance values globally.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">This parameter adjusts the distance between objects in a scene, and is useful for large scenes. Decreasing it creates more distance and a spacious feel, while increasing it creates less distance and a crowded feel.</span>
     </div>
     <div class="parameter__video"><video autoplay loop muted playsinline ><source src="../img/documentation/distance_scalar.mp4" type="video/mp4"></video></div>
 </div>
