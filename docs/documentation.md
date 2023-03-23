@@ -3,8 +3,6 @@
 !!! tip ""
     Hey :wave:, first time here? You can find the installation guide and first run in the [getting started](/psa/getting-started/) section.
 
-!!! warning ""
-    Noticed some of the stars and cloud parameter descriptions are empty? We are working on it :mechanic: .
 
 Take a deep breath and have a look at the user interface. At a glance, it may look a bit complex. It is due to many tweakable parameters and fancy names like *Kelvins*, *radiance*, and *absorption* that we use to standardize variable names.
 
