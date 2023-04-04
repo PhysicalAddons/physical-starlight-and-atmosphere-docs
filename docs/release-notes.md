@@ -2,7 +2,7 @@
 
 `fixed:`{: .label-fixed }
 
-- Fixed issue that prevented the use of real world physical values from working correctly.
+- Fixed issue that prevented the use of real world physical values from working correctly. {[#85](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/85)}
 
 
 ### 1.6.2 <small>- released 15.02.2022</small>
