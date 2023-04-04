@@ -1,3 +1,10 @@
+### 1.6.3 <small>- released 04.04.2023</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed issue that prevented the use of real world physical values from working correctly.
+
+
 ### 1.6.2 <small>- released 15.02.2022</small>
 
 `fixed:`{: .label-fixed }
