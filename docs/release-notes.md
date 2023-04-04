@@ -1,4 +1,4 @@
-### 1.6.3 <small>- released xx.0x.2023</small>
+### 1.6.3 <small>- released 04.04.2023</small>
 
 `fixed:`{: .label-fixed }
 
