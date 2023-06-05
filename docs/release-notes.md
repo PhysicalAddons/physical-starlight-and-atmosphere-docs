@@ -4,7 +4,7 @@
 
 - Preset generation from `.json` files and their automatic loading into Blender Asset Browser. 
 
-`fixed:`{: .label-fixed }
+`fixed:`{: .label-fixed } 
 
 - Cycle fog render performance fix {[Blender: #106770](https://projects.blender.org/blender/blender/issues/106770)}.
 - Fixed issues when preset wasn't generating correctly.
