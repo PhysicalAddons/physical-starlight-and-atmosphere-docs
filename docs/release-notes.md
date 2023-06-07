@@ -1,4 +1,4 @@
-### 1.7.0 <small>- released 05.06.2023</small>
+### 1.7.0 <small>- released 07.06.2023</small>
 
 `new:`{: .label-new }
 
