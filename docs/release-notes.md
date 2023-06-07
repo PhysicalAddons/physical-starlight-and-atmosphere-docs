@@ -7,7 +7,7 @@
 `fixed:`{: .label-fixed } 
 
 - Cycle fog render performance fix {[Blender: #106770](https://projects.blender.org/blender/blender/issues/106770)}.
-- Fixed issues when preset wasn't generating correctly.
+- Fixed issues when preset preview wasn't generating correctly.
 
 ### 1.6.3 <small>- released 04.04.2023</small>
 
