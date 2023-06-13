@@ -84,11 +84,44 @@ Enables features that may not be fully functional and tested for all cases. Curr
 
 ## Presets
 
+Presets allow to store a snapshot of your customized atmosphere settings and return to it later
+or use already predefined presets provided by the addon.
+
+!!! info 
+    To be able to use PSA predefined presets you have to use Blender version 3.0 and above. 
+
+### This works starting with PSA version 1.7+
+!!! summary "If you have used previous versions of Presets"     
+    If you have used the previous versions of Presets, you will need to delete the old asset file:
+        
+    - Open file explorer 
+    - Go to: > This PC > Local Disk > Users > /user/ > AppData > Roaming > Blender Foundation > Blender > /your version/ > datafiles > presets > PSA > 
+    - Delete the ''presets.blend'' file.
+
+#### Installing and using presets
+
+1. Install the PSA addon (version 1.7+)
+2. Enable the addon 
+3. In one of the Blender [existing Areas]((https://docs.blender.org/manual/en/3.0/interface/window_system/areas.html#areas))  open *Data > Asset Browser*
+4. Choose ''PSA'' in the dropdown menu
+5. Choose the preset you like and drag it into your scene
+
+### How to make your own presets
+
+1. In the PSA panle rename the world to your custom presets name
+image
+2. Right click the world button and mark as asset
+3. Your asset will now appear in the asset browser (no preview will generate)
+
+
+
+
+<!-- 
 Assets allow to store a snapshot of your customized atmosphere settings and return to it later
 or use already predefined presets provided by the addon.
 
-!!! info
-     To be able to use PSA predefined assets you have to use Blender version 3.0 and above. 
+!!! info 
+    To be able to use PSA predefined assets you have to use Blender version 3.0 and above.
 
 ### Importing assets
 1. download *assets.blend* file
@@ -101,5 +134,5 @@ or use already predefined presets provided by the addon.
 2. Under the dropdown select a name you assigned to the library when importing assets.
 3. Select an asset and drop it in the view.
 
-[![Asset Browser](img/UI/asset-browser.jpg)](img/UI/asset-browser.jpg)
+[![Asset Browser](img/UI/asset-browser.jpg)](img/UI/asset-browser.jpg) -->
 
