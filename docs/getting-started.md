@@ -88,7 +88,7 @@ Assets allow to store a snapshot of your customized atmosphere settings and retu
 or use already predefined presets provided by the addon.
 
 !!! info
-     To be able to use PSA predefined assets you have to use Blender version 3.0 and above.
+     To be able to use PSA predefined assets you have to use Blender version 3.0 and above. 
 
 ### Importing assets
 1. download *assets.blend* file
