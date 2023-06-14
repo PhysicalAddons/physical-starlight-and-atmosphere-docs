@@ -90,22 +90,22 @@ or use already predefined presets provided by the addon.
 !!! info 
     To be able to use PSA predefined presets you have to use Blender version 3.0 and above. 
 
-### This works starting with PSA version 1.7+
+### This works with PSA version 1.7+
 !!! summary "If you have used previous versions of Presets"     
     If you have used the previous versions of Presets, you will need to delete the old asset file:
         
     - Open file explorer 
     - Go to: > This PC > Local Disk > Users > /user/ > AppData > Roaming > Blender Foundation > Blender > /your version/ > datafiles > presets > PSA > 
 
-        - Alternatively (for non-Windows users), go to:
+        - Alternatively (for non-Windows users):
         
             - Navigate to Blender preferences and locate ''Asset Libraries''
-            - There you will need to find ''Asset Libraries''
-            - There you have to find the User Library ''PSA'' or the library's name that corresponds to the presets.blend file
+            <!-- - There you have to find the User Library ''PSA'' or the library's name that corresponds to the presets.blend file -->
+            - You have to find the User Library ''PSA'' or the library's name corresponding to the presets.blend file
             - After you have located the library, go to the denoted path and find ''presets.blend''
     - Delete the ''presets.blend'' file.
 
-### Installing and using presets
+#### Installing and using presets
 
 1. Install the PSA addon (version 1.7+)
 2. Enable the addon 
@@ -115,9 +115,11 @@ or use already predefined presets provided by the addon.
 
 ### How to make your own presets
 
-1. In the PSA panle rename the world to your custom presets name
-[![New preset](img/UI/new_preset.jpeg)](img/UI/new_preset.jpeg)
-2. Right click the world button and mark as asset
+1. In the PSA panel rename the world to your custom presets name
+
+    [![New preset](img/UI/new_preset.jpeg)](img/UI/new_preset.jpeg)
+
+2. Right-click the world button and mark it as an asset
 3. Your asset will now appear in the asset browser (no preview will generate)
 
 
