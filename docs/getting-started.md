@@ -98,7 +98,7 @@ or use already predefined presets provided by the addon.
     - Go to: > This PC > Local Disk > Users > /user/ > AppData > Roaming > Blender Foundation > Blender > /your version/ > datafiles > presets > PSA > 
     - Delete the ''presets.blend'' file.
 
-#### Installing and using presets
+### Installing and using presets
 
 1. Install the PSA addon (version 1.7+)
 2. Enable the addon 
