@@ -96,6 +96,13 @@ or use already predefined presets provided by the addon.
         
     - Open file explorer 
     - Go to: > This PC > Local Disk > Users > /user/ > AppData > Roaming > Blender Foundation > Blender > /your version/ > datafiles > presets > PSA > 
+
+        - Alternatively (for non-Windows users), go to:
+        
+            - Navigate to Blender preferences and locate ''Asset Libraries''
+            - There you will need to find ''Asset Libraries''
+            - There you have to find the User Library ''PSA'' or the library's name that corresponds to the presets.blend file
+            - After you have located the library, go to the denoted path and find ''presets.blend''
     - Delete the ''presets.blend'' file.
 
 #### Installing and using presets
