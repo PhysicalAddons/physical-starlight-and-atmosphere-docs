@@ -105,7 +105,7 @@ or use already predefined presets provided by the addon.
             - After you have located the library, go to the denoted path and find ''presets.blend''
     - Delete the ''presets.blend'' file.
 
-#### Installing and using presets
+### Installing and using presets
 
 1. Install the PSA addon (version 1.7+)
 2. Enable the addon 
@@ -116,7 +116,7 @@ or use already predefined presets provided by the addon.
 ### How to make your own presets
 
 1. In the PSA panle rename the world to your custom presets name
-image
+[![New preset](img/UI/new_preset.jpeg)](img/UI/new_preset.jpeg)
 2. Right click the world button and mark as asset
 3. Your asset will now appear in the asset browser (no preview will generate)
 
