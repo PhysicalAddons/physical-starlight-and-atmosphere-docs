@@ -91,7 +91,7 @@ or use already predefined presets provided by the addon.
     To be able to use PSA predefined presets you have to use Blender version 3.0 and above. 
 
 ### This works with PSA version 1.7+
-!!! summary "If you have used previous versions of Presets"     
+??? summary "If you have used previous versions of Presets"     
     If you have used the previous versions of Presets, you will need to delete the old asset file:
         
     - Open file explorer 
@@ -109,7 +109,7 @@ or use already predefined presets provided by the addon.
 
 1. Install the PSA addon (version 1.7+)
 2. Enable the addon 
-3. In one of the Blender [existing Areas]((https://docs.blender.org/manual/en/3.0/interface/window_system/areas.html#areas))  open *Data > Asset Browser*
+3. In one of the Blender existing Areas open *Data > Asset Browser*
 4. Choose ''PSA'' in the dropdown menu
 5. Choose the preset you like and drag it into your scene
 
