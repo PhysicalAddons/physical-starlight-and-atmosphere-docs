@@ -84,11 +84,56 @@ Enables features that may not be fully functional and tested for all cases. Curr
 
 ## Presets
 
+Presets allow you to store a snapshot of your customized atmosphere settings and return to it later
+or use already predefined presets provided by the addon.
+
+!!! info 
+    To be able to use PSA predefined presets you have to use Blender version 3.0 and above. 
+
+
+    Automatically generated PSA presets are only available with PSA version 1.7+.
+
+### Installing and using presets
+
+1. Install the PSA addon (version 1.7+)
+2. Enable the addon 
+3. In one of the Blender existing Areas open *Data > Asset Browser*
+4. Choose ''PSA'' in the dropdown menu
+5. Choose the preset you like and drag it into your scene
+
+??? summary "Troubleshooting: Concerning previous versions of Presets"     
+    If you have used the previous versions of Presets, you will need to delete the old asset file:
+        
+    - Open file explorer 
+    - Go to: > This PC > Local Disk > Users > /user/ > AppData > Roaming > Blender Foundation > Blender > /your version/ > datafiles > presets > PSA > 
+
+        - Alternatively (for non-Windows users):
+        
+            - Navigate to Blender preferences and locate ''Asset Libraries''
+            <!-- - There you have to find the User Library ''PSA'' or the library's name that corresponds to the presets.blend file -->
+            - You have to find the User Library ''PSA'' or the library's name corresponding to the presets.blend file
+            - After you have located the library, go to the denoted path and find ''presets.blend''
+    - Delete the ''presets.blend'' file.
+
+
+### How to make your own presets
+
+1. In the PSA panel rename the world to your custom presets name
+
+    [![New preset](img/UI/new_preset.jpeg)](img/UI/new_preset.jpeg)
+
+2. Right-click the world button and mark it as an asset
+3. Your asset will now appear in the asset browser (no preview will generate)
+
+
+
+
+<!-- 
 Assets allow to store a snapshot of your customized atmosphere settings and return to it later
 or use already predefined presets provided by the addon.
 
-!!! info
-     To be able to use PSA predefined assets you have to use Blender version 3.0 and above.
+!!! info 
+    To be able to use PSA predefined assets you have to use Blender version 3.0 and above.
 
 ### Importing assets
 1. download *assets.blend* file
@@ -101,5 +146,5 @@ or use already predefined presets provided by the addon.
 2. Under the dropdown select a name you assigned to the library when importing assets.
 3. Select an asset and drop it in the view.
 
-[![Asset Browser](img/UI/asset-browser.jpg)](img/UI/asset-browser.jpg)
+[![Asset Browser](img/UI/asset-browser.jpg)](img/UI/asset-browser.jpg) -->
 
