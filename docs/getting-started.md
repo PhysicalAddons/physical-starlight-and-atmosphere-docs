@@ -93,7 +93,7 @@ or use already predefined presets provided by the addon.
 
     Automatically generated PSA presets are only available with PSA version 1.7+.
 
-#### Installing and using presets
+### Installing and using presets
 
 1. Install the PSA addon (version 1.7+)
 2. Enable the addon 
