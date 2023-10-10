@@ -1,3 +1,15 @@
+### 1.7.1 <small>- released 10.10.2023</small>
+
+`improvements:`{: .label-improvements }
+
+- Updated 'Report a Bug' button in addon preferences to lead to our Discord channel.
+- Conducted general code cleanup.
+
+`fixed:`{: .label-fixed } 
+
+- Resolved an issue that occasionally prevented preset generation when enabling atmosphere for the first time.
+
+
 ### 1.7.0 <small>- released 07.06.2023</small>
 
 `new:`{: .label-new }
