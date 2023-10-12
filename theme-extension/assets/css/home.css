@@ -434,8 +434,8 @@ body {
   top: 20px;
   left: 20px;
   z-index: 1001;
-  width: 58px;
-  height: 58px;
+  width: 40px;
+  height: 40px;
 }
 @media (max-width: 575px) {
   .nav-primary__logo {
@@ -449,7 +449,7 @@ body {
 .nav-primary__link {
   display: inline-block;
   margin-right: 36px;
-  padding: 16px 0;
+  padding: 12px 0;
   font-size: 16px;
   color: #F5F5F5;
   text-decoration: none;

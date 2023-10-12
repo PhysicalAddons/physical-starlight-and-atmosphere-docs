@@ -10,8 +10,8 @@ $nav-font-color: #F5F5F5;
 		top: 20px;
 		left: 20px;
 		z-index: 1001;
-		width: 58px;
-		height: 58px;
+		width: 40px;
+		height: 40px;
 		@include respond-below(xs) {
 			width: 40px;
 			height: 40px;
@@ -23,7 +23,7 @@ $nav-font-color: #F5F5F5;
 	&__link {
 		display: inline-block;
 		margin-right: 36px;
-		padding: 16px 0;
+		padding: 12px 0;
 		font-size: $nav-font-size;
 		color: $nav-font-color;
 		text-decoration: none;
