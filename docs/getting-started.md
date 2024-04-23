@@ -84,45 +84,48 @@ Enables features that may not be fully functional and tested for all cases. Curr
 
 ## Presets
 
-Presets allow you to store a snapshot of your customized atmosphere settings and return to it later
-or use already predefined presets provided by the addon.
+Presets allow you to store a snapshot of your customized atmosphere settings and return to it later or use already predefined presets provided by the addon.
+the addon comes with 10 different presets:
 
-!!! info 
-    To be able to use PSA predefined presets you have to use Blender version 3.0 and above. 
+- earth
+- earth 2
+- earth 3
+- hazy summer
+- mars
+- nishita
+- retrowave
+- tatooine
+- thick fog
+- thick haze
+  
+### Using presets
 
-
-    Automatically added PSA presets are only available with PSA version 1.7+.
-
-### Installing and using presets
-
-1. Install the PSA addon (version 1.7+)
+1. Install the PSA addon (version 1.8+)
 2. Enable the addon inside the *Blender Preferences*
 3. Enable the addon inside the *Blender Viewport*, which will make the presets visible inside Blender
-4. In one of the Blender existing Areas open *Data > Asset Browser*
-5. Choose ''PSA'' in the dropdown menu
-6. Choose the preset you like and drag it into your scene
+4. In the n panel under ''presets'' pick a preset of your liking
+5. You should now see the preset in your scene!
 
 ??? summary "Troubleshooting: Concerning previous versions of Presets"     
-    If you have used the previous versions of Presets, you will need to delete the old asset file:
+    If you have used the previous versions of Presets (using the asset browser) this is how you can migrate them to the new system:
+                
+            - Navigate to Blender asset libraries
+            - There you have to find the User Library ''PSA'' or the library's name that corresponds to your presets
+            - drag the asset in to your scene
+            - create a new preset through the n panel, name and save it
+            - you now have your preset migrated!
         
-    - Open file explorer 
-    - Go to: > This PC > Local Disk > Users > /user/ > AppData > Roaming > Blender Foundation > Blender > /your version/ > datafiles > presets > PSA > 
-
-        - Alternatively (for non-Windows users):
-        
-            - Navigate to Blender preferences and locate ''Asset Libraries''
-            <!-- - There you have to find the User Library ''PSA'' or the library's name that corresponds to the presets.blend file -->
-            - You have to find the User Library ''PSA'' or the library's name corresponding to the presets.blend file
-            - After you have located the library, go to the denoted path and find ''presets.blend''
-    - Delete the ''presets.blend'' file or any .blend file that starts with ''presets...''.
-
 
 ### How to make your own presets
 
-1. In the PSA panel rename the world to your custom presets name
+1. In the PSA panel click ''+ new preset''
+2. Name it
+3. Modify the PSA parameters to your liking
+4. Save the changes you made!
 
-    [![New preset](img/UI/new_preset.jpeg)](img/UI/new_preset.jpeg)
+!!! tip 
 
-2. Right-click the world button and mark it as an asset
-3. Your asset will now appear in the asset browser (no preview will generate)
+     Use ''Use preset sun location'' if you want to save the suns location in the preset. If you dont want the preset to change your suns location then leave the box unchecked
+   
+
 
