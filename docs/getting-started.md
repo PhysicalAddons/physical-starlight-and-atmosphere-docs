@@ -109,11 +109,11 @@ the addon comes with 10 different presets:
 ??? summary "Troubleshooting: Concerning previous versions of Presets"     
     If you have used the previous versions of Presets (using the asset browser) this is how you can migrate them to the new system:
                 
-            - Navigate to Blender asset libraries
-            - There you have to find the User Library ''PSA'' or the library's name that corresponds to your presets
-            - drag the asset in to your scene
-            - create a new preset through the n panel, name and save it
-            - you now have your preset migrated!
+      - Navigate to Blender asset libraries
+      - There you have to find the User Library ''PSA'' or the library's name that corresponds to your presets
+      - drag the asset in to your scene
+      - create a new preset through the n panel, name and save it
+      - you now have your preset migrated!
         
 
 ### How to make your own presets
