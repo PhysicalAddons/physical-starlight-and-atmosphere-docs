@@ -1,4 +1,4 @@
-### 1.8.0 <small>- released 25.04.2024
+### 1.8.0 <small>- released 25.04.2024</small>
 
 `improvements:`{: .label-improvements }
 
