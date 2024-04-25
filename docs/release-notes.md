@@ -1,3 +1,11 @@
+### 1.8.0 <small>- released 25.04.2024
+
+`improvements:`{: .label-improvements }
+
+- Migrated from Asset Browser to a new better and faster preset system.
+- UI change to match our other products.
+
+  
 ### 1.7.1 <small>- released 10.10.2023</small>
 
 `improvements:`{: .label-improvements }
