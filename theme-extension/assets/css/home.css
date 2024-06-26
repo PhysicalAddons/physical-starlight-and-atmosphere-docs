@@ -833,7 +833,7 @@ body {
   content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTS42NjcgMTZBLjY2Ni42NjYgMCAwMTAgMTUuMzMzVi42NjdBLjY2Ny42NjcgMCAwMS45ODguMDgzTDE0LjMyIDcuNDE2YS42NjYuNjY2IDAgMDEwIDEuMTY4TC45ODggMTUuOTE4QS42NjcuNjY3IDAgMDEuNjY3IDE2eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
 }
 .timeline__section--active:after {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
 .timeline__section--empty:before, .timeline__section--empty:after {
   display: none;

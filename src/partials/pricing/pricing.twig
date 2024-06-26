@@ -19,7 +19,7 @@
 					<footer class="pricing__footer">
 						<p>Buy it once, use it forever</p>
 						{% set new_basic = (promo ? price_basic * (1 - discount) : price_basic) | number_format(2, '.', '') %}
-						<div class="pricing__price" {{ promo ? 'data-before="'~(price_basic | number_format(2, '.', ''))~'$"' : '' }}>{{ promo ? new_basic : price_basic }}$</div>
+						<div class="pricing__price" {{ promo ? 'data-before="'~(price_basic | number_format(2, '.', ''))~'$"' : '' }}>{{ promo ? new_basic : price_basic | number_format(2, '.', '') }}$</div>
 						<a href="https://blendermarket.com/products/physical-starlight-and-atmosphere?variant=2891" class="btn btn--primary">Buy Now</a>
 					</footer>
 				</li>
@@ -37,7 +37,7 @@
 					<footer class="pricing__footer">
 						<p>For your team</p>
 						{% set new_studio = (promo ? price_studio * (1 - discount) : price_studio) | number_format(2, '.', '') %}
-						<div class="pricing__price" {{ promo ? 'data-before="'~(price_studio | number_format(2, '.', ''))~'$"' : '' }}>{{ promo ? new_studio : price_studio }}$</div>
+						<div class="pricing__price" {{ promo ? 'data-before="'~(price_studio | number_format(2, '.', ''))~'$"' : '' }}>{{ promo ? new_studio : price_studio | number_format(2, '.', '') }}$</div>
 						<a href="https://blendermarket.com/products/physical-starlight-and-atmosphere?variant=2892" class="btn btn--secondary">Buy Now</a>
 					</footer>
 				</li>
