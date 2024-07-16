@@ -1,3 +1,13 @@
+### 1.8.1 <small>- released 16.07.2024</small>
+
+`fixed:`{: .label-fixed } 
+
+- Volume linking is now omitted if no surface is present.
+- Improved alpha linking to be mostly automatic.
+- Fixed an issue where re-zipping a folder on MacOS resulted in a non-working addon due to a folder name change.
+- Resolved an issue where the binary sun panel would appear if it was enabled, even when the atmosphere was off.
+
+
 ### 1.8.0 <small>- released 25.04.2024</small>
 
 `improvements:`{: .label-improvements }
