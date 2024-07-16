@@ -1,5 +1,9 @@
 ### 1.8.1 <small>- released 16.07.2024</small>
 
+`improvements:`{: .label-improvements }
+
+- Added Physical Starlight and Atmosphere abbreviation (PSA) to simplify addon search in Blender Preferences.
+
 `fixed:`{: .label-fixed } 
 
 - Volume linking is now omitted if no surface is present.
