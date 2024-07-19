@@ -8,7 +8,7 @@ _Physical Starlight and Atmosphere_ (PSA)  is a Blender addon for advanced envir
 and lighting, and visual consistency between every object in your scene. It can be installed as any other Blender addon.
 ## Requirements
 
-Latest _Physical Starlight and Atmosphere_ is supported by [Blender 3.4+](https://www.blender.org/).
+Latest _Physical Starlight and Atmosphere_ version is supported by [Blender 3.4+](https://www.blender.org/).
 Addon versions from v1.2 till 1.6.1 works on [Blender 2.81 - 3.3](https://www.blender.org/).
 
 ## Installation
@@ -27,7 +27,7 @@ Addon versions from v1.2 till 1.6.1 works on [Blender 2.81 - 3.3](https://www.bl
 - Wait till it registers. Voila!
 
 ## First Run
-- Locate _Physical Starlight and Atmosphere_ panel in [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
+- Locate _Physical Starlight and Atmosphere_ panel in the [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
 also called _N Panel_ (You can also find addon panel in the World Properties). Click on the tab _Atmosphere_ to reveal it.
 - Enable addon by clicking the `+ Add Atmosphere` button.
  
