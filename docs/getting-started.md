@@ -27,8 +27,9 @@ The add-on versions between v1.2 and v1.6.1 still work on [Blender 2.81 - 3.3](h
 - Wait till it registers. Voila!
 
 ## First Run
-- Locate _Physical Starlight and Atmosphere_ panel in the [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
+- Locate the _Physical Starlight and Atmosphere_ panel in the [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
 also called _N Panel_ (You can also find add-on panel in the World Properties). Click on the tab _Atmosphere_ to reveal it.
+
 - Enable add-on by clicking the `+ Add Atmosphere` button.
  
 !!! important
@@ -36,7 +37,7 @@ also called _N Panel_ (You can also find add-on panel in the World Properties). 
 
 [![Enable PSA](img/ENABLE_PSA_v182.jpg)](img/ENABLE_PSA_v182.jpg)
 
-- To then remove the Atmosphere, you can locate the `X Remove Atmosphere` button.
+- To then remove the _Atmosphere_, you can locate and click the `X Remove Atmosphere` button.
 
 [![Disable PSA](img/DISABLE_PSA_v182.jpg)](img/DISABLE_PSA_v182.jpg)
 
@@ -110,8 +111,8 @@ The add-on comes with 10 different presets:
 
 1. Install the PSA add-on (version 1.8+).
 2. Enable the add-on inside the *Blender Preferences*.
-3. Add the *Atmosphere* inside the *Blender Viewport*, which will make the presets visible inside Blender.
-4. In the n panel under ''presets'' pick a preset of your liking.
+3. Add the *Atmosphere* inside the *Blender Viewport*, which will make the presets visible inside the add-ons _N Panel_.
+4. In the _N Panel_ under `Presets` tab pick a preset of your liking.
 5. You should now see the preset in your scene!
 
 ??? summary "Troubleshooting: Concerning previous versions of Presets"     
@@ -126,10 +127,10 @@ The add-on comes with 10 different presets:
 
 ### How to make your own presets
 
-1. In the PSA panel click `+ new preset`.
+1. In the `PSA` _N Panel_ click `+ Create New`.
 2. Name it something memorable, avoid special characters.
-3. Modify the PSA parameters to your liking.
+3. Modify the `PSA` parameters to your liking.
 4. Save the changes you made!
 
 !!! tip 
-     Use ''Use preset sun location'' if you want to save the suns location in the preset. If you don't want the preset to change your suns location then leave the box unchecked.
+    Use ''Use preset sun location'' if you want to save the suns location in the preset. If you don't want the preset to change your suns location, then leave the box unchecked.
