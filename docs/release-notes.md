@@ -2,13 +2,13 @@
 
 `improvements:`{: .label-improvements }
 
-- Added Physical Starlight and Atmosphere abbreviation (PSA) to simplify addon search in Blender Preferences.
+- Added Physical Starlight and Atmosphere abbreviation (PSA) to simplify add-on search in Blender Preferences.
 
 `fixed:`{: .label-fixed } 
 
 - Volume linking is now omitted if no surface is present.
 - Improved alpha linking to be mostly automatic.
-- Fixed an issue where re-zipping a folder on MacOS resulted in a non-working addon due to a folder name change.
+- Fixed an issue where re-zipping a folder on MacOS resulted in a non-working add-on due to a folder name change.
 - Resolved an issue where the binary sun panel would appear if it was enabled, even when the atmosphere was off.
 
 
@@ -24,7 +24,7 @@
 
 `improvements:`{: .label-improvements }
 
-- Updated 'Report a Bug' button in addon preferences to lead to our Discord channel.
+- Updated 'Report a Bug' button in add-on preferences to lead to our Discord channel.
 - Conducted general code cleanup.
 
 `fixed:`{: .label-fixed } 
@@ -84,14 +84,14 @@
 
 `fixed:`{: .label-fixed }
 
-- Fixed issue when **animating sun** via horizontal and vertical rotation or Sun Position addon did cause sun to stutter. **Important Note**: in order for old projects to work with PSA v1.6 - disable and re-enable checkbox in the panel.  
+- Fixed issue when **animating sun** via horizontal and vertical rotation or Sun Position add-on did cause sun to stutter. **Important Note**: in order for old projects to work with PSA v1.6 - disable and re-enable checkbox in the panel.  
 - Fixed issue when animating binary sun didn't work.
 
 ### 1.5.3 <small>- released 17.08.2022</small>
 
 `fixed:`{: .label-fixed }
 
-- Fixed issue when disabling addon that had linked Material Fog node resulted in Missing Data-Block node. 
+- Fixed issue when disabling add-on that had linked Material Fog node resulted in Missing Data-Block node. 
 
 
 ### 1.5.2 <small>- released 01.07.2022</small>
@@ -110,7 +110,7 @@
 
 `improvements:`{: .label-improvements }
 
-- Space out shader nodes when the addon is enabled.
+- Space out shader nodes when the add-on is enabled.
 - Space out shader nodes for existing 10 atmosphere assets.
 - Reduced size of assets file.
 
@@ -141,7 +141,7 @@
 
 `fixed:`{: .label-fixed }
 
-- **Fixed Blender crash** that occured when rendering. {[#43](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/43)}
+- **Fixed Blender crash** that occurred when rendering. {[#43](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/43)}
 - Fixed overexposed Mars preset {[#61](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/61)}
 
 ### 1.4.4-beta <small>- released 14.12.2021</small>
@@ -186,7 +186,7 @@
 
 `improvements:`{: .label-improvements }
 
-- Improved general addon performance.
+- Improved general add-on performance.
 - Reduced RAM used by Object Fog.
 - Clouds UI moved to the Atmosphere tab.
 - Added extra rotation and location parameters for the Clouds.
@@ -195,7 +195,7 @@
 
 - Fixed issue when rendering animation (hitting F12 key) gets a consistent crash. {[#43](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/43)}
 - Fixed issue when using cloud feature were not enabled when using Cycles rendering engine by default. {[#42](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/42)}
-- Fixed issue when animating sun via Sun Position addon resulted in incomplete animation. {[#7](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/7)}
+- Fixed issue when animating sun via Sun Position add-on resulted in incomplete animation. {[#7](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/7)}
 - Alpha fix. {[#45](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/45)}
 
 
@@ -215,14 +215,14 @@
 `improvements:`{: .label-improvements }
 
 - Improve animation performance. Now the atmosphere will be redrawn only if UI parameter has changed.
-- Now on `Blender > System > Reload Scripts` all addon scripts are properly reloading.
-- Whenever a blendfile is loaded it correctly loads preset defaults it is based on.
+- Now on `Blender > System > Reload Scripts` all add-on scripts are properly reloading.
+- Whenever a `.blend` file is loaded in, it correctly loads preset defaults it is based on.
 
 
 `fixed:`{: .label-fixed }
 
-- Fixed issues when installing a new addon version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)}
-- Fixed issue when addon was not working in multiple scenes. {[#26](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/26)}
+- Fixed issues when installing a new add-on version on top of the old one results in console errors. {[#31](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/31)}
+- Fixed issue when add-on was not working in multiple scenes. {[#26](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/26)}
 - Fixed issue when _Material Fog_ is active adding a new material caused to lose user made changes in the Shader editor.
   {[#34](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/34)}
 
@@ -240,7 +240,7 @@
 `new:`{: .label-new }   
 
 - Added ability to add or remove Presets (snapshot of your customized atmosphere settings).
-- Added 4 presets (_Earth, Mars, Nishita and Retrowave_) that comes default with the addon installation.
+- Added 4 presets (_Earth, Mars, Nishita and Retrowave_) that comes default with the add-on installation.
 - Added `Binary Sun` (secondary sun) that can be rotated around the `Sun`. For more information check section
 [Experimental Features](/psa/customization/#experimental-features)
 
@@ -259,19 +259,19 @@
 
 `fixed:`{: .label-fixed }
 
-- Fixed an issue where `Toggle Meterial Fog` button sometimes appears active when it isn't.
-- Fixed an issue where when disabling addon didn't delete all Sun data and left some garbage behind. {[#1](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/1)}
+- Fixed an issue where `Toggle Material Fog` button sometimes appears active when it isn't.
+- Fixed an issue where when disabling add-on didn't delete all Sun data and left some garbage behind. {[#1](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/1)}
 - Fixed an issue where when rotating sun using gimbal it did a random jump. {[#6](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/6)}
-- Fixed an issue where when animating time using Sun Position addon gave the same frame in output. {[#7](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/7)}
+- Fixed an issue where when animating time using Sun Position add-on gave the same frame in output. {[#7](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/7)}
 
 ### 1.2.2 <small>- released 15.07.2020</small>
 
 `new:`{: .label-new }   
 
-- Addon now has preferences to enable or disable real world physical values (by default disabled).
+- Add-on now has preferences to enable or disable real world physical values (by default disabled).
 
 `fixed:`{: .label-fixed }       
 
-- Fixed an issue where disabling addon didn't reset the exposure to defaults {[#8](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/8)}
+- Fixed an issue where disabling add-on didn't reset the exposure to defaults {[#8](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/8)}
 - Fixed an issue where when starting the render exposure was being reset {[#11](https://github.com/PhysicalAddons/physical-starlight-and-atmosphere/issues/11)}  
 
