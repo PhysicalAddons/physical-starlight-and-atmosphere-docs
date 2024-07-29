@@ -6,6 +6,7 @@ title: Getting started
 
 _Physical Starlight and Atmosphere_ (PSA)  is a Blender add-on for advanced environmental lighting that provides high quality atmospherics
 and lighting, and visual consistency between every object in your scene. It can be installed as any other Blender add-on.
+
 ## Requirements
 
 Latest _Physical Starlight and Atmosphere_ version is supported by [Blender 3.4+](https://www.blender.org/).
@@ -35,11 +36,11 @@ also called _N Panel_ (You can also find add-on panel in the World Properties). 
 !!! important
     To see the sky, you have to be in "Rendered" Viewport Shading mode (click on the 4th sphere in the list up in the right corner of 3D viewport)
 
-[![Enable PSA](img/ENABLE_PSA_v182.jpg)](img/ENABLE_PSA_v182.jpg)
+[![Enable PSA](img/ENABLE_PSA.jpg)](img/ENABLE_PSA.jpg)
 
 - To then remove the _Atmosphere_, you can locate and click the `X Remove Atmosphere` button.
 
-[![Disable PSA](img/DISABLE_PSA_v182.jpg)](img/DISABLE_PSA_v182.jpg)
+[![Disable PSA](img/DISABLE_PSA.jpg)](img/DISABLE_PSA.jpg)
 
 !!! summary "What happens when the atmosphere is added?"
     - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you remove the _Atmosphere_, these nodes will subsequently be removed.
@@ -92,7 +93,7 @@ Enables features that may not be fully functional and tested for all cases. Curr
 
 Presets allow you to store a snapshot of your customized atmosphere settings and return to it later or use already predefined presets provided by the add-on.
 
-[![Preset panel](img/UI/PRESET_PANEL_v182.jpg)](img/UI/PRESET_PANEL_v182.jpg)
+[![Preset panel](img/PRESET_PANEL.jpg)](img/PRESET_PANEL.jpg)
 
 The add-on comes with 10 different presets:
 
@@ -107,7 +108,7 @@ The add-on comes with 10 different presets:
 - `thick fog`
 - `thick haze`
   
-### Using presets
+### How to use presets
 
 1. Install the PSA add-on (version 1.8+).
 2. Enable the add-on inside the *Blender Preferences*.
