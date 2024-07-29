@@ -4,18 +4,19 @@ title: Getting started
 
 # Getting started
 
-_Physical Starlight and Atmosphere_ (PSA)  is a Blender addon for advanced environmental lighting that provides high quality atmospherics
-and lighting, and visual consistency between every object in your scene. It can be installed as any other Blender addon.
+_Physical Starlight and Atmosphere_ (PSA)  is a Blender add-on for advanced environmental lighting that provides high quality atmospherics
+and lighting, and visual consistency between every object in your scene. It can be installed as any other Blender add-on.
+
 ## Requirements
 
-Latest _Physical Starlight and Atmosphere_ is supported by [Blender 3.4+](https://www.blender.org/).
-Addon versions from v1.2 till 1.6.1 works on [Blender 2.81 - 3.3](https://www.blender.org/).
+Latest _Physical Starlight and Atmosphere_ version is supported by [Blender 3.4+](https://www.blender.org/).
+The add-on versions between v1.2 and v1.6.1 still work on [Blender 2.81 - 3.3](https://www.blender.org/).
 
 ## Installation
 
 !!! info
-    "Physical Starlight and Atmopshere" is only available for purchase on
-    [Blendermarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or [Gumroad](https://gumroad.com/l/PSaA).
+    "Physical Starlight and Atmosphere" is only available for purchase on
+    [Blender Market](https://blendermarket.com/products/physical-starlight-and-atmosphere) or [Gumroad](https://gumroad.com/l/PSaA).
     Get your latest version there.
 
 - Download the "physical-starlight-atmosphere-[version here].zip" file.
@@ -27,24 +28,30 @@ Addon versions from v1.2 till 1.6.1 works on [Blender 2.81 - 3.3](https://www.bl
 - Wait till it registers. Voila!
 
 ## First Run
-- Locate _Physical Starlight and Atmosphere_ panel in [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
-also called _N Panel_ (You can also find addon panel in the World Properties). Click on the tab _Atmosphere_ to reveal it.
-- Enable addon by ticking the uppermost checkbox.
+- Locate the _Physical Starlight and Atmosphere_ panel in the [Sidebar](https://docs.blender.org/manual/en/latest/interface/window_system/regions.html#sidebar)
+also called _N Panel_ (You can also find add-on panel in the World Properties). Click on the tab _Atmosphere_ to reveal it.
 
+- Enable add-on by clicking the `+ Add Atmosphere` button.
  
 !!! important
     To see the sky, you have to be in "Rendered" Viewport Shading mode (click on the 4th sphere in the list up in the right corner of 3D viewport)
 
-[![First Run](img/first-run.jpg)](img/first-run.jpg)
+[![Enable PSA](img/ENABLE_PSA.jpg)](img/ENABLE_PSA.jpg)
 
-!!! summary "What happens when addon is being enabled/disabled?"
-    - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you uncheck the _Physical Atmosphere_ checkbox, these nodes will be removed.
-    - Sun lamp `Sarlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you uncheck the _Physical Atmosphere_ checkbox, if no active PSA instances are found in other worlds it will be removed.
+- To then remove the _Atmosphere_, you can locate and click the `X Remove Atmosphere` button.
+
+[![Disable PSA](img/DISABLE_PSA.jpg)](img/DISABLE_PSA.jpg)
+
+!!! summary "What happens when the atmosphere is added?"
+    - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you remove the _Atmosphere_, these nodes will subsequently be removed.
+    - The Sun lamp `Starlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you remove the _Atmosphere_, if no active PSA instances are found in other worlds context's, it will be removed.
 
 
 ## Preferences
-There is no _The One_ way to use this addon. That is why we encourage you to find the way
-it works best for you. Addon [preferences panel](img/UI/UI_preferences.png) is located under
+There is no one _right way_ way to use this add-on. That is why we encourage you to find the way
+it works best for you. 
+
+The add-on [preferences panel](img/UI/UI_preferences.jpg) is located under
 `Edit > Preferences > Add-ons`.
 
 ### Toolbar Enabled
@@ -68,9 +75,9 @@ The Academy Color Encoding System[^1] (ACES) is a color image encoding system cr
 ### Use real world physical values
 :octicons-milestone-24: _Default_: `false`
 
-By default, addon reduces `atmosphere`, `sun` and `stars` intensity values to get the feeling _it just works_, and you 
+By default, add-on reduces `atmosphere`, `sun` and `stars` intensity values to get the feeling _it just works_, and you 
 don't have to modify extra parameter `Exposure` in order to get realistic atmosphere. But very important part of this 
-addon is having real world physical values to support visual consistency.
+add-on is having real world physical values to support visual consistency.
 
 <!-- ### Experimental Features
 :octicons-milestone-24: _Default_: `false`
@@ -84,26 +91,29 @@ Enables features that may not be fully functional and tested for all cases. Curr
 
 ## Presets
 
-Presets allow you to store a snapshot of your customized atmosphere settings and return to it later or use already predefined presets provided by the addon.
-the addon comes with 10 different presets:
+Presets allow you to store a snapshot of your customized atmosphere settings and return to it later or use already predefined presets provided by the add-on.
 
-- earth
-- earth 2
-- earth 3
-- hazy summer
-- mars
-- nishita
-- retrowave
-- tatooine
-- thick fog
-- thick haze
+[![Preset panel](img/PRESET_PANEL.jpg)](img/PRESET_PANEL.jpg)
+
+The add-on comes with 10 different presets:
+
+- `earth`
+- `earth 2`
+- `earth 3`
+- `hazy summer`
+- `mars`
+- `nishita`
+- `retrowave`
+- `tatooine`
+- `thick fog`
+- `thick haze`
   
-### Using presets
+### How to use presets
 
-1. Install the PSA addon (version 1.8+)
-2. Enable the addon inside the *Blender Preferences*
-3. Enable the addon inside the *Blender Viewport*, which will make the presets visible inside Blender
-4. In the n panel under ''presets'' pick a preset of your liking
+1. Install the PSA add-on (version 1.8+).
+2. Enable the add-on inside the *Blender Preferences*.
+3. Add the *Atmosphere* inside the *Blender Viewport*, which will make the presets visible inside the add-ons _N Panel_.
+4. In the _N Panel_ under `Presets` tab pick a preset of your liking.
 5. You should now see the preset in your scene!
 
 ??? summary "Troubleshooting: Concerning previous versions of Presets"     
@@ -118,14 +128,10 @@ the addon comes with 10 different presets:
 
 ### How to make your own presets
 
-1. In the PSA panel click ''+ new preset''
-2. Name it
-3. Modify the PSA parameters to your liking
+1. In the `PSA` _N Panel_ click `+ Create New`.
+2. Name it something memorable, avoid special characters.
+3. Modify the `PSA` parameters to your liking.
 4. Save the changes you made!
 
 !!! tip 
-
-     Use ''Use preset sun location'' if you want to save the suns location in the preset. If you dont want the preset to change your suns location then leave the box unchecked
-   
-
-
+    Use ''Use preset sun location'' if you want to save the suns location in the preset. If you don't want the preset to change your suns location, then leave the box unchecked.

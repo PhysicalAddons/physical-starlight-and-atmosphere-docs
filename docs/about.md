@@ -1,6 +1,6 @@
 ###What is Physical Starlight and Atmosphere
 
-"Physical Starlight and Atmosphere" is a Blender addon for advanced environmental lighting that takes inspiration of 'sandbox' game world and editors like Unity or Unreal Engine. The goal of the addon is to provide high quality atmospherics and lighting and bring visual consistency between every object in your scene. As of now it is still in active development and I am working hard to make it the highest quality product.
+"Physical Starlight and Atmosphere" is a Blender add-on for advanced environmental lighting that takes inspiration of 'sandbox' game world and editors like Unity or Unreal Engine. The goal of the add-on is to provide high quality atmospherics and lighting and bring visual consistency between every object in your scene. As of now it is still in active development and I am working hard to make it the highest quality product.
 ___
 ###Why use it?
 - very high dynamic range. Made to be used with tone mapping (filmic, or aces)
@@ -16,7 +16,7 @@ ___
 ___
 ###How does it work?
 
-This addon "fills" your Blender scene with air (or any gas of your liking) where density at the ground level is the highest and in the space - lowest, then a Star of your choice illuminates the air using physics laws - easy as that!
+This add-on "fills" your Blender scene with air (or any gas of your liking) where density at the ground level is the highest and in the space - lowest, then a Star of your choice illuminates the air using physics laws - easy as that!
 
 Lighting is calculated based on Rayleigh and Mie theory of light scattering through gaseous and liquid medium. Most critical part of the calculation is the fog - like in real world, it changes based on altitude of observer.
 
@@ -30,9 +30,9 @@ Outdoor lighting in is essential in computer graphics and Blender still has no p
 A common practice in almost all of CG software is that components like sky, sun, fog, water, clouds, lighting is considered separate entities and they do not interact to each other. In real, physical world everything influences everything. Even bigger issue can happen when different components are created by separate teams. It causes issues where one component looks amazing and realistic, but then everything else looks off and disconnected. Then artist's responsibility is to find the issues, tweak the settings, add fake lights and other "magic" to connect the pieces back to a nice overall render. At least this has been my workflow for many years and it just felt wrong.
 
 so...
-I developed my own rendering system in GLSL for BGE (Blender Game Engine) with which I made most of my projects. It was made with PBR (Physically Based Rendering) in mind. System was time consuming to adapt to other projects so I started to play around with shader node editor. To my surprise, It was possible to "translate" most of it. And with many months of work, I managed to create a first usable version. Then a year later of constant research and optimizations I finally have this addon!
+I developed my own rendering system in GLSL for BGE (Blender Game Engine) with which I made most of my projects. It was made with PBR (Physically Based Rendering) in mind. System was time consuming to adapt to other projects so I started to play around with shader node editor. To my surprise, It was possible to "translate" most of it. And with many months of work, I managed to create a first usable version. Then a year later of constant research and optimizations I finally have this add-on!
 
-Now considering that I developed my old rendering system closely with ocean, clouds, rainbow (!) and weather system, this addon will grow into a considerable mess. This is why I am developing other components simultaneously to be later combined with atmosphere in a sensible way.
+Now considering that I developed my old rendering system closely with ocean, clouds, rainbow (!) and weather system, this add-on will grow into a considerable mess. This is why I am developing other components simultaneously to be later combined with atmosphere in a sensible way.
 
 ___
 ###Why procedural skies?
@@ -44,7 +44,7 @@ HDRI probes unfortunately are not able to capture one crucial aspect - the fact 
 procedural skies to the rescue!
 Procedural skies are more common in games industry, and there the industry have developed way past the static HDRIs, skyboxes or skydomes. Just take a look at the amazing sky system for Horizon Zero Dawn
 
-During the years I have been working with, probably, every existing atmosphere system, starting from the good old O'Neil's "Accurate Atmospheric Scattering" method, to Preetham model, Eric Bruneton's planet rendering, and Hosek-Wilkie's physical sky model. Each of them have their strengths and, unfortunately, also weaknesses. In fact, none of the existing methods proved versatile enough worth my time making an addon for Blender.
+During the years I have been working with, probably, every existing atmosphere system, starting from the good old O'Neil's "Accurate Atmospheric Scattering" method, to Preetham model, Eric Bruneton's planet rendering, and Hosek-Wilkie's physical sky model. Each of them have their strengths and, unfortunately, also weaknesses. In fact, none of the existing methods proved versatile enough worth my time making an add-on for Blender.
 
 So I decided to develop a method mostly from a scratch - The starlight and skylight system I wish existed!
 
