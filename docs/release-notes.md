@@ -1,3 +1,11 @@
+### 1.8.2 <small>- released 27.09.2024</small>
+
+`fixed:`{: .label-fixed } 
+
+- Fixed a bug causing the image to appear overly bright when the sun’s vertical angle was set to 90°, -90°, 270°, or -270°.
+
+
+
 ### 1.8.1 <small>- released 16.07.2024</small>
 
 `improvements:`{: .label-improvements }
