@@ -3,7 +3,7 @@
 
 ## Interface
 
-Take a deep breath and have a look at the user interface. At first addon, interface may look a bit complex. It is due to many tweakable parameters and fancy names like Kelvins, radiance, and absorption that we use those to standardize variable names.
+Take a deep breath and have a look at the user interface. At first add-on, interface may look a bit complex. It is due to the selection of the many modifiable parameters and specific names like `Kelvins`, `Radiance`, and `Absorption` that we use to standardize variable names.
 
 ## General controls
 
