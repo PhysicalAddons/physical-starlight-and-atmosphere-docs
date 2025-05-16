@@ -1,3 +1,27 @@
+### 1.8.3 <small>- released 16.05.2025</small>
+
+`new:`{: .label-new }
+
+- Import/export system for presets with archive validation and texture handling.  
+- Batch import of presets from folder.  
+- Notifications during import/export.  
+- Preset deletion now cleans up texture files.  
+- Improved file selection and texture path handling.
+
+`improvements:`{: .label-improvements }
+
+- Sun rotation now uses attributes instead of drivers.  
+- Removed fog and redundant nodes to improve shader compile time.  
+- Cleaner and more efficient shader node tree.  
+- Export UI updated to match import flow.
+
+`fixed:`{: .label-fixed }
+
+- Fixed issues with preset export paths, image handling, and archive validation.
+
+
+
+
 ### 1.8.2 <small>- released 27.09.2024</small>
 
 `fixed:`{: .label-fixed } 
