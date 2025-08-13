@@ -1,3 +1,25 @@
+### 1.9.0 <small>- released 13.08.2025</small>
+
+[![Release 1.9.0 banner](img/releases/psa1.9.0.png)](img/releases/psa1.9.0.png)
+
+
+`new:`{: .label-new }
+
+- **20K Real Stars** — High-performance starfield based on real star data with up to 20,000 visible stars, sharper rendering, rotation controls, and optimized nodes.
+<br>{ [Read more](https://www.patreon.com/posts/my-god-its-full-131064614) }
+
+- **Baking** — Bake the sky to an image for reuse and sharing across workflows.
+
+`improvements:`{: .label-improvements }
+
+- Reorganized node setup and implemented on-demand loading to improve overall performance.
+
+
+`fixed:`{: .label-fixed }
+
+- Corrected node setup, defaults, and texture color space for stars.
+
+
 ### 1.8.3 <small>- released 16.05.2025</small>
 
 `new:`{: .label-new }
