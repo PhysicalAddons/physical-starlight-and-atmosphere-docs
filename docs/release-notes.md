@@ -1,3 +1,9 @@
+### 1.9.1 <small>- released 14.08.2025</small>
+`fixed:`{: .label-fixed }
+
+- Fixed baked export precision settings that caused errors.
+
+
 ### 1.9.0 <small>- released 13.08.2025</small>
 
 [![Release 1.9.0 banner](img/releases/psa1.9.0.png)](img/releases/psa1.9.0.png)
