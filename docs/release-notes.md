@@ -1,3 +1,15 @@
+### 1.9.2 <small>- released 29.08.2025</small>
+
+`improvements:`{: .label-improvements }
+
+- Apply baked sky as an HDRi directly from PSA (one-click "Apply HDRi").
+- Replaced the technical "Addon Settings" with a simple "Help & Resources" section (Documentation, Support, Tutorials, version info).
+
+`fixed:`{: .label-fixed }
+
+- Resolved an issue where the HDRi bake resolution was not restored to the user’s configuration. 
+
+
 ### 1.9.1 <small>- released 14.08.2025</small>
 `fixed:`{: .label-fixed }
 
@@ -11,7 +23,7 @@
 
 `new:`{: .label-new }
 
-- **20K Real Stars** — High-performance starfield based on real star data with up to 20,000 visible stars, sharper rendering, rotation controls, and optimized nodes.
+- **200K Real Stars** — High-performance starfield based on real star data with up to 20,000 visible stars, sharper rendering, rotation controls, and optimized nodes.
 <br>{ [Read more](https://www.patreon.com/posts/my-god-its-full-131064614) }
 
 - **Baking** — Bake the sky to an image for reuse and sharing across workflows.
