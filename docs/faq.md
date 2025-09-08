@@ -4,6 +4,28 @@
     [BlenderMarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or
     [Gumroad](https://gumroad.com/l/PSaA)) and grab the latest version. For more information see [updating](/psa/updating/) procedure.
 
+??? cite "Where can I find the source code of the add-on?"
+    All of our add-ons are licensed under the GNU GPL v3.
+    The full source code is already included in the product zip you download. Blender add-ons are written in Python, so the .py files you see there are the source code itself (nothing is compiled or hidden).
+
+    After installation, you can also find the add-on files here:
+    === "Windows"
+        `C:\Users\<YourName>\AppData\Roaming\Blender Foundation\Blender\<version>\scripts\addons\`
+
+    === "macOS"
+        `/Users/<YourName>/Library/Application Support/Blender/<version>/scripts/addons/`
+    
+    === "Linux"
+        `/home/<YourName>/.config/blender/<version>/scripts/addons/`
+
+    
+
+    
+    
+
+    If you want to review or verify the source code, simply open the .py files in any text editor.
+
+
 ??? cite "Everything looks blown-out (all white)! What am I missing?"
     Most probobly you have enabled an advanced feature that enables usage of [physical values](/psa/getting-started/#preferences). This feature is meant for users that work with photography tools or want that extra detail. This requires a bit more fiddling but require to manually adjust exposure settings. This [forum reply](https://blenderartists.org/t/physical-starlight-and-atmosphere-addon-for-2-9-v1-4-now-with-clouds/1185314/516) may give more insight what it is all about. To make it look "normal" uncheck the `use real world physical values` option in the addon preferences.
 
