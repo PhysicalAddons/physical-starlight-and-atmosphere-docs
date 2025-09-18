@@ -11,16 +11,10 @@ var General = (function (window) {
       link.addEventListener('mousedown', () => {
         link.setAttribute('data-focus-method', 'mouse');
       });
-      // link.addEventListener('touchstart', () => {
-      //   link.setAttribute('data-focus-method', 'touch');
-      // });
 
       link.addEventListener('blur', () => {
         link.removeAttribute('data-focus-method');
       });
-      // link.addEventListener('touchend', () => {
-      //   link.removeAttribute('data-focus-method');
-      // });
     })
   }
 
@@ -29,7 +23,7 @@ var General = (function (window) {
     var url = new URL(window.location);
     var rcode = url.searchParams.get("v");
     if(rcode!==null) {
-      var bmlinks = document.querySelectorAll("a[href*='blendermarket']")
+      var bmlinks = document.querySelectorAll("a[href*='superhivemarket']")
       bmlinks.forEach(function(link) {
         href = link.href
         conjugator = href.indexOf('?') !== -1 ? '&' : '?'

@@ -1,8 +1,8 @@
-Whenever a new version is released, it will appear in either Blendermarket or Gumroad marketplace where you bought the addon.
+Whenever a new version is released, it will appear in either Superhive or Gumroad marketplace where you bought the addon.
 To find the latest addon version, navigate to:
 
-=== "Blendermarket"
-    1. Go to [Blendermarket Orders](https://blendermarket.com/account/orders){:target="_blank"}
+=== "Superhive"
+    1. Go to [Superhive Orders](https://superhivemarket.com/account/orders){:target="_blank"}
     ```
     Menu (right top corner)  > Orders > Downloads (Go to Downloads link)
     ```
