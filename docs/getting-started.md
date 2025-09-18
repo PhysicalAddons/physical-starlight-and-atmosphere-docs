@@ -15,7 +15,7 @@ Addon versions from v1.2 till 1.6.1 works on [Blender 2.81 - 3.3](https://www.bl
 
 !!! info
     "Physical Starlight and Atmopshere" is only available for purchase on
-    [Blendermarket](https://blendermarket.com/products/physical-starlight-and-atmosphere) or [Gumroad](https://gumroad.com/l/PSaA).
+    [Superhive](https://superhivemarket.com/products/physical-starlight-and-atmosphere) or [Gumroad](https://gumroad.com/l/PSaA).
     Get your latest version there.
 
 - Download the "physical-starlight-atmosphere-[version here].zip" file.
