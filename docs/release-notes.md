@@ -1,3 +1,9 @@
+### 1.9.3 <small>- released 04.06.2026</small>
+
+`new:`{: .label-new }
+
+- Extensions support. PSA can now be installed and updated directly through Blender's Extensions system (Blender 4.2+).
+
 ### 1.9.2 <small>- released 29.08.2025</small>
 
 `improvements:`{: .label-improvements }
