@@ -1,3 +1,9 @@
+### 1.9.4 <small>- released 11.06.2026</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed a crash when you double-click a preset to rename it and focus out without changing the name (same name as before). The rename handler could loop until Blender crashed.
+
 ### 1.9.3 <small>- released 04.06.2026</small>
 
 `new:`{: .label-new }
