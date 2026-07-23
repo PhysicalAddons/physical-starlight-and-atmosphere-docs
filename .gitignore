@@ -5,3 +5,5 @@
 *.DS_Store
 # Local Netlify folder
 .netlify
+# MkDocs build output
+/psa
