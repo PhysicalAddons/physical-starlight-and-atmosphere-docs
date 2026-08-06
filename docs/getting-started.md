@@ -41,6 +41,14 @@ also called _N Panel_ (You can also find addon panel in the World Properties). C
     - A couple of shader nodes are imported and dynamically added and connected to the currently active world. When you uncheck the _Physical Atmosphere_ checkbox, these nodes will be removed.
     - Sun lamp `Sarlight Sun` is added. The Sun lamp is used as the main light source to cast shadows from the Sun. When you uncheck the _Physical Atmosphere_ checkbox, if no active PSA instances are found in other worlds it will be removed.
 
+!!! important
+    If PSA 1.7 is not enabling for you or the Blender system console is outputing an error, that looks something like this:
+        [![Error](img/UI/error_output.png)](img/UI/error_output.png)
+    
+    Please make sure to disable other addons that you have installed and enabled in your current Blender instance, before enabling PSA 1.7+ for the first time. This will mitigate any interference from other addons, and will configure the PSA preset files correctly. This will need to be performed only once - the first time you enable PSA.
+
+    After PSA has been enabled as detailed above, you can enable the other addons you wish to use. 
+
 
 ## Preferences
 There is no _The One_ way to use this addon. That is why we encourage you to find the way
