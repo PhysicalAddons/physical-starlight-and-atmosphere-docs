@@ -1,3 +1,10 @@
+### 1.9.5 <small>- released 30.10.2026</small>
+
+`fixed:`{: .label-fixed }
+
+- Fixed object fog breaking materials that come from linked assets (Asset Browser, linked libraries). Fog no longer edits linked materials, so the edits are not lost on reopen and the fog node group keeps its users.
+- Fixed local materials picking up a linked copy of the atmosphere node group. This caused "Missing Data-Block" and black renders when the library changed.
+
 ### 1.9.4 <small>- released 11.06.2026</small>
 
 `fixed:`{: .label-fixed }
