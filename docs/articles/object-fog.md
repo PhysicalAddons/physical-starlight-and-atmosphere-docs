@@ -52,7 +52,7 @@ Object Fog ignores linked materials and shows how many it ignored. There are two
 
 Note: The first option in the Make Local menu is *Selected Objects*. This option keeps the materials linked.
 
-PSA does not change library overrides. They are linked materials for Object Fog.
+Object Fog also ignores library overrides, because Blender treats them as linked data. The two options above apply to them too.
 
 ??? note "Under the hood: the psa_user_modified property"
     Each material that PSA changes gets a custom property `psa_user_modified`.
