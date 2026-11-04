@@ -2,8 +2,8 @@
 
 `improvements:`{: .label-improvements }
 
-- Redesigned the Object Fog panel. _Apply to all_ and _Clear_ replace the Manual/Auto type. _Apply to new materials_ gives fog to each material you add after you set it. The panel shows how many materials have fog and how many linked materials it ignored, with buttons to select the objects that use them and to open the new [Object Fog article](articles/object-fog.md).
-- Import Preset now accepts a preset .json as well as the packed .zip from Export Preset.
+- Redesigned the Object Fog panel. _Apply to all_ and _Clear_ replace the Manual/Auto type. _Apply to new materials_ gives fog to each material you add after you set it. The panel shows how many materials have fog and how many linked materials it ignored. Two buttons select the objects that use the linked materials and open the new [Object Fog article](articles/object-fog.md).
+- Import Preset now accepts a preset .json and the packed .zip from Export Preset.
 
 `fixed:`{: .label-fixed }
 
