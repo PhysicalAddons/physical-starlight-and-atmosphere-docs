@@ -2,12 +2,12 @@
 
 `improvements:`{: .label-improvements }
 
-- Redesigned the Object Fog panel. _Apply to all_ and _Clear_ replace the Manual/Auto type. _Apply to new materials_ gives fog to each material you add after you set it. The panel shows how many materials have fog and how many linked materials it ignored. Two buttons select the objects that use the linked materials and open the new [Object Fog article](articles/object-fog.md).
+- Redesigned the Object Fog panel. _Apply to all_ and _Clear_ replace the Manual/Auto type. _Apply to new materials_ gives fog to each material you add after you set it. The panel shows how many materials have fog.
 - Import Preset now accepts a preset .json and the packed .zip from Export Preset.
 
 `fixed:`{: .label-fixed }
 
-- Object Fog no longer changes Grease Pencil materials.
+- Object Fog ignored linked materials with no notice. The panel now shows how many linked materials it ignored. Two buttons select the objects that use them and open the new [Object Fog article](articles/object-fog.md), which explains why and what to do.
 - Presets and .blend files saved with the old Manual/Auto fog type still load.
 
 ### 1.9.5 <small>- released 30.10.2026</small>
