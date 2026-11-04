@@ -6,7 +6,7 @@ theme:
   favicon: img/physical-addons-favicon.svg
   font: false
     # text: Inter
-  logo: img/physical-addons-favicon.svg
+  logo: img/physical-addons-logo-white.svg
   palette:
     primary: black
   features:
