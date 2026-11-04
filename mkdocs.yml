@@ -47,6 +47,8 @@ nav:
 # #    - Artistic Values: artistic-values.md
 #     - Clouds: clouds.md
   - Changelog: release-notes.md
+  - Articles:
+    - Object Fog: articles/object-fog.md
     # - Release Notes: 
   # - About:
   #   - Physical Starlight and Atmosphere: about.md

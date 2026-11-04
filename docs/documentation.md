@@ -417,21 +417,28 @@ Take a deep breath and have a look at the user interface. At a glance, it may lo
 
 ## <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve"><path d="M10 3c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 1a5.991 5.991 0 0 1 5.998 5.959C14.887 10.903 12.995 12 10 12v4c-3.32 0-6-2.68-6-6l.002-.043C5.113 10.901 7.003 12 10 12z"/></svg></span> Object Fog
 
-### Type
+### Apply to all / Clear
 <div class="parameter">
     <div class="parameter__info">
-        <span>Chose manually or automatically to apply fog material node for every material in the scene.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Manual allows to chose when fog material node is applied for materials. Auto applies fog material node whenever new material is added to an object.</span>
+        <span>Adds the fog node to every material PSA can change, or removes it again.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Linked, Grease Pencil and hand-rewired materials are left alone. See <a href="../articles/object-fog/">Object Fog: how it works</a>.</span>
     </div>
-    <div class="parameter__video"><img src="../img/documentation/manual-auto.jpg" alt="" /></div>
+    <div class="parameter__video"><img src="../img/documentation/safter_fog.png" alt="" /></div>
 </div>
 
 
-### Apply / Clear
+### Apply to new materials
 <div class="parameter">
     <div class="parameter__info">
-        <span>Adds or removes fog material from every material in the scene.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">If user has manually disconnected fog node for material or relinked it in a different way we apply custom property `psa_user_modified` to object. This prevents our script from overriding user changes.</span>
+        <span>Materials you create or append after ticking this get fog on their own.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">Existing materials are not touched. Untick it and new materials stay as Blender made them.</span>
     </div>
-    <div class="parameter__video"><img src="../img/documentation/safter_fog.png" alt="" /></div>
+</div>
+
+
+### Status
+<div class="parameter">
+    <div class="parameter__info">
+        <span>How many materials have fog, and how many linked materials were ignored.</span><span style="margin-left: 4px; color: rgba(0,0,0,.5)">The first button selects the objects that use the linked materials, the second opens <a href="../articles/object-fog/#linked-materials">why they are ignored</a>.</span>
+    </div>
 </div>
 
 
